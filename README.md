@@ -1,1 +1,1 @@
-# epib706
+Repo for materials related to EPIB-706, Doctoral Seminar
