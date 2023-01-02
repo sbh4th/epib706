@@ -279,19 +279,17 @@ This question probably won't go away over the course of your PhD training, or in
 -   Wasserstein RL, Schirm AL, Lazar NA. Moving to a world beyond "p\<0.05". *The American Statistician* 2019;73(sup1):1--19. [link](https://doi.org/10.1080/00031305.2019.1583913). \[10923 words\]
 
 #### Why:
-Wasserstein et al. provide some grounds for discussing.
+Wasserstein et al. provide a series of arguments for abandoning p-value thresholds, some of which you are likely to have heard before, but there is much more in this paper. They make a number of positive arguments for how we *should* be conducting inference, and interpreting the results of research, and they aim to try and provide solid foundations for being more thoughtful about how to interpret evidence. 
 
 ### `r classdate(w1c2,7)`: What are alternatives to p-values?
 #### What:
 -   Cole SR, Edwards JK, Greenland S. Surprise! *Am J Epidemiol* 2020 Jul. [link](https://doi.org/10.1093/aje/kwaa136) \[1502 words\]
 
--   Begg CB. In Defense of P Values. *JNCI Cancer Spectrum* 2020;4(2):pkaa012. Published 2020 Feb 26. [link](https://doi.org/10.1093/jncics/pkaa012) \[3930 words\]
-
 - Greenland S, Mansournia MA, Joffe M. To curb research misreporting, replace significance and confidence by compatibility. *Prev Med* 2022;164:107127. [[link]](https://doi.org/10.1016/j.ypmed.2022.107127) [4493 words] 
 
 
 #### Why:
-Given the Wasserstein paper's suggestion to abandon statistical significance, questions naturally arise about how we should do inference instead of using p-values. Most epidemiologists are trained to use confidence intervals rather than p-values, but it does not appear to have changed the basic problem of scientists dichotomizing evidence using arbitrary statistical rules. These papers attempt to provide some alternative avenues to explore. Cole et al. propose a transformation of p-values that they argue make it less likely that users will misinterpret p-values as statements of probabilities; Begg makes a defense of the utility of p-values; and lastly Hamra et al. focus on a dialogue that demonstrates how Bayesian inference works to actually produce probabilistic statements about hypotheses.
+Given the Wasserstein paper's suggestion to abandon statistical significance, questions naturally arise about how we should do inference instead of using p-values. Most epidemiologists are trained to use confidence intervals rather than p-values, but it does not appear to have changed the basic problem of scientists dichotomizing evidence using arbitrary statistical rules. These papers attempt to provide some alternative avenues to explore. Cole et al. propose a transformation of p-values that they argue make it less likely that users will misinterpret p-values as statements of probabilities. Greenland et al. continue their quest to promote notions of 'compatibility' rather than significance. This should get you thinking about how you will manage your inferences in your own work. 
 
 ## Week 8: How bad can it be?
 
@@ -301,21 +299,21 @@ This week's readings move beyond inference on the main quantitative question or 
 
 #### What:
 
--   Lash TL, Fox MP, MacLehose RF, Maldonado G, McCandless LC, Greenland S. Good practices for quantitative bias analysis. [link](https://doi.org/10.1093/ije/dyu149) *Int J Epidemiol* 2014;43(6):1969--85. \[12518 words\]
+- Lash TL, Fox MP, MacLehose RF, Maldonado G, McCandless LC, Greenland S. Good practices for quantitative bias analysis. [link](https://doi.org/10.1093/ije/dyu149) *Int J Epidemiol* 2014;43(6):1969--85. \[12518 words\]
 
 #### Why:
 
 Lash et al. provide a long overview of good practices for such bias analysis, discussing both the motivation for why one would want to to conduct bias analysis and the mechanics of how to do so (choosing parameters, considering uncertainty). These methods are valuable for most study designs, but may be especially so for "garden variety" observational studies that must rely on basic regression adjustment to have any hope of making causal inferences.
 
-### `r classdate(w1c2,8)`: E-values, worthwhile or worthless?
+### `r classdate(w1c2,8)`: Can bias analysis be biased?
 
 #### What:
 
--   VanderWeele TJ, Ding P. Sensitivity Analysis in Observational Research: Introducing the E-Value. *Ann Intern Med* 2017;167(4):268--274. [link](https://doi.org/10.7326/M16-2607) \[5122 words\]
+- 2. Lash TL, Ahern TP, Collin LJ, Fox MP, MacLehose RF. Bias Analysis Gone Bad. *Am J Epidemiol* 2021;190(8):1604–12. [[link]](https://doi.org/10.1093/aje/kwab072) [6451 words]
 
--   Greenland S. Commentary: An argument against E-values for assessing the plausibility that an association could be explained away by residual confounding. *Int J Epidemiol.* 2020;49:1501-3. [link](https://doi.org/10.1093/ije/dyaa095) \[1936 words\]
+- Gustafson P. To Bound or Not to Bound: Is That the Question? *Epid* 2021;32(5):635--7. [[link]](https://doi.org/10.1097/EDE.0000000000001379) [2191 words]
 
--   Poole, C. Commentary: Continuing the E-Value's Post-Publication Peer Review. *Int J Epidemiol* 2020;49: 1497--1500. [link](https://doi.org/10.1093/ije/dyaa097) \[2479 words\]
+
 
 #### Why:
 
