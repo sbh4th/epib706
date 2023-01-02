@@ -272,21 +272,26 @@ Once again, let's take a break and delve into a case study regarding the importa
 
 ## Week 7: How should we make statistical inferences?
 
-This question probably won't go away over the course of your PhD training, or in the near future, so it is important to grapple with it. What are the consequences of the way we currently teach and use p-values (or 95% confidence intervals), how does it affect the way you read and interpret evidence? Should be banish the term "statistically significant" and, if so, why? How will you argue against peer reviewers and journal editors (or even your supervisors) that demand you include p-values (or, even worse, stars for levels of 'significance') in your revisions? This is a core issue of moving from sampled data and analysis to the kind of inferences you will make about causal effects. How will you approach it? Wasserstein et al. provide some grounds for discussing.
-
-Given the Wasserstein paper's suggestion to abandon statistical significance, questions naturally arise about how we should do inference instead of using p-values. Most epidemiologists are trained to use confidence intervals rather than p-values, but it does not appear to have changed the basic problem of scientists dichotomizing evidence using arbitrary statistical rules. These papers attempt to provide some alternative avenues to explore. Cole et al. propose a transformation of p-values that they argue make it less likely that users will misinterpret p-values as statements of probabilities; Begg makes a defense of the utility of p-values; and lastly Hamra et al. focus on a dialogue that demonstrates how Bayesian inference works to actually produce probabilistic statements about hypotheses.
+This question probably won't go away over the course of your PhD training, or in the near future, so it is important to grapple with it. What are the consequences of the way we currently teach and use p-values (or 95% confidence intervals), how does it affect the way you read and interpret evidence? Should we banish the term "statistically significant" and, if so, why? How will you argue against peer reviewers and journal editors (or even your supervisors) that demand you include p-values (or, even worse, stars for levels of 'significance') in your revisions? This is a core issue of moving from sampled data and analysis to the kind of inferences you will make about causal effects. How will you approach it? 
 
 ### Thursday `r classdate(w1c1,7)`: How should we use p-values?
-
+#### What:
 -   Wasserstein RL, Schirm AL, Lazar NA. Moving to a world beyond "p\<0.05". *The American Statistician* 2019;73(sup1):1--19. [link](https://doi.org/10.1080/00031305.2019.1583913). \[10923 words\]
 
-### `r classdate(w1c2,7)`: What are alternatives to p-values?
+#### Why:
+Wasserstein et al. provide some grounds for discussing.
 
+### `r classdate(w1c2,7)`: What are alternatives to p-values?
+#### What:
 -   Cole SR, Edwards JK, Greenland S. Surprise! *Am J Epidemiol* 2020 Jul. [link](https://doi.org/10.1093/aje/kwaa136) \[1502 words\]
 
 -   Begg CB. In Defense of P Values. *JNCI Cancer Spectrum* 2020;4(2):pkaa012. Published 2020 Feb 26. [link](https://doi.org/10.1093/jncics/pkaa012) \[3930 words\]
 
--   Hamra GB, Stang A, Poole C. The researcher and the consultant: from testing to probability statements. *Eur J Epidemiol* 2013;28:939--944. [link](https://doi.org/10.1007/s10654-013-9861-4)
+- Greenland S, Mansournia MA, Joffe M. To curb research misreporting, replace significance and confidence by compatibility. *Prev Med* 2022;164:107127. [[link]](https://doi.org/10.1016/j.ypmed.2022.107127) [4493 words] 
+
+
+#### Why:
+Given the Wasserstein paper's suggestion to abandon statistical significance, questions naturally arise about how we should do inference instead of using p-values. Most epidemiologists are trained to use confidence intervals rather than p-values, but it does not appear to have changed the basic problem of scientists dichotomizing evidence using arbitrary statistical rules. These papers attempt to provide some alternative avenues to explore. Cole et al. propose a transformation of p-values that they argue make it less likely that users will misinterpret p-values as statements of probabilities; Begg makes a defense of the utility of p-values; and lastly Hamra et al. focus on a dialogue that demonstrates how Bayesian inference works to actually produce probabilistic statements about hypotheses.
 
 ## Week 8: How bad can it be?
 
@@ -388,17 +393,22 @@ The second session's readings are focused more on how to grapple with and commun
 
 -   Lawlor DA, Tilling K, Davey Smith G. Triangulation in aetiological epidemiology. *Int J Epidemiol* 2016;45(6):1866--86. [link](https://academic.oup.com/ije/article/45/6/1866/2930550) \[141610 words\]
 
-### `r classdate(w1c2,12)`: How do we deal with uncertainty?
+### `r classdate(w1c2,12)`: Should we meta-analyze?
 
--   Savitz DA, Wellenius GA. Characterization and Communication of Conclusions. In: *Interpreting epidemiologic evidence: connecting research to applications*. Oxford University Press; 2016. p. 200--10. [link](https://academic.oup.com/book/8266/chapter/153869539) \[5958 words\]
+- Savitz DA, Forastiere F. Do pooled estimates from meta-analyses of observational epidemiology studies contribute to causal inference? **Occup Environ Med** 2021;78(9):621–2. [[link]](https://doi.org/10.1136/oemed-2021-107702) 
 
--   Blastland M et al. Five rules for evidence communication. *Nature* 2020;587:362--364 [link](https://doi.org/10.1038/d41586-020-03189-1) \[2664 words\]
+
 
 ## Week 13: How should we communicate epidemiologic evidence?
 
 This week we will be reading more about the (possible) tension between our duties as epidemiologic scientists to try and conduct and report evidence in a dispassionate way, and the sometimes pressing need for action to tackle pressing health problems when evidence is uncertain. The readings are from two seasoned epidemiologists and provide some overarching guidance thinking about how far to 'push' with your results, and what the benefits and drawbacks of different levels of engagement with the broader scientific community might be. Greenhalgh uses the twin examples of the 19th century cholera epidemics in England and the present pandemic to talk about the role of 'extra-scientific' values in shaping how we view and decide on what kind of 'evidence' is compelling.
 
-### `r classdate(w1c1,13)`: Debate on epidemiology's aspirations and capabilities
+### `r classdate(w1c1,13)`: How should we summarize epidemiolic results?
+
+-   Savitz DA, Wellenius GA. Characterization and Communication of Conclusions. In: *Interpreting epidemiologic evidence: connecting research to applications*. Oxford University Press; 2016. p. 200--10. [link](https://academic.oup.com/book/8266/chapter/153869539) \[5958 words\]
+
+-   Blastland M et al. Five rules for evidence communication. *Nature* 2020;587:362--364 [link](https://doi.org/10.1038/d41586-020-03189-1) \[2664 words\]
+
 
 -   Savitz DA. Point: Reconciling Epidemiology's Aspirations and Capabilities. *Am J Epidemiol* 2021;190: 977--79. (https://doi.org/10.1093/aje/kwaa271) \[1851 words\]
 
@@ -427,7 +437,7 @@ The integrity of University academic life and of the degrees the University conf
 
 L'université McGill attache une haute importance à l'honnêteté académique. Il incombe par conséquent à tous les étudiants de comprendre ce que l'on entend par tricherie, plagiat et autres infractions académiques, ainsi que les conséquences que peuvent avoir de telles actions, selon le Code de conduite de l'étudiant et des procédures disciplinaires (pour de plus amples renseignements, veuillez consulter le site http://www.mcgill.ca/integrity).
 
-## Plagiarism
+## Plagarism
 
 -   
 
