@@ -224,7 +224,7 @@ Despite some important strengths of randomized designs, especially for exchangea
 
 #### What:
 
--   Deaton A, Cartwright N. Understanding and misunderstanding randomized controlled trials. *Soc Sci Med* 2018;210:2--21. [link](https://doi.org/10.1016/j.socscimed.2017.12.005) \[22882 words\]
+-   Deaton A, Cartwright N. Understanding and misunderstanding randomized controlled trials. *Soc Sci Med* 2018;210:2--21. [[link]](https://doi.org/10.1016/j.socscimed.2017.12.005) \[22882 words\]
 
 #### Why:
 
@@ -234,7 +234,7 @@ Deaton and Cartwright's paper provides an overview of core philosophical, concep
 
 #### What:
 
--   Lodi S, Phillips A, Lundgren J, Logan R, Sharma S, Cole SR, et al. Effect Estimates in Randomized Trials and Observational Studies: Comparing Apples With Apples. *Am J Epidemiol* 2019 08;188(8):1569--1577. [\[link\]](https://doi.org/10.1093/aje/kwz100) \[3044 words\]
+-   Lodi S, Phillips A, Lundgren J, Logan R, Sharma S, Cole SR, et al. Effect Estimates in Randomized Trials and Observational Studies: Comparing Apples With Apples. *Am J Epidemiol* 2019 08;188(8):1569--1577. [[link]](https://doi.org/10.1093/aje/kwz100) \[3044 words\]
 
 #### Why:
 
@@ -250,11 +250,11 @@ Okay, so now suppose that we've decided on a question and a (randomized or non-r
 
 #### What:
 
--   Rothman KJ, Gallacher JEJ, Hatch EE. Why representativeness should be avoided. *Int J Epidemiol* 2013;42(4):1012-4. [link](https://doi.org/10.1093/ije/dys223). \[2338 words\]
+-   Rothman KJ, Gallacher JEJ, Hatch EE. Why representativeness should be avoided. *Int J Epidemiol* 2013;42(4):1012-4. [[link]](https://doi.org/10.1093/ije/dys223). \[2338 words\]
 
--   Ebrahim S, Davey Smith G. Should we always deliberately be non-representative? *Int J Epidemiol* 2013;42:1022--26. [link](https://doi.org/doi:10.1093/ije/dyt105) \[3823 words\]
+-   Ebrahim S, Davey Smith G. Should we always deliberately be non-representative? *Int J Epidemiol* 2013;42:1022--26. [[link]](https://doi.org/doi:10.1093/ije/dyt105) \[3823 words\]
 
--   Stamatakis E, et al. Is Cohort Representativeness Passé? Poststratified Associations of Lifestyle Risk Factors with Mortality in the UK Biobank. *Epidemiology* 2021;32:179--188. [link](https://doi.org/10.1097/EDE.0000000000001316) \[6921 words\]
+-   Stamatakis E, et al. Is Cohort Representativeness Passé? Poststratified Associations of Lifestyle Risk Factors with Mortality in the UK Biobank. *Epidemiology* 2021;32:179--188. [[link]](https://doi.org/10.1097/EDE.0000000000001316) \[6921 words\]
 
 #### Why:
 
@@ -264,7 +264,7 @@ Debates about whether studies designed to estimate causal effects need to be rep
 
 #### What:
 
--   Bradley VC et al. Unrepresentative Big Surveys Significantly Overestimated US Vaccine Uptake. *Nature* 2021;600:695--700. [link](https://doi.org/10.1038/s41586-021-04198-4) \[11400 words\]
+-   Bradley VC et al. Unrepresentative Big Surveys Significantly Overestimated US Vaccine Uptake. *Nature* 2021;600:695--700. [[link]](https://doi.org/10.1038/s41586-021-04198-4) \[11400 words\]
 
 #### Why:
 
@@ -276,14 +276,14 @@ This question probably won't go away over the course of your PhD training, or in
 
 ### Thursday `r classdate(w1c1,7)`: How should we use p-values?
 #### What:
--   Wasserstein RL, Schirm AL, Lazar NA. Moving to a world beyond "p\<0.05". *The American Statistician* 2019;73(sup1):1--19. [link](https://doi.org/10.1080/00031305.2019.1583913). \[10923 words\]
+-   Wasserstein RL, Schirm AL, Lazar NA. Moving to a world beyond "p\<0.05". *The American Statistician* 2019;73(sup1):1--19. [[link]](https://doi.org/10.1080/00031305.2019.1583913). \[10923 words\]
 
 #### Why:
 Wasserstein et al. provide a series of arguments for abandoning p-value thresholds, some of which you are likely to have heard before, but there is much more in this paper. They make a number of positive arguments for how we *should* be conducting inference, and interpreting the results of research, and they aim to try and provide solid foundations for being more thoughtful about how to interpret evidence. 
 
 ### `r classdate(w1c2,7)`: What are alternatives to p-values?
 #### What:
--   Cole SR, Edwards JK, Greenland S. Surprise! *Am J Epidemiol* 2020 Jul. [link](https://doi.org/10.1093/aje/kwaa136) \[1502 words\]
+-   Cole SR, Edwards JK, Greenland S. Surprise! *Am J Epidemiol* 2020 Jul. [[link]](https://doi.org/10.1093/aje/kwaa136) \[1502 words\]
 
 - Greenland S, Mansournia MA, Joffe M. To curb research misreporting, replace significance and confidence by compatibility. *Prev Med* 2022;164:107127. [[link]](https://doi.org/10.1016/j.ypmed.2022.107127) [4493 words] 
 
@@ -299,7 +299,7 @@ This week's readings move beyond inference on the main quantitative question or 
 
 #### What:
 
-- Lash TL, Fox MP, MacLehose RF, Maldonado G, McCandless LC, Greenland S. Good practices for quantitative bias analysis. [link](https://doi.org/10.1093/ije/dyu149) *Int J Epidemiol* 2014;43(6):1969--85. \[12518 words\]
+- Lash TL, Fox MP, MacLehose RF, Maldonado G, McCandless LC, Greenland S. Good practices for quantitative bias analysis. *Int J Epidemiol* 2014;43(6):1969--85. [[link]](https://doi.org/10.1093/ije/dyu149) \[12518 words\]
 
 #### Why:
 
