@@ -9,6 +9,7 @@ format:
     toc: true
     number-sections: true
     number-depth: 2
+    theme: sandstone
   pdf:
     toc: false
     number-sections: true
