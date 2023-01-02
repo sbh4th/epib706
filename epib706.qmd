@@ -1,5 +1,5 @@
 ---
-title: "EPIB706: Doctoral Seminar"
+title: "EPIB 706: Doctoral Seminar"
 subtitle: "Winter 2023"
 author: 
   - name: Sam Harper
@@ -37,7 +37,7 @@ classdate <- function(obj, adv) {
 }
 ```
 
-| **About me**                               | **About class**                                                                          |
+| **About me**                           | **About class**                                                                      |
 |-----------------------------------------|-------------------------------|
 | sam.harper\@mcgill.ca                  | [mycourses2.mcgill.ca/d2l/home/631790](https://mycourses2.mcgill.ca/d2l/home/631790) |
 | Hours: by appointment                  | Hours: Wednesday/Friday 1335h-1455h                                                  |
@@ -61,7 +61,7 @@ This is a discussion-based course and, quite frankly, it simply won't work well 
 
 ## Written Assignments
 
-The discussions in the course are meant to activate your critical thinking skills, and to encourage you to synthesize your own thoughts on the material, particularly as it may relate to your area of research interest. Toward that end, over the course of the semester you will be asked to submit **one** original, critical essay that explores a topic of relevance to epidemiologic science. It may be a direct response to material that we read or discuss in class, or it may be an essay exploring other topics relevant to your work that demonstrate a good-faith effort to engage with the class material. These should take the form of a commentary similar (in spirit) to those we have read during the semester, and should be no longer than 2500 words. An outline of the essay, including the basic arguments you want to make, is due on **March 10, 2022** and the final essay is due on **April 15, 2022**. I will provide examples of what I think are good pieces of writing to aspire to.
+The discussions in the course are meant to activate your critical thinking skills, and to encourage you to synthesize your own thoughts on the material, particularly as it may relate to your area of research interest. Toward that end, over the course of the semester you will be asked to submit **one** original, critical essay that explores a topic of relevance to epidemiologic science. It may be a direct response to material that we read or discuss in class, or it may be an essay exploring other topics relevant to your work that demonstrate a good-faith effort to engage with the class material. These should take the form of a commentary similar (in spirit) to those we have read during the semester, and should be no longer than 2500 words. An outline of the essay, including the basic arguments you want to make, is due on [**March 10, 2023**]{style="color: red"} and the final essay is due on [**April 21, 2023**]{style="color: red"}. I will provide examples of what I think are good pieces of writing to aspire to.
 
 ## Class Participation
 
@@ -101,7 +101,7 @@ A note about the outline. In an effort to make this course as dynamic and helpfu
 
 Why are we doing this?
 
-Because this is not a didactic course that is focused on learning methods or technical skills, and because in the past this course has often been critiqued for not providing a solid rationale for why it even exists, I owe it to you to provide some justification for the topics and readings I've chosen, as well as for why I think this material would be useful for your doctoral training. For each set of assigned material (the 'What'), I've included a brief rationale (the 'Why'). I hope you find it helpful. 
+Because this is not a didactic course that is focused on learning methods or technical skills, and because in the past this course has often been critiqued for not providing a solid rationale for why it even exists, I owe it to you to provide some justification for the topics and readings I've chosen, as well as for why I think this material would be useful for your doctoral training. For each set of assigned material (the 'What'), I've included a brief rationale (the 'Why'). I hope you find it helpful.
 
 ### `r classdate(w1c1,1)`: Course introduction
 
@@ -115,9 +115,9 @@ In the first session we will talk generally about high-level questions regarding
 
 #### What:
 
--   Davey Smith G. Post--Modern Epidemiology: When Methods Meet Matter. *Am J Epidemiol* 2019;188(8):1410--1419. [[link]](https://doi.org/10.1093/aje/kw064) [8601 words]
+-   Davey Smith G. Post--Modern Epidemiology: When Methods Meet Matter. *Am J Epidemiol* 2019;188(8):1410--1419. [\[link\]](https://doi.org/10.1093/aje/kw064) \[8601 words\]
 
--   Lesko CR, Keil AP, Edwards JK. The Epidemiologic Toolbox: Identifying, Honing, and Using the Right Tools for the Job. *Am J Epidemiol* 2020;189(6):511--517. [[link]](https://doi.org/10.1093/aje/kwaa030) [3675 words]
+-   Lesko CR, Keil AP, Edwards JK. The Epidemiologic Toolbox: Identifying, Honing, and Using the Right Tools for the Job. *Am J Epidemiol* 2020;189(6):511--517. [\[link\]](https://doi.org/10.1093/aje/kwaa030) \[3675 words\]
 
 #### Why?
 
@@ -131,10 +131,9 @@ Asking good questions is central to advancing epidemiologic knowledge, but what 
 
 #### What:
 
-- Fox MP, Murray EJ, Lesko CR, Sealy-Jefferson S. On the Need to Revitalize Descriptive Epidemiology. *Am J of Epidemiol* 2022;191(7):1174–9. [[link]](https://doi.org/10.1093/aje/kwac056) [4263 words]
+-   Fox MP, Murray EJ, Lesko CR, Sealy-Jefferson S. On the Need to Revitalize Descriptive Epidemiology. *Am J of Epidemiol* 2022;191(7):1174--9. [\[link\]](https://doi.org/10.1093/aje/kwac056) \[4263 words\]
 
-
-- Hernan MA, Hsu J, Healy B. A Second Chance to Get Causal Inference Right: A Classification of Data Science Tasks. *CHANCE* 2019; 32:1, 42-49. [[link]](https://doi.org/10.1080/09332480.2019.1579578) [5650 words]
+-   Hernan MA, Hsu J, Healy B. A Second Chance to Get Causal Inference Right: A Classification of Data Science Tasks. *CHANCE* 2019; 32:1, 42-49. [\[link\]](https://doi.org/10.1080/09332480.2019.1579578) \[5650 words\]
 
 #### Why:
 
@@ -144,9 +143,9 @@ What is the relationship between research questions and methods? Should we just 
 
 #### What:
 
--   Banack H. Fox M. Questioning the Questions with Maria Glymour. *SERiousEPI* podcast. 2020-10-01. [[link]](https://seriousepi.blubrry.net/2020/10/01/6-questioning-the-questions-with-maria-glymour/) [44 mins]
+-   Banack H. Fox M. Questioning the Questions with Maria Glymour. *SERiousEPI* podcast. 2020-10-01. [\[link\]](https://seriousepi.blubrry.net/2020/10/01/6-questioning-the-questions-with-maria-glymour/) \[44 mins\]
 
--   Fox MP, Edwards JK, Platt R, Balzer LB. The Critical Importance of Asking Good Questions: The Role of Epidemiology Doctoral Training Programs. *Am J Epidemiol* 2020;189(4):261--264. [[link]](https://doi.org/10.1093/aje/kwz233) [1876 words]
+-   Fox MP, Edwards JK, Platt R, Balzer LB. The Critical Importance of Asking Good Questions: The Role of Epidemiology Doctoral Training Programs. *Am J Epidemiol* 2020;189(4):261--264. [\[link\]](https://doi.org/10.1093/aje/kwz233) \[1876 words\]
 
 #### Why:
 
@@ -160,9 +159,9 @@ Much of modern epidemiologic training now starts with the introduction of potent
 
 #### What:
 
-- Krieger N, Davey Smith G. The tale wagged by the DAG: broadening the scope of causal inference and explanation for epidemiology. Int J Epidemiol. 2016 12;45(6):1787--1808. [[link]](https://doi.org/10.1093/ije/dyw114) [15714 words]
+-   Krieger N, Davey Smith G. The tale wagged by the DAG: broadening the scope of causal inference and explanation for epidemiology. Int J Epidemiol. 2016 12;45(6):1787--1808. [\[link\]](https://doi.org/10.1093/ije/dyw114) \[15714 words\]
 
-- Daniel RM, De Stavola BL, Vansteelandt S. Commentary: The formal approach to quantitative causal inference in epidemiology: misguided or misrepresented? Int J Epidemiol. 2016 12;45(6):1817--1829. [[link]](https://doi.org/10.1093/ije/dyw227) [10561 words]
+-   Daniel RM, De Stavola BL, Vansteelandt S. Commentary: The formal approach to quantitative causal inference in epidemiology: misguided or misrepresented? Int J Epidemiol. 2016 12;45(6):1817--1829. [\[link\]](https://doi.org/10.1093/ije/dyw227) \[10561 words\]
 
 #### Why?
 
@@ -172,11 +171,11 @@ The first set of papers for this session come from an older, but still relevant 
 
 #### What:
 
-- Schwartz S, Gatto NM, Campbell UB. Causal identification: a charge of epidemiology in danger of marginalization. *Ann Epidemiol* 2016;26(10):669-673. [[link]](https://doi.org/10.1016/j.annepidem.2016.03.013). [4069 words]
+-   Schwartz S, Gatto NM, Campbell UB. Causal identification: a charge of epidemiology in danger of marginalization. *Ann Epidemiol* 2016;26(10):669-673. [\[link\]](https://doi.org/10.1016/j.annepidem.2016.03.013). \[4069 words\]
 
-- Hernan MA. Does water kill? A call for less casual causal inferences. *Ann Epidemiol* 2016;26(10):674-680. [[link]](https://doi.org/10.1016/j.annepidem.2016.08.016). [5734 words]
+-   Hernan MA. Does water kill? A call for less casual causal inferences. *Ann Epidemiol* 2016;26(10):674-680. [\[link\]](https://doi.org/10.1016/j.annepidem.2016.08.016). \[5734 words\]
 
-- Schwartz S, Gatto NM, Campbell UB. Heeding the call for less casual causal inferences: the utility of realized (quantitative) causal effects. *Ann Epidemiol* 2017;27(6):402-405. [[link]](https://doi.org/10.1016/j.annepidem.2017.05.012). [2756 words]
+-   Schwartz S, Gatto NM, Campbell UB. Heeding the call for less casual causal inferences: the utility of realized (quantitative) causal effects. *Ann Epidemiol* 2017;27(6):402-405. [\[link\]](https://doi.org/10.1016/j.annepidem.2017.05.012). \[2756 words\]
 
 #### Why:
 
@@ -192,9 +191,9 @@ Longstanding debates about whether exposures that are not directly (or perhaps e
 
 #### What:
 
-- VanderWeele TJ, Robinson WR. On the causal interpretation of race in regressions adjusting for confounding and mediating variables. *Epidemiology* 2014 Jul;25(4):473--84. [[link]](https://doi.org/10.1097/EDE.0000000000000105) [11470 words]
+-   VanderWeele TJ, Robinson WR. On the causal interpretation of race in regressions adjusting for confounding and mediating variables. *Epidemiology* 2014 Jul;25(4):473--84. [\[link\]](https://doi.org/10.1097/EDE.0000000000000105) \[11470 words\]
 
-- Glymour MM, Spiegelman D. Evaluating Public Health Interventions: 5. Causal Inference in Public Health Research-Do Sex, Race, and Biological Factors Cause Health Outcomes? *Am J Public Health* 2017 Jan;107(1):81--85. [[link]](https://doi.org/10.2105/AJPH.2016.303539) [3446 words]
+-   Glymour MM, Spiegelman D. Evaluating Public Health Interventions: 5. Causal Inference in Public Health Research-Do Sex, Race, and Biological Factors Cause Health Outcomes? *Am J Public Health* 2017 Jan;107(1):81--85. [\[link\]](https://doi.org/10.2105/AJPH.2016.303539) \[3446 words\]
 
 -   Boyd RW et al. On Racism: A New Standard For Publishing On Racial Health Inequities. *Health Affairs Blog*, July 2, 2020. (https://doi.org/10.1377/hblog20200630.939347) \[2378 words\]
 
@@ -205,9 +204,10 @@ The paper by Vanderweele and Robinson tries to address the issue of non-manipula
 ### `r classdate(w1c2,4)`: Case study: race in clinical treatment.
 
 #### What:
-- Vyas DA, Eisenstein LG, Jones DS. Hidden in Plain Sight — Reconsidering the Use of Race Correction in Clinical Algorithms. *New Engl J Med* 2020;383(9):874–82. [[link]](https://doi.org/10.1056/NEJMms2004740) [6251 words]
 
-- Manski CF. Patient-centered appraisal of race-free clinical risk assessment. *Health Econ* 2022;31(10):2109–14. [[link]]https://onlinelibrary.wiley.com/doi/abs/10.1002/hec.4569 [4133 words]
+-   Vyas DA, Eisenstein LG, Jones DS. Hidden in Plain Sight --- Reconsidering the Use of Race Correction in Clinical Algorithms. *New Engl J Med* 2020;383(9):874--82. [\[link\]](https://doi.org/10.1056/NEJMms2004740) \[6251 words\]
+
+-   Manski CF. Patient-centered appraisal of race-free clinical risk assessment. *Health Econ* 2022;31(10):2109--14. \[\[link\]\](https://onlinelibrary.wiley.com/doi/abs/10.1002/hec.4569) \[4133 words\]
 
 #### Why:
 
@@ -225,8 +225,6 @@ Despite some important strengths of randomized designs, especially for exchangea
 
 -   Deaton A, Cartwright N. Understanding and misunderstanding randomized controlled trials. *Soc Sci Med* 2018;210:2--21. [link](https://doi.org/10.1016/j.socscimed.2017.12.005) \[22882 words\]
 
--   Haushofer J, Metcalf CJE. Which interventions work best in a pandemic? *Science* 2020;368: 1063--1065. [link](http://doi.org/10.1126/science.abb6144) \[215 words\]
-
 #### Why:
 
 Deaton and Cartwright's paper provides an overview of core philosophical, conceptual, and statistical concepts of randomized trials, and a lot of comments on their benefits and drawbacks. Haushofer and Metcalf apply questions about the feasibility to our pandemic circumstances (though it seems a long time ago that they published this in May of 2020, before viable vaccines, before new strains, before second, third, omicron waves). As epidemiologists, I think you will benefit from getting into the weeds a bit about randomized designs and grappling with questions about when and where they might be appropriate.
@@ -235,7 +233,7 @@ Deaton and Cartwright's paper provides an overview of core philosophical, concep
 
 #### What:
 
-- Lodi S, Phillips A, Lundgren J, Logan R, Sharma S, Cole SR, et al. Effect Estimates in Randomized Trials and Observational Studies: Comparing Apples With Apples. *Am J Epidemiol* 2019 08;188(8):1569--1577. [[link]](https://doi.org/10.1093/aje/kwz100) [3044 words]
+-   Lodi S, Phillips A, Lundgren J, Logan R, Sharma S, Cole SR, et al. Effect Estimates in Randomized Trials and Observational Studies: Comparing Apples With Apples. *Am J Epidemiol* 2019 08;188(8):1569--1577. [\[link\]](https://doi.org/10.1093/aje/kwz100) \[3044 words\]
 
 #### Why:
 
