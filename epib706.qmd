@@ -9,7 +9,7 @@ format:
     toc: true
     number-sections: true
     number-depth: 2
-    theme: materia
+    theme: sandstone
   pdf:
     toc: false
     number-sections: true
@@ -42,7 +42,7 @@ classdate <- function(obj, adv) {
 |-----------------------------------------|-------------------------------|
 | sam.harper\@mcgill.ca                  | [mycourses2.mcgill.ca/d2l/home/631790](https://mycourses2.mcgill.ca/d2l/home/631790) |
 | Hours: by appointment                  | Hours: Wednesday/Friday 1335h-1455h                                                  |
-| Office: 2001 McGill College, Room 1262 | Location: 2001 McGill College, Room 1140                                             |
+| Office: 2001 McGill College, Room 1262 | Location: 2001 McGill College, Room 1201                                             |
 
 : {tbl-colwidths="\[45,55\]"}
 
@@ -56,41 +56,43 @@ Registration in the PhD program in Epidemiology and successful completion of the
 
 # Course Format
 
-This is a discussion-based course and, quite frankly, it simply won't work well without engagement and participation from all of us (including me). Of course, everyone has their own level of comfort speaking up, as well as varying levels of interest in some of these topics, so I have no expectation that everyone participates equally. What I do ask is that you make a sincere effort to engage with the material, both in terms of the reading and in different forums for discussion. Learning how to respectfully express your opinion about conceptual and methodological issues, and to respectfully listen, engage, and respond to the opinions of others is a core part of being a scientist.
+This is a discussion-based course and, quite frankly, it simply won't work well without engagement and participation from all of us (including me). Of course, everyone has their own level of comfort speaking up, as well as varying levels of interest in some of these topics, so I have no expectation that everyone participates equally. What I do ask is that you make a sincere effort to engage with the material, both in terms of the reading and in the discussion forum. Learning how to respectfully express your opinion about conceptual and methodological issues is a core part of being a scientist.
 
 # Evaluation
 
-## Reading
+## Written Assignments
 
-The assigned readings are the core of the course material, and students are expected to carefully and critically read each assignment *before* class. To facilitate student engagement with the reading we will use the online tool [Perusall](http://perusall.com) for all required readings. Perusall is a reading platform in which students (and faculty) annotate texts collaboratively alongside one another. More information on how Perusall works and how it is integrated into the course is available [here](https://asuonline.wistia.com/medias/dvaftxxad7) (thank you Arizona State!). To access Perusall through MyCourses, navigate to Content \> Readings \> Perusall, and then click the "Open Link" button. This will take you to the Perusall site and automatically register you as a member of the course. If you are having any trouble accessing the readings through Perusall contact me right away. I will not be using Perusall's grading features, but I expect you to read, post questions, respond to other students questions and answers, and to take an active role in generating productive discussion.
+The discussions in the course are meant to activate your critical thinking skills, and to encourage you to synthesize your own thoughts on the material, particularly as it may relate to your area of research interest. Toward that end, over the course of the semester you will be asked to submit **one** original, critical essay that explores a topic of relevance to epidemiologic science. It may be a direct response to material that we read or discuss in class, or it may be an essay exploring other topics relevant to your work that demonstrate a good-faith effort to engage with the class material. These should take the form of a commentary similar (in spirit) to those we have read during the semester, and should be no longer than 2500 words. An outline of the essay, including the basic arguments you want to make, is due on [**March 10, 2023**]{style="color: red"} and the final essay is due on [**April 21, 2023**]{style="color: red"}. I will provide examples of what I think are good pieces of writing to aspire to.
 
-## Writing
+## Class Participation
 
-The discussions in the course are meant to activate your critical thinking skills, and to encourage you to synthesize your own thoughts on the material, particularly as it may relate to your area of research interest. Toward that end, over the course of the semester you will be asked to submit **one** original, critical essay that explores a topic of relevance to epidemiologic science. It may be a direct response to material that we read or discuss in class, or it may be an essay exploring other topics relevant to your work that demonstrate a good-faith effort to engage with the class material. These should take the form of a commentary similar (in spirit) to those we have read during the semester, and should be no longer than 2500 words. An outline of the essay, including the basic arguments you want to make, is due on [**March 10, 2023**]{style="color: red"} and the final essay is due on [**April 19, 2023**]{style="color: red"}. I will provide examples of what I think are good pieces of writing to aspire to.
+In addition to the writing assignment, each student will be asked to lead **at least one** day of discussion among the topics that we will cover (and probably more than one for most of you). For that session, you will come prepared to *briefly* summarize the material we have read, and to prepare some discussion points to help keep the conversation moving. I have created a Google spreadsheet with the current days for each topic [here](https://docs.google.com/spreadsheets/d/1njZXu5oLeYKnTOYkb6NZVS90Lgk4aQ6C5yXGdqOTCi0/edit?usp=sharing). Please sign-up for a session and we can have a discussion about the readings and where to draw on other resources for the topic. Note: We have 25 sessions and 15 students this year, so not everyone is required to lead 2 sessions. You should be able to sort this out, but if the remaining slots don't get filled I will happily assign them.
 
-## Engagement
+Clipped from https://twitter.com/samplereality/status/1564016056208949249 \>Engagement comes in many forms, not just attendance. Taken holistically, engagement includes (but is not limited to) the following:
 
-### Leading Discussion
+(1) Preparation (reviewing readings and material before class)
 
-In addition to the writing assignment, each student will be asked to lead **at least one** day of discussion among the topics that we will cover (and probably more than one for most of you). For that session, you will come prepared to *briefly* summarize the material we have read, and to prepare some discussion points to help keep the conversation moving. I have created a Google spreadsheet with the current days for each topic [here](https://docs.google.com/spreadsheets/d/1njZXu5oLeYKnTOYkb6NZVS90Lgk4aQ6C5yXGdqOTCi0/edit?usp=sharing). Please sign-up for a session and we can have a discussion about the readings and where to draw on other resources for the topic. Note: We have 25 sessions and 14 students this year, so not everyone is required to lead 2 sessions. You should be able to sort this out, but if the remaining slots don't get filled I will happily assign them.
+(2) Focus (avoiding distractions during in-person and online activities)
 
-Although each class session is 1.5 hours, there will inevitably be topics that come up that we can't fully address in class. I encourage you to use the [Discussion](https://mycourses2.mcgill.ca/d2l/le/631790/discussions/List) section of MyCourses to post questions or comments there. In past years I have also used this as a place to occassionally post links to additional readings for those interested. 
+(3) Presence (Engaged and responsive during group activities)
 
-### Participation
+(4) Asking questions (in class, out of class, online, offline)
 
-Real engagement means *active* participation. This can take many forms, but for some general guidance, this means: 
+(5) Listening (hearing what others say, and also what they're not saying)
 
-- Showing up for each class *having read and engaged with the material assigned*. It will help facilitate discussion if you could aim to contribute at least 2-3 points for discussion or questions about the material in Perusall, and bring those to class;
-
-- Focusing during class discussion and avoiding distractions, and being present and intellectually engaged during the discussion;
-
-- Asking questions about anything in the readings that seems unclear or objectionable (in class, outside class, online). This can include both specific ideas from the readings, as well as synthesizing or finding themes common to different readings or our discussion;
-
-- Offering respectful arguments and responses, and respectfully listening to the arguments and responses of others. Contributions should be relevant and helpful and demonstrate that you are engaging with the material being discussed at the time, and that you are well-prepared for class.
+(6) Specificity (referring to specific ideas from readings and discussions) Synthesizing (making connections between readings and discussions)
 
 # Grading
 
 The course is pass-fail.
+
+# Reading
+
+The assigned readings are the core of the course material, and students are expected to carefully and critically read each assignment *before* class. To facilitate student engagement with the reading we will use the online tool [Perusall](http://perusall.com) for all required readings. Perusall is a reading platform in which students (and faculty) annotate texts collaboratively alongside one another. More information on how Perusall works and how it is integrated into the course is available [here](https://asuonline.wistia.com/medias/dvaftxxad7) (thank you Arizona State!). To access Perusall through MyCourses, navigate to Content \> Perusall (readings) \> Perusall, and then click the "Open Link" button. This will take you to the Perusall site and automatically register you as a member of the course. If you are having any trouble accessing the readings through Perusall contact me right away. I will not be using Perusall's grading features, but I expect you to read, post questions, respond to other students questions and answers, and to take an active role in generating productive discussion.
+
+# A Note About Class Participation
+
+Participation means showing up for each class having read and engaged with the material assigned. It will help facilitate discussion if you could aim to contribute at least 2-3 points for discussion in Perusall, and bring those to class. During the discussion period in class participation means asking questions about anything in the readings that seems unclear or objectionable, offering respectful arguments and responses, and respectfully listening to the arguments and responses of others. Contributions should be relevant and helpful and demonstrate that you are engaging with the material being discussed at the time, and that you are well-prepared for class.
 
 # Course Outline (12 "questions" to consider)
 
@@ -333,22 +335,24 @@ We have spent time now thinking about developing questions, considering whether 
 
 #### What:
 
--   Lesko CR, Buchanan AL, Westreich D, Edwards JK, Hudgens MG, Cole SR. Generalizing Study Results: A Potential Outcomes Perspective. *Epidemiology* 2017;28:553--561. [[link]](https://doi.org/10.1097/EDE.0000000000000664) [6631 words]
+-   Lesko CR, Buchanan AL, Westreich D, Edwards JK, Hudgens MG, Cole SR. Generalizing Study Results: A Potential Outcomes Perspective. *Epidemiology* 2017;28:553--561. (https://doi.org/10.1097/EDE.0000000000000664)
 
--   Westreich D, Edwards JK, Lesko CR, Cole SR, Stuart EA. Target Validity and the Hierarchy of Study Designs. *Am J Epidemiol* 2019;188:438--443. [[link]](https://doi.org/10.1093/aje/kwy228) [5308 words]
+-   Westreich D, Edwards JK, Lesko CR, Cole SR, Stuart EA. Target Validity and the Hierarchy of Study Designs. *Am J Epidemiol* 2019;188:438--443. (https://doi.org/10.1093/aje/kwy228)
 
 #### Why:
 
 Despite the clear importance of considering to whom study results should apply, there has been little formal work on what assumptions are needed to derive quantitative estimates of effects in different external populations, whether those refer to the target population or a population that is external to the target. These papers argue that we should consider these formal approaches, and provide some guidance as to what assumptions (and potentially data) would be needed to do so.
 
-### `r classdate(w1c2,10)`: Should we generalize to specific individuals?
+### `r classdate(w1c2,10)`: How should we think about generalizing to specific individuals?
 
 #### What:
--   Khoury, MJ et al. The Intersection of Genomics and Big Data with Public Health: Opportunities for Precision Public Health. *PLoS Medicine* 2020;17: e1003373. [[link]](https://doi.org/10.1371/journal.pmed.1003373) [7677 words]
 
--   Cooper R, Paneth N. Will precision medicine lead to a healthier population?. *Issues in Science and Technology* 2020;36(2):64-71. [[link]](https://www.jstor.org/stable/26949110) \[6793 words\]
+-   Khoury, MJ et al. The Intersection of Genomics and Big Data with Public Health: Opportunities for Precision Public Health. *PLoS Medicine* 2020;17: e1003373. [link](https://doi.org/10.1371/journal.pmed.1003373)
+
+-   Cooper R, Paneth N. Will precision medicine lead to a healthier population?. *Issues in Science and Technology* 2020;36(2):64-71. [link](https://www.jstor.org/stable/26949110) \[6793 words\]
 
 #### Why:
+
 The second part of our readings on extending results to other populations reframes the question not about transporting results to a different sample, but about how (and whether we can) derive reliable predictions about treatment effects at the individual level. This is related to ongoing discussions about the concepts of "precision" epidemiology or precision public health, and whether these ideas are really novel or just ways of re-branding what we have always considered in public health, which is targeting when it comes to interventions. There have emerged different 'camps' of those more and less enthusiastic about this idea, and these two papers are meant to provide an overview of some of these issues.
 
 ## Week 11: Is research (including epidemiology) reliable?
