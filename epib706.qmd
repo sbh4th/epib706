@@ -282,10 +282,12 @@ This question probably won't go away over the course of your PhD training, or in
 Wasserstein et al. provide a series of arguments for abandoning p-value thresholds, some of which you are likely to have heard before, but there is much more in this paper. They make a number of positive arguments for how we *should* be conducting inference, and interpreting the results of research, and they aim to try and provide solid foundations for being more thoughtful about how to interpret evidence. 
 
 ### `r classdate(w1c2,7)`: What are alternatives to p-values?
-#### What:
--   Cole SR, Edwards JK, Greenland S. Surprise! *Am J Epidemiol* 2020 Jul. [[link]](https://doi.org/10.1093/aje/kwaa136) \[1502 words\]
 
+#### What:
 - Greenland S, Mansournia MA, Joffe M. To curb research misreporting, replace significance and confidence by compatibility. *Prev Med* 2022;164:107127. [[link]](https://doi.org/10.1016/j.ypmed.2022.107127) [4493 words] 
+
+- Harhay MO, Blette BS, Granholm A, Moler FW, Zampieri FG, Goligher EC, et al. A Bayesian Interpretation of a Pediatric Cardiac Arrest Trial (THAPCA-OH). *NEJM Evidence*. 2022;2(1):EVIDoa2200196. [[link]](https://evidence.nejm.org/doi/full/10.1056/EVIDoa2200196) [7203 words]
+
 
 
 #### Why:
