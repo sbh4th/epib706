@@ -473,4 +473,4 @@ Downloaded and excerpted from A Handbook on Student Rights and Responsibilities,
 
 « Conformément à la Charte des droits de l'étudiant de l'Université McGill, chaque étudiant a le droit de soumettre en français ou en anglais tout travail écrit devant être noté (sauf dans le cas des cours dont l'un des objets est la maîtrise d'une langue). »
 
-Added
+Added another sentence
