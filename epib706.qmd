@@ -41,14 +41,14 @@ classdate <- function(obj, adv) {
 | **About me**                           | **About class**                                                                      |
 |-----------------------------------------|-------------------------------|
 | sam.harper\@mcgill.ca                  | [mycourses2.mcgill.ca/d2l/home/631790](https://mycourses2.mcgill.ca/d2l/home/631790) |
-| Hours: by appointment                  | Hours: Wednesday/Friday 1335h-1455h                                                  |
+| Hours: by appointment                  | Hours: Wednesday/Friday 1305h-1425h                                                  |
 | Office: 2001 McGill College, Room 1262 | Location: 2001 McGill College, Room 1140                                             |
 
 : {tbl-colwidths="\[45,55\]"}
 
 # Course Description
 
-EPIB 706 is a PhD-level seminar aimed at providing space for students to engage with overarching concepts critical to the theory and practice of epidemiology, as well to explore recent controversies and debates in the field. The purpose of this course is not to equip you with any marketable skill; rather, it is to reinforce your formal coursework by making space to develop and sharpen your critical thinking skills. We will review a selection of papers that range across methods, principles, arguments, and debates in epidemiology and the wider scientific community.
+EPIB 706 is a PhD-level seminar aimed at providing space for students to engage with overarching concepts critical to the theory and practice of epidemiology, as well to explore recent controversies and debates in the field. The purpose of this course to reinforce your formal methodological coursework by making space to develop and sharpen your critical thinking skills. We will review a selection of papers that range across methods, principles, arguments, and debates in epidemiology and the wider scientific community.
 
 # Eligibility
 
@@ -113,14 +113,12 @@ In the first session we will talk generally about high-level questions regarding
 ### `r classdate(w1c2,1)`: Reflections on epidemiology's past and present
 
 #### What:
-
 -   Davey Smith G. Post--Modern Epidemiology: When Methods Meet Matter. *Am J Epidemiol* 2019;188(8):1410--1419. [\[link\]](https://doi.org/10.1093/aje/kw064) \[8601 words\]
 
 -   Lesko CR, Keil AP, Edwards JK. The Epidemiologic Toolbox: Identifying, Honing, and Using the Right Tools for the Job. *Am J Epidemiol* 2020;189(6):511--517. [\[link\]](https://doi.org/10.1093/aje/kwaa030) \[3675 words\]
 
-#### Why?
-
-The Davey Smith paper provides a bit of historical orientation to the 'modern' epidemiology training you are getting. I chose the Lesko et al. paper because it focuses on the relationship between the tools of epidemiology (about which you are learning a lot in this first year) and the kinds of questions that can be answered with those tools. In particular, they focus on differences between purely descriptive questions, questions about synthesized evidence on causal relationships, and questions about specific interventions for which we want to estimate a causal effect. I also like that it was written by early career researchers whose training is in many ways similar to your own.
+#### Why:
+The Davey Smith paper provides a bit of historical orientation to the 'modern' epidemiology training you are getting, as well as a critique of it in relation to epidemiology's past. I chose the Lesko et al. paper because it focuses on the relationship between the tools of epidemiology (about which you are learning a lot in this first year) and the kinds of questions that can be answered with those tools. In particular, they focus on differences between purely descriptive questions, questions about synthesized evidence on causal relationships, and questions about specific interventions for which we want to estimate a causal effect. I also like that it was written by early career researchers whose training is in many ways similar to your own.
 
 ## Week 2: What kinds of questions should we be asking?
 
@@ -136,7 +134,7 @@ Asking good questions is central to advancing epidemiologic knowledge, but what 
 
 #### Why:
 
-What is the relationship between research questions and methods? Should we just use regression for everything? Does it actually matter? Fox et al. argue for the importance and need to reinvigorate descriptive epidemiology, and make a case that this has particular consequences for both theory and methods. The paper by Hernan and colleagues tries to lay out how questions and methods should be aligned in empirical data science research. This paper was written when enthusiasm for machine learning and other empirical data science algorithms began achieving a high degree of influence, and their paper aims to try and clarify the utility of being clear about the question being asked, the methods used to answer it, and the role of expert knowledge in generating the result.
+What is the relationship between research questions and methods? Should we just use multivariable regression for everything? Does it actually matter? Fox et al. argue for the importance and need to reinvigorate descriptive epidemiology, and make a case that this has particular consequences for both theory and methods. The paper by Hernan and colleagues tries to lay out how questions and methods should be aligned in empirical data science research. This paper was written when enthusiasm for machine learning and other empirical data science algorithms began achieving a high degree of influence, and their paper aims to try and clarify the utility of being clear about the question being asked, the methods used to answer it, and the role of expert knowledge in generating the result.
 
 ### `r classdate(w1c2,2)`: What makes a 'good' question?
 
@@ -152,32 +150,28 @@ The paper by Fox et al. and the podcast by Banack and Fox (with apologies in adv
 
 ## Week 3: How important is formal causal inference?
 
-Much of modern epidemiologic training now starts with the introduction of potential outcomes framework, as well as introducing DAGs as a way to draw and consider assumptions needed for doing causal inference. What are the implications of using these frameworks for the kinds of questions that can be asked and answered in epidemiology? Do we risk restricting ourselves to 'formal' methods when it comes to causal questions, or are other alternatives possible? These are fundamental questions about the nature of epidemiologic inquiry, and we think it is useful for you to consider the benefits and drawbacks that may come with adopting this epistemological stance. As you progress in your training, you'll need to decide on how you will approach questions of causal inference both in your own work and in your evaluations of the wider epidemiologic literature.
+Much of modern epidemiologic training now starts with the introduction of potential outcomes framework, as well as introducing DAGs as a way to draw and consider assumptions needed for doing causal inference. What are the implications of using these frameworks for the kinds of questions that can be asked and answered in epidemiology? Do we risk restricting ourselves to 'formal' methods when it comes to causal questions, or are other alternatives possible? These are fundamental questions about the nature of epidemiologic inquiry, and it is useful for you to consider the benefits and drawbacks that may come with adopting this epistemological stance. As you progress in your training, you'll need to decide on how you will approach questions of causal inference both in your own work and in your evaluations of the wider epidemiologic literature.
 
 ### `r classdate(w1c1,3)`: Are potential outcomes and DAGs necessary?
 
 #### What:
+- Krieger N, Davey Smith G. The tale wagged by the DAG: broadening the scope of causal inference and explanation for epidemiology. Int J Epidemiol. 2016 12;45(6):1787--1808. [[link]](https://doi.org/10.1093/ije/dyw114) \[15714 words\]
 
--   Krieger N, Davey Smith G. The tale wagged by the DAG: broadening the scope of causal inference and explanation for epidemiology. Int J Epidemiol. 2016 12;45(6):1787--1808. [\[link\]](https://doi.org/10.1093/ije/dyw114) \[15714 words\]
+- Daniel RM, De Stavola BL, Vansteelandt S. Commentary: The formal approach to quantitative causal inference in epidemiology: misguided or misrepresented? Int J Epidemiol. 2016 12;45(6):1817--1829. [[link]](https://doi.org/10.1093/ije/dyw227) \[10561 words\]
 
--   Daniel RM, De Stavola BL, Vansteelandt S. Commentary: The formal approach to quantitative causal inference in epidemiology: misguided or misrepresented? Int J Epidemiol. 2016 12;45(6):1817--1829. [\[link\]](https://doi.org/10.1093/ije/dyw227) \[10561 words\]
-
-#### Why?
-
+#### Why:
 The first set of papers for this session come from an older, but still relevant "debate" about the utility and consequences of the "formal" approach to causal inference in epidemiology, which you likely now take for granted, since that is what most 'modern' epi programs teach (including ours). Krieger/Davey Smith are asking critical questions of potential outcomes and DAGs (the latter was also the editor at IJE at the time, hence the 'relaxed' approach to word limits), and Daniel et al. defending, more or less the modern approach. Look forward to hearing your thoughts.
 
 ### `r classdate(w1c2,3)`: Are well-defined interventions needed for causal questions?
 
 #### What:
+-   Schwartz S, Gatto NM, Campbell UB. Causal identification: a charge of epidemiology in danger of marginalization. *Ann Epidemiol* 2016;26(10):669-673. [[link]](https://doi.org/10.1016/j.annepidem.2016.03.013). \[4069 words\]
 
--   Schwartz S, Gatto NM, Campbell UB. Causal identification: a charge of epidemiology in danger of marginalization. *Ann Epidemiol* 2016;26(10):669-673. [\[link\]](https://doi.org/10.1016/j.annepidem.2016.03.013). \[4069 words\]
+-   Hernan MA. Does water kill? A call for less casual causal inferences. *Ann Epidemiol* 2016;26(10):674-680. [[link]](https://doi.org/10.1016/j.annepidem.2016.08.016). \[5734 words\]
 
--   Hernan MA. Does water kill? A call for less casual causal inferences. *Ann Epidemiol* 2016;26(10):674-680. [\[link\]](https://doi.org/10.1016/j.annepidem.2016.08.016). \[5734 words\]
-
--   Schwartz S, Gatto NM, Campbell UB. Heeding the call for less casual causal inferences: the utility of realized (quantitative) causal effects. *Ann Epidemiol* 2017;27(6):402-405. [\[link\]](https://doi.org/10.1016/j.annepidem.2017.05.012). \[2756 words\]
+-   Schwartz S, Gatto NM, Campbell UB. Heeding the call for less casual causal inferences: the utility of realized (quantitative) causal effects. *Ann Epidemiol* 2017;27(6):402-405. [[link]](https://doi.org/10.1016/j.annepidem.2017.05.012). \[2756 words\]
 
 #### Why:
-
 The second set of readings for this week is meant to engage with a more specific critique of 'modern' causal inference methods, namely, the notion that 'good' causal questions are based on well-defined interventions. This is a more recent argument, largely associated with Miguel Hernan and linked to the idea of using 'target trials' to formulate questions for observational studies.
 
 As academics are wont to do, there has been some pushback against this idea, notably by Sharon Schwartz, another long-term and thoughtful critic of epidemiology (see her nice 1999 pre-causal-inference-revolution paper in Am J Public Health on the consequences of what she called, 'Type III error' which is about asking the wrong question). She and other critics are pushing back against this idea and trying to understand it's implications (again) for the kinds of *causal* questions we can answer (and note that I think this is a different sort of critique than was being made by Krieger/Davey Smith).
@@ -189,43 +183,35 @@ Longstanding debates about whether exposures that are not directly (or perhaps e
 ### `r classdate(w1c1,4)`: Are non-manipulable exposures causes?
 
 #### What:
+-   VanderWeele TJ, Robinson WR. On the causal interpretation of race in regressions adjusting for confounding and mediating variables. *Epidemiology* 2014 Jul;25(4):473--84. [[link]](https://doi.org/10.1097/EDE.0000000000000105) \[11470 words\]
 
--   VanderWeele TJ, Robinson WR. On the causal interpretation of race in regressions adjusting for confounding and mediating variables. *Epidemiology* 2014 Jul;25(4):473--84. [\[link\]](https://doi.org/10.1097/EDE.0000000000000105) \[11470 words\]
+-   Glymour MM, Spiegelman D. Evaluating Public Health Interventions: 5. Causal Inference in Public Health Research-Do Sex, Race, and Biological Factors Cause Health Outcomes? *Am J Public Health* 2017 Jan;107(1):81--85. [[link]](https://doi.org/10.2105/AJPH.2016.303539) \[3446 words\]
 
--   Glymour MM, Spiegelman D. Evaluating Public Health Interventions: 5. Causal Inference in Public Health Research-Do Sex, Race, and Biological Factors Cause Health Outcomes? *Am J Public Health* 2017 Jan;107(1):81--85. [\[link\]](https://doi.org/10.2105/AJPH.2016.303539) \[3446 words\]
-
--   Boyd RW et al. On Racism: A New Standard For Publishing On Racial Health Inequities. *Health Affairs Blog*, July 2, 2020. (https://doi.org/10.1377/hblog20200630.939347) \[2378 words\]
+-   Boyd RW et al. On Racism: A New Standard For Publishing On Racial Health Inequities. *Health Affairs Blog*, July 2, 2020. [[link]](https://doi.org/10.1377/hblog20200630.939347) \[2378 words\]
 
 #### Why:
-
 The paper by Vanderweele and Robinson tries to address the issue of non-manipulable exposures (specifically race) in a way that respects the complexity of this kind of exposure, but attempts to move forward to see whether it is helpful to reframe the question to how interventions on factors plausibly affected by race may affect racial differences in health. Meanwhile, Glymour and Spiegelman offer more of a defense of the idea that non-manipulable factors are causes and deserve the same kind of consideration and treatment as other exposures we study routinely in epidemiology. Finally, the blog post by Boyd is a relatively new piece making strong arguments for how race should be reported and interpreted in epidemiologic and clinical studies.
 
 ### `r classdate(w1c2,4)`: Case study: race in clinical treatment.
 
 #### What:
+- Vyas DA, Eisenstein LG, Jones DS. Hidden in Plain Sight --- Reconsidering the Use of Race Correction in Clinical Algorithms. *New Engl J Med* 2020;383(9):874--82. [\[link\]](https://doi.org/10.1056/NEJMms2004740) \[6251 words\]
 
--   Vyas DA, Eisenstein LG, Jones DS. Hidden in Plain Sight --- Reconsidering the Use of Race Correction in Clinical Algorithms. *New Engl J Med* 2020;383(9):874--82. [\[link\]](https://doi.org/10.1056/NEJMms2004740) \[6251 words\]
-
--   Manski CF. Patient-centered appraisal of race-free clinical risk assessment. *Health Econ* 2022;31(10):2109--14. \[\[link\]\](https://onlinelibrary.wiley.com/doi/abs/10.1002/hec.4569) \[4133 words\]
+- Manski CF. Patient-centered appraisal of race-free clinical risk assessment. *Health Econ* 2022;31(10):2109--14. [[link]](https://onlinelibrary.wiley.com/doi/abs/10.1002/hec.4569) \[4133 words\]
 
 #### Why:
-
-Taking a bit of a break from conceptual readings on questions and causal inference, in the second session we delve into a case study of the challenges in the use of race in clinical medicine. Should we use race as a factor in recommending treatments to patients? Does it matter whether or not race is a cause of the outcome, or how it might affect inequalities? The two papers from Vyas et al. and Manski arrive at different arguments regarding whether or not race should be included, and I think they provide a rich set of issues to discuss that complement the arguments about how we should study non-manipulable exposures in epidemiology.
+Taking a bit of a break from conceptual readings on questions and causal inference, in the second session we delve into a case study of the challenges in the use of race in clinical medicine. Should we use race as a factor in recommending treatments to patients? Does it matter whether or not race is a cause of the outcome, or whether including race might affect inequalities? The two papers from Vyas et al. and Manski arrive at different arguments regarding whether or not race should be included, and I think they provide a rich set of issues to discuss that complement the arguments about how we should study non-manipulable exposures in epidemiology.
 
 ## Week 5: Should we try to randomize interventions?
 
 Okay, we've talked about the role of asking good questions, whether non-manipulable factors are causes and ways to investigate them, and whether we need well-specified interventions for causal questions, but let's now turn toward more practical concerns (ha). You want to study intervention $X$, which is not known to be either harmful or beneficial, *can* be ethically and feasibly delivered, and has plausible reasons why it should affect $Y$. What kind of design should you use? Should you try and design a randomized evaluation? What would be the benefits? What drawbacks? What implications for external generalizability or understanding the mechanisms through which it may affect $Y$?
 
-Despite some important strengths of randomized designs, especially for exchangeability, in some cases it just won't be feasible or ethical to pursue a randomized design. What then? Anything goes? Just plug all the confounders into your regression and hope for the best? There are still good reasons to consider thinking conceptually about the trial you would design if feasibility and ethical issues were irrelevant, and then attempting to pursue an observational design that corresponds as closely as possible to your hypothetical "target trial". These two papers introduce a couple of alternatives.
-
 ### `r classdate(w1c1,5)`: Are RCT's special?
 
 #### What:
-
 -   Deaton A, Cartwright N. Understanding and misunderstanding randomized controlled trials. *Soc Sci Med* 2018;210:2--21. [[link]](https://doi.org/10.1016/j.socscimed.2017.12.005) \[22882 words\]
 
 #### Why:
-
 Deaton and Cartwright's paper provides an overview of core philosophical, conceptual, and statistical concepts of randomized trials, and a lot of comments on their benefits and drawbacks. Haushofer and Metcalf apply questions about the feasibility to our pandemic circumstances (though it seems a long time ago that they published this in May of 2020, before viable vaccines, before new strains, before second, third, omicron waves). As epidemiologists, I think you will benefit from getting into the weeds a bit about randomized designs and grappling with questions about when and where they might be appropriate.
 
 ### `r classdate(w1c2,5)`: What if we can't randomize?
@@ -235,10 +221,9 @@ Deaton and Cartwright's paper provides an overview of core philosophical, concep
 -   Lodi S, Phillips A, Lundgren J, Logan R, Sharma S, Cole SR, et al. Effect Estimates in Randomized Trials and Observational Studies: Comparing Apples With Apples. *Am J Epidemiol* 2019 08;188(8):1569--1577. [[link]](https://doi.org/10.1093/aje/kwz100) \[3044 words\]
 
 #### Why:
+Despite some important strengths of randomized designs, especially for exchangeability, in some cases it just won't be feasible or ethical to pursue a randomized design. What then? Anything goes? Just plug all the confounders into your regression and hope for the best? There are still good reasons to consider thinking conceptually about the trial you would design if feasibility and ethical issues were irrelevant, and then attempting to pursue an observational design that corresponds as closely as possible to your hypothetical "target trial". 
 
 Lodi et al. are really focused on comparing results from an observational study to a trial that both investigate the same question, and their paper shows a practical example of how you might think about approaching this question (I would say even if you don't have trial data). Nevertheless, this design still focuses almost entirely on regression adjustment as a way of achieving exchangeability--a rather strong assumption, and one that may be difficult to sell to critics.
-
-Moving beyond regression adjustment (or matching) on observed covariates, the paper by Craig et al. introduces a number of quasi-experimental designs. These are also observational, so don't let the "experimental" part of that moniker fool you. However, these designs do, by design, control for at least some unmeasured sources of bias, in contrast with simple regression adjustment. These may be useful alternatives when RCTs are not possible.
 
 ## Week 6: Do we need representative samples?
 
@@ -247,7 +232,6 @@ Okay, so now suppose that we've decided on a question and a (randomized or non-r
 ### `r classdate(w1c1,6)`: Should our studies be representative?
 
 #### What:
-
 -   Rothman KJ, Gallacher JEJ, Hatch EE. Why representativeness should be avoided. *Int J Epidemiol* 2013;42(4):1012-4. [[link]](https://doi.org/10.1093/ije/dys223). \[2338 words\]
 
 -   Ebrahim S, Davey Smith G. Should we always deliberately be non-representative? *Int J Epidemiol* 2013;42:1022--26. [[link]](https://doi.org/doi:10.1093/ije/dyt105) \[3823 words\]
@@ -255,17 +239,14 @@ Okay, so now suppose that we've decided on a question and a (randomized or non-r
 -   Stamatakis E, et al. Is Cohort Representativeness Passé? Poststratified Associations of Lifestyle Risk Factors with Mortality in the UK Biobank. *Epidemiology* 2021;32:179--188. [[link]](https://doi.org/10.1097/EDE.0000000000001316) \[6921 words\]
 
 #### Why:
-
-Debates about whether studies designed to estimate causal effects need to be representative, or alternatively should purposefully be designed not to be representative, have been persistent in epidemiology, but have also become more pressing given increasing concerns for generalizability. This paper by Rothman arguing that causal studies should avoid representative samples created a bit of a stir a few years ago, and has produced some additional empirical work on how much this matters. These issues are important for when you are both producing and consuming research, and it will be worthwhile to struggle a bit with them.
+Debates about whether studies designed to estimate causal effects need to be representative, or alternatively should purposefully be designed not to be representative, have been persistent in epidemiology, but have also become more pressing given increasing concerns for generalizability. This paper by Rothman arguing that causal studies should avoid representative samples created a bit of a stir a few years ago, and has produced some additional empirical work on how much this matters. These issues are important for when you are both producing and consuming research, and it will be worthwhile to struggle a bit with them. I've also included a recent empirical piece that attempts to assess the quantitative consequences for a specific set of exposures and outcomes. 
 
 ### `r classdate(w1c2,6)`: Case study: COVID-19 vaccine uptake
 
 #### What:
-
--   Bradley VC et al. Unrepresentative Big Surveys Significantly Overestimated US Vaccine Uptake. *Nature* 2021;600:695--700. [[link]](https://doi.org/10.1038/s41586-021-04198-4) \[11400 words\]
+- Bradley VC et al. Unrepresentative Big Surveys Significantly Overestimated US Vaccine Uptake. *Nature* 2021;600:695--700. [[link]](https://doi.org/10.1038/s41586-021-04198-4) \[11400 words\]
 
 #### Why:
-
 Once again, let's take a break and delve into a case study regarding the importance (or non-importance) of representative samples. Do the consequences actually matter? A very recent paper by Bradley on vaccine uptake surveys provides an example to discuss in the second session.
 
 ## Week 7: How should we make statistical inferences?
@@ -286,38 +267,30 @@ Wasserstein et al. provide a series of arguments for abandoning p-value threshol
 
 - Harhay MO, Blette BS, Granholm A, Moler FW, Zampieri FG, Goligher EC, et al. A Bayesian Interpretation of a Pediatric Cardiac Arrest Trial (THAPCA-OH). *NEJM Evidence*. 2022;2(1):EVIDoa2200196. [[link]](https://evidence.nejm.org/doi/full/10.1056/EVIDoa2200196) [7203 words]
 
-
-
 #### Why:
-Given the Wasserstein paper's suggestion to abandon statistical significance, questions naturally arise about how we should do inference instead of using p-values. Most epidemiologists are trained to use confidence intervals rather than p-values, but it does not appear to have changed the basic problem of scientists dichotomizing evidence using arbitrary statistical rules. These papers attempt to provide some alternative avenues to explore. Cole et al. propose a transformation of p-values that they argue make it less likely that users will misinterpret p-values as statements of probabilities. Greenland et al. continue their quest to promote notions of 'compatibility' rather than significance. This should get you thinking about how you will manage your inferences in your own work. 
+Given the Wasserstein paper's suggestion to abandon statistical significance, questions naturally arise about how we should do inference instead of using p-values. Most epidemiologists are trained to use confidence intervals rather than p-values, but it does not appear to have changed the basic problem of scientists dichotomizing evidence using arbitrary statistical rules. These papers attempt to provide some alternative avenues to explore. Greenland et al. continue their quest to promote notions of 'compatibility' rather than significance. I included the Harhay et al. paper because it shows how to provide a more nuanced interpretation of a 'non-significant' RCT using straightforward Bayesian inference. This should get you thinking about how you will manage your inferences in your own research 
 
 ## Week 8: How bad can it be?
 
-This week's readings move beyond inference on the main quantitative question or hypothesis and are focused on concepts and methods relevant to testing and probing the assumptions needed to interpret quantitative evidence. These ideas are crucial for thinking about testing alternative explanations for observed findings, and quantifying the assumptions needed to do so.
+This week's readings move beyond inference on the main quantitative question or hypothesis of interest and are focused on concepts and methods relevant to testing and probing the assumptions needed to interpret quantitative evidence. These ideas are crucial for thinking about testing alternative explanations for observed findings, and quantifying the assumptions needed to do so.
 
 ### `r classdate(w1c1,8)`: How can we quantify our assumptions?
 
 #### What:
-
 - Lash TL, Fox MP, MacLehose RF, Maldonado G, McCandless LC, Greenland S. Good practices for quantitative bias analysis. *Int J Epidemiol* 2014;43(6):1969--85. [[link]](https://doi.org/10.1093/ije/dyu149) \[12518 words\]
 
 #### Why:
-
 Lash et al. provide a long overview of good practices for such bias analysis, discussing both the motivation for why one would want to to conduct bias analysis and the mechanics of how to do so (choosing parameters, considering uncertainty). These methods are valuable for most study designs, but may be especially so for "garden variety" observational studies that must rely on basic regression adjustment to have any hope of making causal inferences.
 
 ### `r classdate(w1c2,8)`: Can bias analysis be biased?
 
 #### What:
-
-- 2. Lash TL, Ahern TP, Collin LJ, Fox MP, MacLehose RF. Bias Analysis Gone Bad. *Am J Epidemiol* 2021;190(8):1604–12. [[link]](https://doi.org/10.1093/aje/kwab072) [6451 words]
+- Lash TL, Ahern TP, Collin LJ, Fox MP, MacLehose RF. Bias Analysis Gone Bad. *Am J Epidemiol* 2021;190(8):1604–12. [[link]](https://doi.org/10.1093/aje/kwab072) [6451 words]
 
 - Gustafson P. To Bound or Not to Bound: Is That the Question? *Epid* 2021;32(5):635--7. [[link]](https://doi.org/10.1097/EDE.0000000000001379) [2191 words]
 
-
-
 #### Why:
-
-Although sensitivity analysis has been around a long time, quantitative bias analysis continues to be rare, and perhaps one explanation is that it asks a lot from researchers. As an effort to promote more widespread adoption of quantitative bias analysis for unmeasured confounding, VanderWeele and colleagues introduced the e-value, which can facilitate a kind of bias analysis with a minimal set of assumptions. This set of readings introduces and justifies the E-value, and also asks you to consider its strengths and weaknesses. I hope you can come away with an appreciation and understanding of what the e-value is, and whether you would consider using it in your own work, or suggesting it to papers you would review.
+Although sensitivity analysis has been around a long time, quantitative bias analysis continues to be rare, and perhaps one explanation is that it asks a lot from researchers. Other options may include using simple bounds to answer questions about how bad things would have to be to 'nullify' an effect, but replacing ignoring assumptions with absurd assumptions leaves much to be desired. Lash et al. demonstrate how to do bias analysis 'better' and what can go wrong when it is not done with care. Gustafson, in a comment on some other papers, provides an interesting hypothetical set of scenarios for different ways of combining different study designs and strategies for accounting for bias. I hope you can come away with an appreciation and understanding of why such analyses are valuable.
 
 ## Week 9: Winter Break
 
@@ -332,24 +305,22 @@ We have spent time now thinking about developing questions, considering whether 
 ### `r classdate(w1c1,10)`: How should we think about generalizing to other populations?
 
 #### What:
+- Lesko CR, Buchanan AL, Westreich D, Edwards JK, Hudgens MG, Cole SR. Generalizing Study Results: A Potential Outcomes Perspective. *Epidemiology* 2017;28:553--561. [[link]](https://doi.org/10.1097/EDE.0000000000000664) [6631 words]
 
--   Lesko CR, Buchanan AL, Westreich D, Edwards JK, Hudgens MG, Cole SR. Generalizing Study Results: A Potential Outcomes Perspective. *Epidemiology* 2017;28:553--561. [[link]](https://doi.org/10.1097/EDE.0000000000000664) [6631 words]
-
--   Westreich D, Edwards JK, Lesko CR, Cole SR, Stuart EA. Target Validity and the Hierarchy of Study Designs. *Am J Epidemiol* 2019;188:438--443. [[link]](https://doi.org/10.1093/aje/kwy228) [5308 words]
+- Westreich D, Edwards JK, Lesko CR, Cole SR, Stuart EA. Target Validity and the Hierarchy of Study Designs. *Am J Epidemiol* 2019;188:438--443. [[link]](https://doi.org/10.1093/aje/kwy228) [5308 words]
 
 #### Why:
-
-Despite the clear importance of considering to whom study results should apply, there has been little formal work on what assumptions are needed to derive quantitative estimates of effects in different external populations, whether those refer to the target population or a population that is external to the target. These papers argue that we should consider these formal approaches, and provide some guidance as to what assumptions (and potentially data) would be needed to do so.
+Despite the clear importance of considering to whom study results should apply, there has been little formal work on what assumptions are needed to derive quantitative estimates of effects in different external populations, whether those refer to the target population or a population that is external to the target. These two papers argue that we should consider these formal approaches, and provide some guidance as to what assumptions (and potentially data) would be needed to do so.
 
 ### `r classdate(w1c2,10)`: Should we generalize to specific individuals?
 
 #### What:
 -   Khoury, MJ et al. The Intersection of Genomics and Big Data with Public Health: Opportunities for Precision Public Health. *PLoS Medicine* 2020;17: e1003373. [[link]](https://doi.org/10.1371/journal.pmed.1003373) [7677 words]
 
--   Cooper R, Paneth N. Will precision medicine lead to a healthier population?. *Issues in Science and Technology* 2020;36(2):64-71. [[link]](https://www.jstor.org/stable/26949110) \[6793 words\]
+-   Cooper R, Paneth N. Will precision medicine lead to a healthier population? *Issues in Science and Technology* 2020;36(2):64-71. [[link]](https://www.jstor.org/stable/26949110) \[6793 words\]
 
 #### Why:
-The second part of our readings on extending results to other populations reframes the question not about transporting results to a different sample, but about how (and whether we can) derive reliable predictions about treatment effects at the individual level. This is related to ongoing discussions about the concepts of "precision" epidemiology or precision public health, and whether these ideas are really novel or just ways of re-branding what we have always considered in public health, which is targeting when it comes to interventions. There have emerged different 'camps' of those more and less enthusiastic about this idea, and these two papers are meant to provide an overview of some of these issues.
+The second part of our readings on extending results to other populations reframes the question not about transporting results to a different sample, but about how to (and whether we can) derive reliable predictions about treatment effects at the individual level. This is related to ongoing discussions about the concepts of "precision" epidemiology or precision public health, and whether these ideas are really novel or just ways of re-branding what we have always considered in public health, which is targeting when it comes to interventions. There have emerged different 'camps' of those more and less enthusiastic about this idea, and these two papers are meant to provide an overview of some of these issues.
 
 ## Week 11: Is research (including epidemiology) reliable?
 
@@ -358,67 +329,94 @@ This week we are stepping away a bit from epidemiology only, and focusing on lar
 ### `r classdate(w1c1,11)`: Is science broken?
 
 #### What:
+- Oliver, J. Scientific studies. *Last Week Tonight with John Oliver*, Season 3, Episode 11, May 5, 2016 [[link]](https://www.youtube.com/watch?v=0Rnq1NpHdmw) [20 mins] **Note: contains explicit and crude language**
 
--   Oliver, J. Scientific studies. *Last Week Tonight with John Oliver*, Season 3, Episode 11, May 5, 2016 [link](https://www.youtube.com/watch?v=0Rnq1NpHdmw) **Note: contains explicit and crude language**
+-   Baker M. 1,500 scientists lift the lid on reproducibility. *Nature* 2016:533(7604):452--4. [[link]](https://doi.org/10.1038/533452a) [2002 words]
 
--   Baker M. 1,500 scientists lift the lid on reproducibility. *Nature* 2016:533(7604):452--4. [link](https://doi.org/10.1038/533452a)
-
--   Pearson H. How COVID Broke the Evidence Pipeline. *Nature* 2021;593:182-5 [link](https://doi.org/10.1038/d41586-021-01246-x) \[3884 words\]
+-   Pearson H. How COVID Broke the Evidence Pipeline. *Nature* 2021;593:182-5 [[link]](https://doi.org/10.1038/d41586-021-01246-x) \[3884 words\]
 
 #### Why:
-
 The video by Oliver discusses wild claims, the propensity of such claims to be blown up by the media, as well as problems with incentives. Additional evidence on these issues comes from a survey of scientists reported in Nature across a broad number of fields, as well as a report by Pearson on how this has played out in research on the pandemic.
 
 ### `r classdate(w1c2,11)`: What are some potential solutions?
 
 #### What:
-
--   Munafo MR et al. A manifesto for reproducible science. *Nature Human Behaviour* 2017;1:1--9. [link](https://doi.org/10.1038/s41562-016-0021)
+- Munafo MR et al. A manifesto for reproducible science. *Nature Human Behaviour* 2017;1:1--9. [[link]](https://doi.org/10.1038/s41562-016-0021) [9180 words]
 
 #### Why:
-
 The second session features a long paper by Munafo et al. that is more focused on outlining and describing some potential solutions, including study pre-registration and pre-analysis plan, registered reports or 'results-blind' peer review, sharing of research materials, including data and code, and changing incentives around publication and grants - all core processes for modern working scientists.
 
-## Week 12: How to put together all of the evidence?
+## Week 12: How should we put together all of the evidence?
 
-This week we are going to talk more about how to put together and think about diverse lines of evidence to come to some sort of judgement about causal effects. Most of you will have heard (and I agree) that it a single study is unlikely to be sufficient to generate certainty about a given exposure-outcome effect. There may be special circumstances (e.g, vaccine trials for COVID-19), but generally we are starting from a place where we have to consider various lines of argument and evidence to inform our thinking. You may have seen various papers talk about the concept of 'triangulation' in thinking about evidence. The Lawlor et al. paper focuses on trying to pull together (sometimes by design) data sources that may trade off different kinds of biases in order to see whether results are consistent across various settings, but in a formal and methodological way. I encourage you to consider whether you think it is useful.
-
-The second session's readings are focused more on how to grapple with and communicate uncertainty in epidemiologic findings, both to other scientists (e.g., in peer-reviewed papers) and to the public or to other stakeholders. The chapter by Savitz and Wellenius provides some high-level guidance and advice to epidemiologists about their duties to describe evidence in a dispassionate way, but also to make good faith efforts to distill findings in ways suitably tailored for different audiences. Some additional discussion of how to consider biases across different studies when synthesizing evidence is also included. The piece by Blastland et al. is more direct in providing advice to scientists on how to communicate about evidence, largely arguing that our duties are to be transparent in reporting, especially about uncertainty, rather than attempting to persuade or change opinions.
+This week we are going to talk more about how to put together and think about diverse lines of evidence to come to some sort of judgement about causal effects. Most of you will have heard (and I agree) that it a single study is unlikely to be sufficient to generate certainty about a given exposure-outcome effect. There may be special circumstances (e.g, vaccine trials for COVID-19), but generally we are starting from a place where we have to consider various lines of argument and evidence to inform our thinking. 
 
 ### `r classdate(w1c1,12)`: Can "triangulation" help?
 
--   Lawlor DA, Tilling K, Davey Smith G. Triangulation in aetiological epidemiology. *Int J Epidemiol* 2016;45(6):1866--86. [link](https://academic.oup.com/ije/article/45/6/1866/2930550) \[141610 words\]
+#### What:
+-   Lawlor DA, Tilling K, Davey Smith G. Triangulation in aetiological epidemiology. *Int J Epidemiol* 2016;45(6):1866--86. [[link]](https://academic.oup.com/ije/article/45/6/1866/2930550) [14610 words]
 
-### `r classdate(w1c2,12)`: Should we meta-analyze?
+#### Why:
+You may have seen various papers talk about the concept of 'triangulation' in thinking about evidence. The Lawlor et al. paper focuses on trying to pull together (sometimes by design) data sources that may trade off different kinds of biases in order to see whether results are consistent across various settings, but in a formal and methodological way. I encourage you to consider whether you think it is a useful approach.
 
-- Savitz DA, Forastiere F. Do pooled estimates from meta-analyses of observational epidemiology studies contribute to causal inference? **Occup Environ Med** 2021;78(9):621–2. [[link]](https://doi.org/10.1136/oemed-2021-107702) 
+### `r classdate(w1c2,12)`: Does meta-analysis help or hurt?
 
+#### What:
+- Hilton Boon M, Burns J, Craig P, Griebler U, Heise TL, Vittal Katikireddi S, et al. Value and Challenges of Using Observational Studies in Systematic Reviews of Public Health Interventions. *Am J Public Health* 2022;112(4):548–52. [[link]](https://doi.org/10.2105/AJPH.2021.306658) [3899 words]
+
+- Savitz DA, Forastiere F. Do pooled estimates from meta-analyses of observational epidemiology studies contribute to causal inference? *Occup Environ Med* 2021;78(9):621–2. [[link]](https://doi.org/10.1136/oemed-2021-107702) [2029 words]
+
+#### Why:
+Meta-analysis of a systematic review has become the dominant method for summarizing epidemiologic evidence, but comes with a large set of challenges, particularly for observational studies. These two papers provide an overview of some of the challenges of how these contribute to evidence, and whether they are ultimately useful for informing causal inference about the effects of exposures. 
 
 
 ## Week 13: How should we communicate epidemiologic evidence?
 
-This week we will be reading more about the (possible) tension between our duties as epidemiologic scientists to try and conduct and report evidence in a dispassionate way, and the sometimes pressing need for action to tackle pressing health problems when evidence is uncertain. The readings are from two seasoned epidemiologists and provide some overarching guidance thinking about how far to 'push' with your results, and what the benefits and drawbacks of different levels of engagement with the broader scientific community might be. Greenhalgh uses the twin examples of the 19th century cholera epidemics in England and the present pandemic to talk about the role of 'extra-scientific' values in shaping how we view and decide on what kind of 'evidence' is compelling.
+This week we will be reading more about the (possible) tension between our duties as epidemiologic scientists to try and report evidence in a dispassionate way, and the sometimes pressing need for action to tackle pressing health problems when evidence is uncertain. The readings are from two seasoned epidemiologists and provide some overarching guidance thinking about how far to 'push' with your results, and what the benefits and drawbacks of different levels of engagement with the broader scientific community might be. 
 
-### `r classdate(w1c1,13)`: How should we summarize epidemiolic results?
+### `r classdate(w1c1,13)`: How should we discuss epidemiologic results?
 
--   Savitz DA, Wellenius GA. Characterization and Communication of Conclusions. In: *Interpreting epidemiologic evidence: connecting research to applications*. Oxford University Press; 2016. p. 200--10. [link](https://academic.oup.com/book/8266/chapter/153869539) \[5958 words\]
+#### What:
+- Savitz DA, Wellenius GA. Characterization and Communication of Conclusions. In: *Interpreting epidemiologic evidence: connecting research to applications*. Oxford University Press; 2016. p. 200--10. [[link]](https://academic.oup.com/book/8266/chapter/153869539) \[5958 words\]
 
--   Blastland M et al. Five rules for evidence communication. *Nature* 2020;587:362--364 [link](https://doi.org/10.1038/d41586-020-03189-1) \[2664 words\]
+-   Blastland M et al. Five rules for evidence communication. *Nature* 2020;587:362--364 [[link]](https://doi.org/10.1038/d41586-020-03189-1) \[2664 words\]
 
-
--   Savitz DA. Point: Reconciling Epidemiology's Aspirations and Capabilities. *Am J Epidemiol* 2021;190: 977--79. (https://doi.org/10.1093/aje/kwaa271) \[1851 words\]
-
--   Saracci R. Counterpoint: Epidemiology's Dual Social Commitment---Science and Health. *Am J Epidemiol* 2021;190: 980--83. (https://doi.org/10.1093/aje/kwaa272) \[2764 words\]
+#### Why:
+The second session's readings are focused more on how to grapple with and communicate uncertainty in epidemiologic findings, both to other scientists (e.g., in peer-reviewed papers) and to the public or to other stakeholders. The chapter by Savitz and Wellenius provides some high-level guidance and advice to epidemiologists about their duties to describe evidence in a dispassionate way, but also to make good faith efforts to distill findings in ways suitably tailored for different audiences. Some additional discussion of how to consider biases across different studies when synthesizing evidence is also included. The piece by Blastland et al. is more direct in providing advice to scientists on how to communicate about evidence, largely arguing that our duties are to be transparent in reporting, especially about uncertainty, rather than attempting to persuade or change opinions.
 
 ### `r classdate(w1c2,13)`: How much does "evidence" even matter?
 
--   Greenhalgh T. Miasmas, Mental Models and Preventive Public Health: Some Philosophical Reflections on Science in the COVID-19 Pandemic. *Interface Focus* 2021;11: 1-8. (https://doi.org/10.1098/rsfs.2021.0017) \[7602 words\]
+#### What:
+- Greenhalgh T. Miasmas, Mental Models and Preventive Public Health: Some Philosophical Reflections on Science in the COVID-19 Pandemic. *Interface Focus* 2021;11: 1-8. [[link]](https://doi.org/10.1098/rsfs.2021.0017) \[7602 words\]
 
-## Week 14: Parting discussion
+#### Why:
+Greenhalgh uses the twin examples of the 19th century cholera epidemics in England and the present pandemic to talk about the role of 'extra-scientific' values in shaping how we view and decide on what kind of 'evidence' is compelling, and ties this to current (and ongoing) debates regarding the use of evidence in the COVID-19 pandemic. 
 
-### `r classdate(w1c1,14)`: No class (Good Friday)
+## Week 14: What is to be done?
 
-### `r classdate(w1c2,14)`: Wrap up
+### `r classdate(w1c1,14)`: Can we change scientific culture?
+
+We've discussed multiple theoretical and methodological issues thus far, many of which stem from, and cannot be separated from, the fact that science is conducted by humans. This creates a kind of cultural inertia in science that has produced important advances, but also creates problems. Can we change the culture to improve the way epidemiology is working today? This last session asks you to consider this question.
+
+#### What:
+- Mathur MB, Fox MP. Toward open and reproducible epidemiology. *Am J Epidemiol* (forthcoming) [[link]](https://osf.io/bpkf7/) [5823 words]
+
+- Lakens D. Is my study useless? Why researchers need methodological review boards. *Nature* 2023;613(7942):9–9. [[link]](https://www.nature.com/articles/d41586-022-04504-8) [977 words]
+
+#### Why:
+These two papers aim to argue for adopting larger scale innovations in social sciences (including epidemiology). Mathur and Fox make a strong case for greater openness and transparency, specifically in epidemiology. Lakens (a psychologist) makes a case that ethical review boards have an obligation to consider whether proposed research is capable of producing reliable evidence, and suggests they should have the power to intervene to stop work that has a low probability of providing reliable evidence.  
+
+
+### `r classdate(w1c2,14)`: No class (Good Friday)
+
+## Week 15: Parting discussion
+
+### `r classdate(w1c1,15)`: No class
+
+Wednesday, April 12 is the make-up lecture day for Monday classes and will follow a Monday schedule.
+
+### **Thursday** 2023-04-13: Wrap up
+
+*Note*: Thursday, April 13 is the make-up lecture day for Friday classes and will follow a Friday schedule.
 
 -   Final discussion.
 -   Course review and feedback.
