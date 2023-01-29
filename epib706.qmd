@@ -221,10 +221,15 @@ Deaton and Cartwright's paper provides an overview of core philosophical, concep
 
 -   Lodi S, Phillips A, Lundgren J, Logan R, Sharma S, Cole SR, et al. Effect Estimates in Randomized Trials and Observational Studies: Comparing Apples With Apples. *Am J Epidemiol* 2019 08;188(8):1569--1577. [[link]](https://doi.org/10.1093/aje/kwz100) \[3044 words\]
 
+- Bärnighausen T, Tugwell P, Røttingen JA, Shemilt I, Rockers P, Geldsetzer P, et al. Quasi-experimental study designs series—paper 4: uses and value. Journal of Clinical Epidemiology 2017;89:21–9.  [[link]](http://dx.doi.org/10.1016/j.jclinepi.2017.03.012) [6932 words]
+
+
 #### Why:
 Despite some important strengths of randomized designs, especially for exchangeability, in some cases it just won't be feasible or ethical to pursue a randomized design. What then? Anything goes? Just plug all the confounders into your regression and hope for the best? There are still good reasons to consider thinking conceptually about the trial you would design if feasibility and ethical issues were irrelevant, and then attempting to pursue an observational design that corresponds as closely as possible to your hypothetical "target trial". 
 
 Lodi et al. are really focused on comparing results from an observational study to a trial that both investigate the same question, and their paper shows a practical example of how you might think about approaching this question (I would say even if you don't have trial data). Nevertheless, this design still focuses almost entirely on regression adjustment as a way of achieving exchangeability--a rather strong assumption, and one that may be difficult to sell to critics.
+
+Finally, Barninghausen et al. provide an overview of benefits and drawbacks of quasi-experimental strategies that, by design, control for at least some sources of unmeasured confounding. These designs are becoming more common in epidemiology and are worth considering when deciding on how you might approach a causal question when randomization is not feasible.
 
 ## Week 6: Do we need representative samples?
 
