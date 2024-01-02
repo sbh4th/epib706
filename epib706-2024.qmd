@@ -18,23 +18,23 @@ editor: source
 ---
 
 ```{r setup, include=FALSE, cache=TRUE}
-biblio <- bibtex::read.bib("EPIB706-2023.bib")
+biblio <- bibtex::read.bib("EPIB706-2024.bib")
 knitr::opts_chunk$set(cache=FALSE, dev='pdf')
 
-w1c1 <- as.Date("2023-01-04")
-w1c2 <- as.Date("2023-01-06")
+w1c1 <- as.Date("2024-01-05")
+w1c2 <- as.Date("2024-01-10")
 
 classdate <- function(obj, adv) {
- wed <- obj + 7*(adv - 1)
- d1 <- weekdays(wed)
- wed <- format(wed, format="%Y-%m-%d")
- wed <- paste(d1, wed)
- return(wed)
- fri <- obj + 2 + 7*(adv - 1)
- d2 <- weekdays(fri)
+ fri <- obj + 7*(adv - 1)
+ d1 <- weekdays(fri)
  fri <- format(fri, format="%Y-%m-%d")
- fri <- paste(d2, fri)
+ fri <- paste(d1, fri)
  return(fri)
+ wed <- obj + 5 + 7*(adv - 1)
+ d2 <- weekdays(wed)
+ wed <- format(wed, format="%Y-%m-%d")
+ wed <- paste(d2, wed)
+ return(wed)
 }
 ```
 [[PDF version]](https://samharper.org/epib706/epib706.pdf)  
@@ -95,9 +95,9 @@ The course is pass-fail.
 
 # Course Outline (12 "questions" to consider)
 
-A note about the outline. In an effort to make this course as dynamic and helpful to students as possible, the list of topics and readings below is subject to change. Enthusiasm (or lack thereof) for certain topics may lead us to revise, drop, add, or replace some readings or entire topics as we go. I promise to entertain any suggestions for changes, but may also disagree if I feel certain topics or readings are too important to replace.
+A note about the outline. In an effort to make this course as dynamic and helpful to students as possible, the list of topics and readings below is subject to change. Enthusiasm (or lack thereof) for certain topics may lead us to revise, drop, add, or replace some readings or entire topics as we go. I promise to entertain any suggestions for changes, but I may also disagree if I feel certain topics or readings are too important to replace.
 
-## Week 1: What is the present and future of epidemiology as a discipline?
+## Week 0: Course introduction
 
 Why are we doing this?
 
@@ -109,12 +109,14 @@ Because this is not a didactic course that is focused on learning methods or tec
 -   Round table -- introductions.
 -   Discussion of objectives and competencies.
 
+## Week 1: What is the present and future of epidemiology as a discipline?
+
 In the first session we will talk generally about high-level questions regarding the discipline of epidemiology as a whole. Although you are early on in your training, I think it is valuable for you to be aware of these broader discussions about where the field stands in relation to its past, and what the appropriate balance should be between descriptive, causal, or implementation questions. Having some knowledge about the intellectual history of different concepts ("risk factor epidemiology", "consequential epidemiology") will help you to figure out where your own work stands in relation to the discipline as a whole.
 
 ### `r classdate(w1c2,1)`: Reflections on epidemiology's past and present
 
 #### What:
--   Davey Smith G. Post--Modern Epidemiology: When Methods Meet Matter. *Am J Epidemiol* 2019;188(8):1410--1419. [\[link\]](https://doi.org/10.1093/aje/kw064) \[8601 words\]
+-   Davey Smith G. Post--Modern Epidemiology: When Methods Meet Matter. *Am J Epidemiol* 2019;188(8):1410--1419. [\[link\]](https://doi.org/10.1093/aje/kwz064) \[8601 words\]
 
 -   Lesko CR, Keil AP, Edwards JK. The Epidemiologic Toolbox: Identifying, Honing, and Using the Right Tools for the Job. *Am J Epidemiol* 2020;189(6):511--517. [\[link\]](https://doi.org/10.1093/aje/kwaa030) \[3675 words\]
 
@@ -416,13 +418,7 @@ These two papers aim to argue for adopting larger scale innovations in social sc
 
 ## Week 15: Parting discussion
 
-### `r classdate(w1c1,15)`: No class
-
-Wednesday, April 12 is the make-up lecture day for Monday classes and will follow a Monday schedule.
-
-### **Thursday** 2023-04-13: Wrap up
-
-*Note*: Thursday, April 13 is the make-up lecture day for Friday classes and will follow a Friday schedule.
+### `r classdate(w1c1,15)`: Wrap up
 
 -   Final discussion.
 -   Course review and feedback.
