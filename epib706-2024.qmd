@@ -97,7 +97,7 @@ The course is pass-fail.
 
 A note about the outline. In an effort to make this course as dynamic and helpful to students as possible, the list of topics and readings below is subject to change. Enthusiasm (or lack thereof) for certain topics may lead us to revise, drop, add, or replace some readings or entire topics as we go. I promise to entertain any suggestions for changes, but I may also disagree if I feel certain topics or readings are too important to replace.
 
-## Week 0: Course introduction
+## Week 1: What is the present and future of epidemiology as a discipline?
 
 Why are we doing this?
 
@@ -109,9 +109,7 @@ Because this is not a didactic course that is focused on learning methods or tec
 -   Round table -- introductions.
 -   Discussion of objectives and competencies.
 
-## Week 1: What is the present and future of epidemiology as a discipline?
-
-In the first session we will talk generally about high-level questions regarding the discipline of epidemiology as a whole. Although you are early on in your training, I think it is valuable for you to be aware of these broader discussions about where the field stands in relation to its past, and what the appropriate balance should be between descriptive, causal, or implementation questions. Having some knowledge about the intellectual history of different concepts ("risk factor epidemiology", "consequential epidemiology") will help you to figure out where your own work stands in relation to the discipline as a whole.
+In the first substantive session we will talk generally about high-level questions regarding the discipline of epidemiology as a whole. Although you are early on in your training, I think it is valuable for you to be aware of these broader discussions about where the field stands in relation to its past, and what the appropriate balance should be between descriptive, causal, or implementation questions. Having some knowledge about the intellectual history of different concepts ("risk factor epidemiology", "consequential epidemiology") will help you to figure out where your own work stands in relation to the discipline as a whole.
 
 ### `r classdate(w1c2,1)`: Reflections on epidemiology's past and present
 
