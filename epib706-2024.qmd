@@ -37,7 +37,7 @@ classdate <- function(obj, adv) {
  return(wed)
 }
 ```
-[[PDF version]](https://samharper.org/epib706/epib706.pdf)  
+[[PDF version]](https://samharper.org/epib706/epib706-2024.pdf)  
 
 | **About me**                           | **About class**                                                                      |
 |-----------------------------------------|-------------------------------|
