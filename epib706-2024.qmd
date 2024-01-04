@@ -41,9 +41,9 @@ classdate <- function(obj, adv) {
 
 | **About me**                           | **About class**                                                                      |
 |-----------------------------------------|-------------------------------|
-| sam.harper\@mcgill.ca                  | [mycourses2.mcgill.ca/d2l/home/631790](https://mycourses2.mcgill.ca/d2l/home/631790) |
-| Hours: by appointment                  | Hours: Wednesday/Friday 1305h-1425h                                                  |
-| Office: 2001 McGill College, Room 1262 | Location: 2001 McGill College, Room 1140                                             |
+| sam.harper\@mcgill.ca                  | [mycourses2.mcgill.ca/d2l/home/699913](https://mycourses2.mcgill.ca/d2l/home/699913) |
+| Hours: by appointment                  | Hours: Wednesday/Friday 1005h-1125h                                                  |
+| Office: 2001 McGill College, Room 1262 | Location: 2001 McGill College, Room 1135                                             |
 
 : {tbl-colwidths="\[45,55\]"}
 
@@ -64,6 +64,14 @@ This is a discussion-based course and, quite frankly, it simply won't work well 
 ## Reading
 
 The assigned readings are the core of the course material, and students are expected to carefully and critically read each assignment *before* class. To facilitate student engagement with the reading we will use the online tool [Perusall](http://perusall.com) for all required readings. Perusall is a reading platform in which students (and faculty) annotate texts collaboratively alongside one another. More information on how Perusall works and how it is integrated into the course is available [here](https://asuonline.wistia.com/medias/dvaftxxad7) (thank you Arizona State!). To access Perusall through MyCourses, navigate to Content \> Readings \> Perusall, and then click the "Open Link" button. This will take you to the Perusall site and automatically register you as a member of the course. If you are having any trouble accessing the readings through Perusall contact me right away. I will not be using Perusall's grading features, but I expect you to read, post questions, respond to other students questions and answers, and to take an active role in generating productive discussion.
+
+A couple of features of Persuall that you may want to use:  
+
+1. Tagging with @mentions. You can more directly promote interactions by using the @name, @conversation, and @everyone features. Students (and instructors) will be notified by email and in the app whenever they @mention each other.
+
+2. Identifying themes with #hashtags. It seems dated now that Twitter is all but lost, but using hastags can help to develop and build themes for the course. Students (and instructors) can then see in one place all comments that have a particular #hashtag.
+
+3. Upvoting and question flags. You can upvote each others’ comments and questions to indicate that they found a particular comment helpful, or that they have the same question. It's not a popularity contest, but this helps to provide some feedback on the quality of the discussion and responses. Students can also flag a comment of theirs as a question if Perusall doesn’t automatically detect it as such.
 
 ## Writing
 
@@ -149,7 +157,7 @@ What is the relationship between research questions and methods? Should we just 
 
 #### Why:
 
-Modern statistical software makes regression adjustment incredibly easy, but it cannot tell you whether or why you should adjust. The paper by Kaufman tries to lay out the rationale for different kinds of statistical adjustment, depending on the specific epidemiologic question at hand. We will use this to inform our case study for this session, which is to answer the question of whether Gov. Ron DeSantis of Florida was right to use standardized death rates to compare Florida and California's experience with COVID-19. Is this the right comparision? For which research question?
+Modern statistical software makes regression adjustment incredibly easy, but it cannot tell you whether, why, or what you should adjust for in your model (or whether to use a model at all). The paper by Kaufman tries to lay out the rationale for different kinds of statistical adjustment, depending on the specific epidemiologic question at hand. We will use this to inform a case study for this session, which is to answer the question of whether Gov. Ron DeSantis of Florida was right to use standardized death rates to compare Florida and California's experience with COVID-19. Is this the right comparision? For which research question?
 
 ## Unit 3: How important is formal causal inference?
 
@@ -247,7 +255,7 @@ Okay, so now suppose that we've decided on a question and a (randomized or non-r
 #### Why:
 Debates about whether studies designed to estimate causal effects need to be representative, or alternatively should purposefully be designed not to be representative, have been persistent in epidemiology, but have also become more pressing given increasing concerns for generalizability. This paper by Rothman arguing that causal studies should avoid representative samples created a bit of a stir a few years ago, and has produced some additional empirical work on how much this matters. These issues are important for when you are both producing and consuming research, and it will be worthwhile to struggle a bit with them. 
 
-### `r classdate(w1c2,6)`: Case study: COVID-19 vaccine uptake
+### `r classdate(w1c2,6)`: Case studies in moving beyond the sample.
 
 #### What:
 - Stamatakis E, et al. Is Cohort Representativeness Passé? Poststratified Associations of Lifestyle Risk Factors with Mortality in the UK Biobank. *Epidemiology* 2021;32:179--188. [[link]](https://doi.org/10.1097/EDE.0000000000001316) \[6921 words\]
@@ -319,7 +327,7 @@ Although sensitivity analysis has been around a long time, quantitative bias ana
 
 We have spent time now thinking about developing questions, considering whether to randomize treatments, making statistical inferences about population or causal parameters, and thinking about how to address biases. This week, we are moving on to thinking about the question of to whom our study results should apply. These are core questions that come up in the context of evaluating strengths and weaknesses of studies in peer review (or perhaps grant review), and whether the results of studies may provide actionable evidence.
 
- How should we think about generalizing to other populations?
+### `r classdate(w1c2,10)`: How should we think about generalizing to other populations?
 
 #### What:
 - Lesko CR, Buchanan AL, Westreich D, Edwards JK, Hudgens MG, Cole SR. Generalizing Study Results: A Potential Outcomes Perspective. *Epidemiology* 2017;28:553--561. [[link]](https://doi.org/10.1097/EDE.0000000000000664) [6631 words]
@@ -329,12 +337,12 @@ We have spent time now thinking about developing questions, considering whether 
 #### Why:
 Despite the clear importance of considering to whom study results should apply, there has been little formal work on what assumptions are needed to derive quantitative estimates of effects in different external populations, whether those refer to the target population or a population that is external to the target. These two papers argue that we should consider these formal approaches, and provide some guidance as to what assumptions (and potentially data) would be needed to do so.
 
-### `r classdate(w1c2,10)`: Should we generalize to specific individuals?
+### `r classdate(w1c1,11)`: Should we generalize to specific individuals?
 
 #### What:
--   Khoury, MJ et al. The Intersection of Genomics and Big Data with Public Health: Opportunities for Precision Public Health. *PLoS Medicine* 2020;17: e1003373. [[link]](https://doi.org/10.1371/journal.pmed.1003373) [7677 words]
+- Khoury, MJ et al. The Intersection of Genomics and Big Data with Public Health: Opportunities for Precision Public Health. *PLoS Medicine* 2020;17: e1003373. [[link]](https://doi.org/10.1371/journal.pmed.1003373) [7677 words]
 
--   Cooper R, Paneth N. Will precision medicine lead to a healthier population? *Issues in Science and Technology* 2020;36(2):64-71. [[link]](https://www.jstor.org/stable/26949110) \[6793 words\]
+- Cooper R, Paneth N. Will precision medicine lead to a healthier population? *Issues in Science and Technology* 2020;36(2):64-71. [[link]](https://www.jstor.org/stable/26949110) \[6793 words\]
 
 #### Why:
 The second part of our readings on extending results to other populations reframes the question not about transporting results to a different sample, but about how to (and whether we can) derive reliable predictions about treatment effects at the individual level. This is related to ongoing discussions about the concepts of "precision" epidemiology or precision public health, and whether these ideas are really novel or just ways of re-branding what we have always considered in public health, which is targeting when it comes to interventions. There have emerged different 'camps' of those more and less enthusiastic about this idea, and these two papers are meant to provide an overview of some of these issues.
@@ -343,31 +351,29 @@ The second part of our readings on extending results to other populations refram
 
 This week we are stepping away a bit from epidemiology only, and focusing on larger questions related potential problems that may be widespread across scientific research (obviously, including epidemiology). Can or should we trust most published research? Is it reliable? Is it replicable and, if not, is that really a problem? Many of these issues have come up in the context of something that has been called the "replication crisis" in science, much of which started when some high-profile lab and social science projects were found not to replicate using similar designs and methods.
 
-### `r classdate(w1c1,11)`: Is science broken?
+### `r classdate(w1c2,11)`: Is science broken?
 
 #### What:
 - Oliver, J. Scientific studies. *Last Week Tonight with John Oliver*, Season 3, Episode 11, May 5, 2016 [[link]](https://www.youtube.com/watch?v=0Rnq1NpHdmw) [20 mins] **Note: contains explicit and crude language**
 
--   Baker M. 1,500 scientists lift the lid on reproducibility. *Nature* 2016:533(7604):452--4. [[link]](https://doi.org/10.1038/533452a) [2002 words]
-
--   Pearson H. How COVID Broke the Evidence Pipeline. *Nature* 2021;593:182-5 [[link]](https://doi.org/10.1038/d41586-021-01246-x) \[3884 words\]
+- Lewis-Kraus G. They Studied Dishonesty. Was Their Work a Lie? *The New Yorker* September 30, 2023. [[link]](https://www.newyorker.com/magazine/2023/10/09/they-studied-dishonesty-was-their-work-a-lie) [12128 words]
 
 #### Why:
-The video by Oliver discusses wild claims, the propensity of such claims to be blown up by the media, as well as problems with incentives. Additional evidence on these issues comes from a survey of scientists reported in Nature across a broad number of fields, as well as a report by Pearson on how this has played out in research on the pandemic.
+The video by Oliver discusses wild claims, the propensity of such claims to be blown up by the media, as well as problems with incentives. It's old, but do you think we have made progress since Oliver's piece aired? The second reading is a long essay describing the story about two prominent researchers in psychology and business that have come under substantial scrutiny after some of their work was found to be consistent with fraud. We think of fraud as being rare, but to what extent can (or should) we make independent verification of results normative in epidemiology?
 
-### `r classdate(w1c2,11)`: What are some potential solutions?
+### `r classdate(w1c1,12)`: What are some potential solutions?
 
 #### What:
-- Munafo MR et al. A manifesto for reproducible science. *Nature Human Behaviour* 2017;1:1--9. [[link]](https://doi.org/10.1038/s41562-016-0021) [9180 words]
+- Mathur MB, Fox MP. Toward open and reproducible epidemiology. *Am J Epidemiol* 2023;192(4):658–664 [[link]](https://osf.io/bpkf7/) [5823 words]
 
 #### Why:
-The second session features a long paper by Munafo et al. that is more focused on outlining and describing some potential solutions, including study pre-registration and pre-analysis plans, registered reports or 'results-blind' peer review, sharing of research materials, including data and code, and changing incentives around publication and grants - all core processes for modern working scientists.
+The second session features a paper by Mathur and Fox that is more focused on outlining and describing some potential solutions, including study pre-registration and pre-analysis plans, registered reports or 'results-blind' peer review, sharing of research materials, including data and code, and changing incentives around publication and grants - all core processes for modern working scientists.
 
 ## Unit 12: How should we put together all of the evidence?
 
 This week we are going to talk more about how to put together and think about diverse lines of evidence to come to some sort of judgement about causal effects. Most of you will have heard (and I agree) that it a single study is unlikely to be sufficient to generate certainty about a given exposure-outcome effect. There may be special circumstances (e.g, vaccine trials for COVID-19), but generally we are starting from a place where we have to consider various lines of argument and evidence to inform our thinking. 
 
-### `r classdate(w1c1,12)`: Can "triangulation" help?
+### `r classdate(w1c2,12)`: Can "triangulation" help?
 
 #### What:
 -   Lawlor DA, Tilling K, Davey Smith G. Triangulation in aetiological epidemiology. *Int J Epidemiol* 2016;45(6):1866--86. [[link]](https://academic.oup.com/ije/article/45/6/1866/2930550) [14610 words]
@@ -375,7 +381,9 @@ This week we are going to talk more about how to put together and think about di
 #### Why:
 You may have seen various papers talk about the concept of 'triangulation' in thinking about evidence. The Lawlor et al. paper focuses on trying to pull together (sometimes by design) data sources that may trade off different kinds of biases in order to see whether results are consistent across various settings, but in a formal and methodological way. I encourage you to consider whether you think it is a useful approach.
 
-### `r classdate(w1c2,12)`: Does meta-analysis help or hurt?
+### `r classdate(w1c1,13)`: No class [Good Friday]
+
+### `r classdate(w1c2,13)`: Does meta-analysis help or hurt?
 
 #### What:
 - Hilton Boon M, Burns J, Craig P, Griebler U, Heise TL, Vittal Katikireddi S, et al. Value and Challenges of Using Observational Studies in Systematic Reviews of Public Health Interventions. *Am J Public Health* 2022;112(4):548–52. [[link]](https://doi.org/10.2105/AJPH.2021.306658) [3899 words]
@@ -388,9 +396,9 @@ Meta-analysis of a systematic review has become the dominant method for summariz
 
 ## Unit 13: How should we communicate epidemiologic evidence?
 
-This week we will be reading more about the (possible) tension between our duties as epidemiologic scientists to try and report evidence in a dispassionate way, and the sometimes pressing need for action to tackle pressing health problems when evidence is uncertain. The readings are from two seasoned epidemiologists and provide some overarching guidance thinking about how far to 'push' with your results, and what the benefits and drawbacks of different levels of engagement with the broader scientific community might be. 
+This week we will be reading more about the (possible) tension between our duties as epidemiologic scientists to try and report evidence in a dispassionate way, and the sometimes pressing need for action to tackle pressing health problems when evidence is uncertain, or in contrast to our expectations.
 
-### `r classdate(w1c1,13)`: How should we discuss epidemiologic results?
+### `r classdate(w1c1,14)`: How should we discuss epidemiologic results?
 
 #### What:
 - Savitz DA, Wellenius GA. Characterization and Communication of Conclusions. In: *Interpreting epidemiologic evidence: connecting research to applications*. Oxford University Press; 2016. p. 200--10. [[link]](https://academic.oup.com/book/8266/chapter/153869539) \[5958 words\]
@@ -398,39 +406,29 @@ This week we will be reading more about the (possible) tension between our dutie
 -   Blastland M et al. Five rules for evidence communication. *Nature* 2020;587:362--364 [[link]](https://doi.org/10.1038/d41586-020-03189-1) \[2664 words\]
 
 #### Why:
-The second session's readings are focused more on how to grapple with and communicate uncertainty in epidemiologic findings, both to other scientists (e.g., in peer-reviewed papers) and to the public or to other stakeholders. The chapter by Savitz and Wellenius provides some high-level guidance and advice to epidemiologists about their duties to describe evidence in a dispassionate way, but also to make good faith efforts to distill findings in ways suitably tailored for different audiences. Some additional discussion of how to consider biases across different studies when synthesizing evidence is also included. The piece by Blastland et al. is more direct in providing advice to scientists on how to communicate about evidence, largely arguing that our duties are to be transparent in reporting, especially about uncertainty, rather than attempting to persuade or change opinions.
+Thissession's readings are focused more on how to grapple with and communicate uncertainty in epidemiologic findings, both to other scientists (e.g., in peer-reviewed papers) and to the public or to other stakeholders. The chapter by Savitz and Wellenius provides some high-level guidance and advice to epidemiologists about their duties to describe evidence in a dispassionate way, but also to make good faith efforts to distill findings in ways suitably tailored for different audiences. Some additional discussion of how to consider biases across different studies when synthesizing evidence is also included. The piece by Blastland et al. is more direct in providing advice to scientists on how to communicate about evidence, largely arguing that our duties are to be transparent in reporting, especially about uncertainty, rather than attempting to persuade or change opinions.
 
-### `r classdate(w1c2,13)`: How much does "evidence" even matter?
+### `r classdate(w1c2,14)`: How much does "evidence" even matter?
 
 #### What:
-- Greenhalgh T. Miasmas, Mental Models and Preventive Public Health: Some Philosophical Reflections on Science in the COVID-19 Pandemic. *Interface Focus* 2021;11: 1-8. [[link]](https://doi.org/10.1098/rsfs.2021.0017) \[7602 words\]
+- Johns DM. The Ice-Cream Conspiracy. *Atlantic Monthly* 2023;331(4):16-22.  [[link]](https://search-ebscohost-com.proxy3.library.mcgill.ca/login.aspx?direct=true&db=rch&AN=163061193&scope=site) \[3687 words\]
 
 #### Why:
-Greenhalgh uses the twin examples of the 19th century cholera epidemics in England and the present pandemic to talk about the role of 'extra-scientific' values in shaping how we view and decide on what kind of 'evidence' is compelling, and ties this to current (and ongoing) debates regarding the use of evidence in the COVID-19 pandemic. 
+David Merritt Johns uses the recent example of a 'novel' finding in nutritional epidemiology as a basis for an essay about the role that extra-scientific judgements play in how we as scientists (and humans) interpret findings that may contrast with our expectations. How will you react if your study produces findings in opposition to what you may have hypothesized?  
 
-## Unit 14: What is to be done?
-
-### `r classdate(w1c1,14)`: Can we change scientific culture?
+### `r classdate(w1c1,15)`: Wrap up / Can we change scientific culture? 
 
 We've discussed multiple theoretical and methodological issues thus far, many of which stem from, and cannot be separated from, the fact that science is conducted by humans. This creates a kind of cultural inertia in science that has produced important advances, but also creates problems. Can we change the culture to improve the way epidemiology is working today? This last session asks you to consider this question.
 
 #### What:
-- Mathur MB, Fox MP. Toward open and reproducible epidemiology. *Am J Epidemiol* (forthcoming) [[link]](https://osf.io/bpkf7/) [5823 words]
-
 - Lakens D. Is my study useless? Why researchers need methodological review boards. *Nature* 2023;613(7942):9–9. [[link]](https://www.nature.com/articles/d41586-022-04504-8) [977 words]
 
+- Wrap up  
+  - Final discussion.
+  - Course review and feedback.
+
 #### Why:
-These two papers aim to argue for adopting larger scale innovations in social sciences (including epidemiology). Mathur and Fox make a strong case for greater openness and transparency, specifically in epidemiology. Lakens (a psychologist) makes a case that ethical review boards have an obligation to consider whether proposed research is capable of producing reliable evidence, and suggests they should have the power to intervene to stop work that has a low probability of providing reliable evidence.  
-
-
-### `r classdate(w1c2,14)`: No class (Good Friday)
-
-## Unit 15: Parting discussion
-
-### `r classdate(w1c1,15)`: Wrap up
-
--   Final discussion.
--   Course review and feedback.
+Lakens (a psychologist) makes a case that ethical review boards have an obligation to consider whether proposed research is capable of producing reliable evidence, and suggests they should have the power to intervene to stop work that has a low probability of providing reliable evidence.  
 
 # Academic Integrity
 
