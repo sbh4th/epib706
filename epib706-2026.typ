@@ -388,8 +388,8 @@ Real engagement means #emph[active] participation. This can take many forms, but
 <grading>
 The course is pass-fail.
 
-= Course Outline (A "baker's dozen" of questions to consider)
-<course-outline-a-bakers-dozen-of-questions-to-consider>
+= Course Outline (A "baker's dozen" of questions)
+<course-outline-a-bakers-dozen-of-questions>
 A note about the outline. In an effort to make this course as dynamic and helpful to students as possible, the list of topics and readings below is subject to change. Enthusiasm (or lack thereof) for certain topics may lead us to revise, drop, add, or replace some readings or entire topics as we go. I promise to entertain any suggestions for changes, but I may also disagree if I feel certain topics or readings are too important to replace.
 
 == Unit 1: What is the present and future of epidemiology as a discipline?

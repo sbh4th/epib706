@@ -24,6 +24,10 @@ format:
     section-numbering: "1."
     number-depth: 2
     color-links: true
+    template: template.typ
+    template-partials: 
+      - typst-template.typ
+      - typst-show.typ
 editor: source
 bibliography: "EPIB706.bib"
 csl: chicago-syllabus.csl
@@ -33,7 +37,7 @@ citations-hover: false
 ---
 
 ```{r setup, include=FALSE, cache=TRUE}
-biblio <- bibtex::read.bib("EPIB706-2024.bib")
+# biblio <- bibtex::read.bib("EPIB706-2024.bib")
 knitr::opts_chunk$set(cache=FALSE, dev='pdf')
 
 w1c1 <- as.Date("2026-01-06")
