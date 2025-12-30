@@ -149,6 +149,8 @@ In the first substantive session we will talk generally about high-level questio
 
 -   Lesko CR, Keil AP, Edwards JK. The Epidemiologic Toolbox: Identifying, Honing, and Using the Right Tools for the Job. *Am J Epidemiol* 2020;189(6):511--517. [\[link\]](https://doi.org/10.1093/aje/kwaa030) \[3675 words\]
 
+- @goulden2025
+
 -   @labrecque2025
 
 #### Why:

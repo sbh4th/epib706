@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.26">
+<meta name="generator" content="quarto-1.7.30">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -27,15 +27,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="epib706-2024_files/libs/clipboard/clipboard.min.js"></script>
 <script src="epib706-2024_files/libs/quarto-html/quarto.js" type="module"></script>
 <script src="epib706-2024_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="epib706-2024_files/libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="epib706-2024_files/libs/quarto-html/popper.min.js"></script>
 <script src="epib706-2024_files/libs/quarto-html/tippy.umd.min.js"></script>
 <script src="epib706-2024_files/libs/quarto-html/anchor.min.js"></script>
 <link href="epib706-2024_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="epib706-2024_files/libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="epib706-2024_files/libs/quarto-html/quarto-syntax-highlighting-de070a7b0ab54f8780927367ac907214.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="epib706-2024_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="epib706-2024_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="epib706-2024_files/libs/bootstrap/bootstrap-66db0097476468aff533d1f23d934a35.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="epib706-2024_files/libs/bootstrap/bootstrap-bb4ae3cbdb7666cafb6ef5e9f69aabfc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -51,7 +50,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+      if (mathElements[i].tagName == "SPAN") {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -814,14 +813,13 @@ window.Quarto = {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-      const outerScaffold = trigger.parentElement.cloneNode(true);
-      const codeEl = outerScaffold.querySelector('code');
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
         }
-      }
-      return codeEl.innerText;
+        return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

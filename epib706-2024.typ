@@ -179,6 +179,8 @@
   abstract: none,
   abstract-title: none,
   cols: 1,
+  margin: (x: 1.25in, y: 1.25in),
+  paper: "us-letter",
   lang: "en",
   region: "US",
   font: "libertinus serif",
@@ -191,12 +193,18 @@
   heading-color: black,
   heading-line-height: 0.65em,
   sectionnumbering: none,
+  pagenumbering: "1",
   toc: false,
   toc_title: none,
   toc_depth: none,
   toc_indent: 1.5em,
   doc,
 ) = {
+  set page(
+    paper: paper,
+    margin: margin,
+    numbering: pagenumbering,
+  )
   set par(justify: true)
   set text(lang: lang,
            region: region,
@@ -207,7 +215,8 @@
     align(center)[#block(inset: 2em)[
       #set par(leading: heading-line-height)
       #if (heading-family != none or heading-weight != "bold" or heading-style != "normal"
-           or heading-color != black) {
+           or heading-color != black or heading-decoration == "underline"
+           or heading-background-color != none) {
         set text(font: heading-family, weight: heading-weight, style: heading-style, fill: heading-color)
         text(size: title-size)[#title]
         if subtitle != none {
@@ -279,12 +288,6 @@
   stroke: none
 )
 
-#set page(
-  paper: "us-letter",
-  margin: (x: 1.25in, y: 1.25in),
-  numbering: "1",
-)
-
 #show: doc => article(
   title: [EPIB 706: Doctoral Seminar],
   subtitle: [Winter 2026],
@@ -296,6 +299,7 @@
   font: ("C059",),
   fontsize: 10pt,
   sectionnumbering: "1.",
+  pagenumbering: "1",
   toc_title: [Table of contents],
   toc_depth: 3,
   cols: 1,
@@ -387,8 +391,8 @@ Real engagement means #emph[active] participation. This can take many forms, but
 <grading>
 The course is pass-fail.
 
-= Course Outline (12 "questions" to consider)
-<course-outline-12-questions-to-consider>
+= Course Outline (A "baker's dozen" of questions to consider)
+<course-outline-a-bakers-dozen-of-questions-to-consider>
 A note about the outline. In an effort to make this course as dynamic and helpful to students as possible, the list of topics and readings below is subject to change. Enthusiasm (or lack thereof) for certain topics may lead us to revise, drop, add, or replace some readings or entire topics as we go. I promise to entertain any suggestions for changes, but I may also disagree if I feel certain topics or readings are too important to replace.
 
 == Unit 1: What is the present and future of epidemiology as a discipline?
@@ -442,11 +446,11 @@ What:
 ]
 )
 ]
-- Davey Smith G. Post--Modern Epidemiology: When Methods Meet Matter. #emph[Am J Epidemiol] 2019;188(8):1410--1419. #link("https://doi.org/10.1093/aje/kwz064")[\[link\]] \[8601 words\]
-
 - #cite(<daveysmith2019>, form: "prose")
 
 - Lesko CR, Keil AP, Edwards JK. The Epidemiologic Toolbox: Identifying, Honing, and Using the Right Tools for the Job. #emph[Am J Epidemiol] 2020;189(6):511--517. #link("https://doi.org/10.1093/aje/kwaa030")[\[link\]] \[3675 words\]
+
+- #cite(<goulden2025>, form: "prose")
 
 - #cite(<labrecque2025>, form: "prose")
 
