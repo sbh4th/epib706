@@ -278,6 +278,8 @@
   inset: 6pt,
   stroke: none
 )
+/* Color links */
+#show link: set text(fill: rgb(0, 0, 255))
 
 #set page(
   paper: "us-letter",
@@ -340,7 +342,7 @@ A couple of features of Persuall that you may want to use:
 
 == Writing
 <writing>
-The discussions in the course are meant to activate your critical thinking skills, and to encourage you to synthesize your own thoughts on the material, particularly as it may relate to your area of research interest. Toward that end, over the course of the semester you will be asked to submit #strong[one] original, critical essay that explores a topic of relevance to epidemiologic science. It may be a direct response to material that we read or discuss in class, or it may be an essay exploring other topics relevant to your work that demonstrate a good-faith effort to engage with the class material. These should take the form of a commentary similar (in spirit) to those we have read during the semester, and should be no longer than 2500 words. An outline of the essay, including the basic arguments you want to make, is due on #text(fill: red)[#strong[March 15, 2024];] and the final essay is due on #text(fill: red)[#strong[April 19, 2024];]. I will provide examples of what I think are good pieces of writing to aspire to.
+The discussions in the course are meant to activate your critical thinking skills, and to encourage you to synthesize your own thoughts on the material, particularly as it may relate to your area of research interest. Toward that end, over the course of the semester you will be asked to submit #strong[one] original, critical essay that explores a topic of relevance to epidemiologic science. It may be a direct response to material that we read or discuss in class, or it may be an essay exploring other topics relevant to your work that demonstrate a good-faith effort to engage with the class material. These should take the form of a commentary similar (in spirit) to those we have read during the semester, and should be no longer than 2500 words. An outline of the essay, including the basic arguments you want to make, is due on #text(fill: red)[#strong[March 17, 2026];] and the final essay is due on #text(fill: red)[#strong[April 16, 2024];]. I will provide examples of what I think are good pieces of writing to aspire to. And who knows, you just may end up publishing what you write for this course!#footnote[The published paper by Goulden assigned for Unit 3 was written for EPIB 706!]
 
 == Engagement
 <engagement>
@@ -390,14 +392,14 @@ The course is pass-fail.
 
 = Course Outline (A "baker's dozen" of questions)
 <course-outline-a-bakers-dozen-of-questions>
-A note about the outline. In an effort to make this course as dynamic and helpful to students as possible, the list of topics and readings below is subject to change. Enthusiasm (or lack thereof) for certain topics may lead us to revise, drop, add, or replace some readings or entire topics as we go. I promise to entertain any suggestions for changes, but I may also disagree if I feel certain topics or readings are too important to replace.
+Why are we doing this?
+
+Because this is not a didactic course that is focused on learning methods or technical skills, I owe it to you to provide some justification for the topics and readings I've chosen, as well as for why I think this material would be useful for your doctoral training. For each set of assigned material (the 'What'), I've included a brief rationale (the 'Why'). I hope you find it helpful.
+
+A final note about the outline. In an effort to make this course as dynamic and helpful to students as possible, the list of topics and readings below is subject to change. Enthusiasm (or lack thereof) for certain topics may lead us to revise, drop, add, or replace some readings or entire topics as we go. I promise to entertain any suggestions for changes, but I may also disagree if I feel certain topics or readings are too important to replace.
 
 == Unit 1: What is the present and future of epidemiology as a discipline?
 <unit-1-what-is-the-present-and-future-of-epidemiology-as-a-discipline>
-Why are we doing this?
-
-Because this is not a didactic course that is focused on learning methods or technical skills, and because in the past this course has often been critiqued for not providing a solid rationale for why it even exists, I owe it to you to provide some justification for the topics and readings I've chosen, as well as for why I think this material would be useful for your doctoral training. For each set of assigned material (the 'What'), I've included a brief rationale (the 'Why'). I hope you find it helpful.
-
 #block[
 #heading(
 level: 
@@ -445,7 +447,7 @@ What:
 ]
 - #cite(<daveysmith2019>, form: "prose")
 
-- Lesko CR, Keil AP, Edwards JK. The Epidemiologic Toolbox: Identifying, Honing, and Using the Right Tools for the Job. #emph[Am J Epidemiol] 2020;189(6):511--517. #link("https://doi.org/10.1093/aje/kwaa030")[\[link\]] \[3675 words\]
+- #cite(<lesko2020>, form: "prose")
 
 - #cite(<goulden2025>, form: "prose")
 
@@ -498,7 +500,7 @@ What:
 ]
 - Fox MP, Murray EJ, Lesko CR, Sealy-Jefferson S. On the Need to Revitalize Descriptive Epidemiology. #emph[Am J of Epidemiol] 2022;191(7):1174--9. #link("https://doi.org/10.1093/aje/kwac056")[\[link\]] \[4263 words\]
 
-- Hernan MA, Hsu J, Healy B. A Second Chance to Get Causal Inference Right: A Classification of Data Science Tasks. #emph[CHANCE] 2019; 32:1, 42-49. #link("https://doi.org/10.1080/09332480.2019.1579578")[\[link\]] \[5650 words\]
+- #cite(<hernan2019>, form: "prose")
 
 #block[
 #heading(
@@ -635,11 +637,9 @@ What:
 ]
 )
 ]
-- Schwartz S, Gatto NM, Campbell UB. Causal identification: a charge of epidemiology in danger of marginalization. #emph[Ann Epidemiol] 2016;26(10):669-673. #link("https://doi.org/10.1016/j.annepidem.2016.03.013")[\[link\]];. \[4069 words\]
-
-- Hernan MA. Does water kill? A call for less casual causal inferences. #emph[Ann Epidemiol] 2016;26(10):674-680. #link("https://doi.org/10.1016/j.annepidem.2016.08.016")[\[link\]];. \[5734 words\]
-
-- Schwartz S, Gatto NM, Campbell UB. Heeding the call for less casual causal inferences: the utility of realized (quantitative) causal effects. #emph[Ann Epidemiol] 2017;27(6):402-405. #link("https://doi.org/10.1016/j.annepidem.2017.05.012")[\[link\]];. \[2756 words\]
+- #cite(<schwartz2016>, form: "prose")
+- #cite(<hernan2016c>, form: "prose")
+- #cite(<schwartz2017>, form: "prose")
 
 #block[
 #heading(
@@ -974,7 +974,7 @@ What:
 ]
 )
 ]
-- Wasserstein RL, Schirm AL, Lazar NA. Moving to a world beyond "p\<0.05". #emph[The American Statistician] 2019;73(sup1):1--19. #link("https://doi.org/10.1080/00031305.2019.1583913")[\[link\]];. \[10923 words\]
+- #cite(<wasserstein2019>, form: "prose")
 
 #block[
 #heading(
@@ -1017,9 +1017,9 @@ What:
 ]
 )
 ]
-- Greenland S, Mansournia MA, Joffe M. To curb research misreporting, replace significance and confidence by compatibility. #emph[Prev Med] 2022;164:107127. #link("https://doi.org/10.1016/j.ypmed.2022.107127")[\[link\]] \[4493 words\]
+- #cite(<greenland2022>, form: "prose")
 
-- Harhay MO, Blette BS, Granholm A, Moler FW, Zampieri FG, Goligher EC, et al.~A Bayesian Interpretation of a Pediatric Cardiac Arrest Trial (THAPCA-OH). #emph[NEJM Evidence];. 2022;2(1):EVIDoa2200196. #link("https://evidence.nejm.org/doi/full/10.1056/EVIDoa2200196")[\[link\]] \[7203 words\]
+- #cite(<harhay2022>, form: "prose")
 
 #block[
 #heading(

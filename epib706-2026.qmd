@@ -15,6 +15,10 @@ format:
     #number-sections: true
     #number-depth: 2
   typst:
+    include-in-header:
+        - text: |
+            /* Color links */
+            #show link: set text(fill: rgb(0, 0, 255))
     toc: false
     keep-typ: true
     output-file: epib706-2026.pdf
@@ -115,7 +119,7 @@ A couple of features of Persuall that you may want to use:
 
 ## Writing
 
-The discussions in the course are meant to activate your critical thinking skills, and to encourage you to synthesize your own thoughts on the material, particularly as it may relate to your area of research interest. Toward that end, over the course of the semester you will be asked to submit **one** original, critical essay that explores a topic of relevance to epidemiologic science. It may be a direct response to material that we read or discuss in class, or it may be an essay exploring other topics relevant to your work that demonstrate a good-faith effort to engage with the class material. These should take the form of a commentary similar (in spirit) to those we have read during the semester, and should be no longer than 2500 words. An outline of the essay, including the basic arguments you want to make, is due on [**March 15, 2024**]{style="color: red"} and the final essay is due on [**April 19, 2024**]{style="color: red"}. I will provide examples of what I think are good pieces of writing to aspire to.
+The discussions in the course are meant to activate your critical thinking skills, and to encourage you to synthesize your own thoughts on the material, particularly as it may relate to your area of research interest. Toward that end, over the course of the semester you will be asked to submit **one** original, critical essay that explores a topic of relevance to epidemiologic science. It may be a direct response to material that we read or discuss in class, or it may be an essay exploring other topics relevant to your work that demonstrate a good-faith effort to engage with the class material. These should take the form of a commentary similar (in spirit) to those we have read during the semester, and should be no longer than 2500 words. An outline of the essay, including the basic arguments you want to make, is due on [**March 17, 2026**]{style="color: red"} and the final essay is due on [**April 16, 2024**]{style="color: red"}. I will provide examples of what I think are good pieces of writing to aspire to. And who knows, you just may end up publishing what you write for this course!^[The published paper by Goulden assigned for Unit 3 was written for EPIB 706.]
 
 ## Engagement
 
@@ -143,13 +147,13 @@ The course is pass-fail.
 
 # Course Outline (A "baker's dozen" of questions)
 
-A note about the outline. In an effort to make this course as dynamic and helpful to students as possible, the list of topics and readings below is subject to change. Enthusiasm (or lack thereof) for certain topics may lead us to revise, drop, add, or replace some readings or entire topics as we go. I promise to entertain any suggestions for changes, but I may also disagree if I feel certain topics or readings are too important to replace.
-
-## Unit 1: What is the present and future of epidemiology as a discipline?
-
 Why are we doing this?
 
-Because this is not a didactic course that is focused on learning methods or technical skills, and because in the past this course has often been critiqued for not providing a solid rationale for why it even exists, I owe it to you to provide some justification for the topics and readings I've chosen, as well as for why I think this material would be useful for your doctoral training. For each set of assigned material (the 'What'), I've included a brief rationale (the 'Why'). I hope you find it helpful.
+Because this is not a didactic course that is focused on learning methods or technical skills, I owe it to you to provide some justification for the topics and readings I've chosen, as well as for why I think this material would be useful for your doctoral training. For each set of assigned material (the 'What'), I've included a brief rationale (the 'Why'). I hope you find it helpful.
+
+A final note about the outline. In an effort to make this course as dynamic and helpful to students as possible, the list of topics and readings below is subject to change. Enthusiasm (or lack thereof) for certain topics may lead us to revise, drop, add, or replace some readings or entire topics as we go. I promise to entertain any suggestions for changes, but I may also disagree if I feel certain topics or readings are too important to replace.
+
+## Unit 1: What is the present and future of epidemiology as a discipline?
 
 ### `r classdate(w1c1,1)`: Course introduction
 
@@ -165,11 +169,11 @@ In the first substantive session we will talk generally about high-level questio
 
 - @daveysmith2019
 
--   Lesko CR, Keil AP, Edwards JK. The Epidemiologic Toolbox: Identifying, Honing, and Using the Right Tools for the Job. *Am J Epidemiol* 2020;189(6):511--517. [\[link\]](https://doi.org/10.1093/aje/kwaa030) \[3675 words\]
+- @lesko2020
 
 - @goulden2025
 
--   @labrecque2025
+- @labrecque2025
 
 #### Why:
 
@@ -185,7 +189,7 @@ Asking good questions is central to advancing epidemiologic knowledge, but what 
 
 -   Fox MP, Murray EJ, Lesko CR, Sealy-Jefferson S. On the Need to Revitalize Descriptive Epidemiology. *Am J of Epidemiol* 2022;191(7):1174--9. [\[link\]](https://doi.org/10.1093/aje/kwac056) \[4263 words\]
 
--   Hernan MA, Hsu J, Healy B. A Second Chance to Get Causal Inference Right: A Classification of Data Science Tasks. *CHANCE* 2019; 32:1, 42-49. [\[link\]](https://doi.org/10.1080/09332480.2019.1579578) \[5650 words\]
+- @hernan2019
 
 #### Why:
 
@@ -223,11 +227,11 @@ The first set of papers for this session come from an older, but still relevant 
 
 #### What:
 
--   Schwartz S, Gatto NM, Campbell UB. Causal identification: a charge of epidemiology in danger of marginalization. *Ann Epidemiol* 2016;26(10):669-673. [\[link\]](https://doi.org/10.1016/j.annepidem.2016.03.013). \[4069 words\]
+- @schwartz2016
 
--   Hernan MA. Does water kill? A call for less casual causal inferences. *Ann Epidemiol* 2016;26(10):674-680. [\[link\]](https://doi.org/10.1016/j.annepidem.2016.08.016). \[5734 words\]
+- @hernan2016c
 
--   Schwartz S, Gatto NM, Campbell UB. Heeding the call for less casual causal inferences: the utility of realized (quantitative) causal effects. *Ann Epidemiol* 2017;27(6):402-405. [\[link\]](https://doi.org/10.1016/j.annepidem.2017.05.012). \[2756 words\]
+- @schwartz2017
 
 #### Why:
 
@@ -243,15 +247,13 @@ Longstanding debates about whether exposures that are not directly (or perhaps e
 
 #### What:
 
--   VanderWeele TJ, Robinson WR. On the causal interpretation of race in regressions adjusting for confounding and mediating variables. *Epidemiology* 2014 Jul;25(4):473--84. [\[link\]](https://doi.org/10.1097/EDE.0000000000000105) \[11470 words\]
+- @vanderweele2014
 
--   Glymour MM, Spiegelman D. Evaluating Public Health Interventions: 5. Causal Inference in Public Health Research-Do Sex, Race, and Biological Factors Cause Health Outcomes? *Am J Public Health* 2017 Jan;107(1):81--85. [\[link\]](https://doi.org/10.2105/AJPH.2016.303539) \[3446 words\]
-
--   Boyd RW et al. On Racism: A New Standard For Publishing On Racial Health Inequities. *Health Affairs Blog*, July 2, 2020. [\[link\]](https://doi.org/10.1377/hblog20200630.939347) \[2378 words\]
+- @glymour2017
 
 #### Why:
 
-The paper by Vanderweele and Robinson tries to address the issue of non-manipulable exposures (specifically race) in a way that respects the complexity of this kind of exposure, but attempts to move forward to see whether it is helpful to reframe the question to how interventions on factors plausibly affected by race may affect racial differences in health. Meanwhile, Glymour and Spiegelman offer more of a defense of the idea that non-manipulable factors are causes and deserve the same kind of consideration and treatment as other exposures we study routinely in epidemiology. Finally, the blog post by Boyd is a relatively new piece making strong arguments for how race should be reported and interpreted in epidemiologic and clinical studies.
+The paper by Vanderweele and Robinson tries to address the issue of non-manipulable exposures (specifically race) in a way that respects the complexity of this kind of exposure, but attempts to move forward to see whether it is helpful to reframe the question to how interventions on factors plausibly affected by race may affect racial differences in health. Meanwhile, Glymour and Spiegelman offer more of a defense of the idea that non-manipulable factors are causes and deserve the same kind of consideration and treatment as other exposures we study routinely in epidemiology. What do you think? How can we balance methodological rigor and concerns for inequality?
 
 ### `r classdate(w1c2,4)`: Case study: race in clinical treatment.
 
@@ -331,7 +333,7 @@ This question probably won't go away over the course of your PhD training, or in
 
 #### What:
 
--   Wasserstein RL, Schirm AL, Lazar NA. Moving to a world beyond "p\<0.05". *The American Statistician* 2019;73(sup1):1--19. [\[link\]](https://doi.org/10.1080/00031305.2019.1583913). \[10923 words\]
+- @wasserstein2019
 
 #### Why:
 
@@ -341,9 +343,9 @@ Wasserstein et al. provide a series of arguments for abandoning p-value threshol
 
 #### What:
 
--   Greenland S, Mansournia MA, Joffe M. To curb research misreporting, replace significance and confidence by compatibility. *Prev Med* 2022;164:107127. [\[link\]](https://doi.org/10.1016/j.ypmed.2022.107127) \[4493 words\]
+- @greenland2022
 
--   Harhay MO, Blette BS, Granholm A, Moler FW, Zampieri FG, Goligher EC, et al. A Bayesian Interpretation of a Pediatric Cardiac Arrest Trial (THAPCA-OH). *NEJM Evidence*. 2022;2(1):EVIDoa2200196. [\[link\]](https://evidence.nejm.org/doi/full/10.1056/EVIDoa2200196) \[7203 words\]
+- @harhay2022
 
 #### Why:
 
@@ -378,6 +380,8 @@ Lash et al. provide a long overview of good practices for quantitative bias anal
 ### `r classdate(w1c1,9)`: No class
 
 ### `r classdate(w1c2,9)`: No class
+
+## Unit 9: Needs a title?
 
 ### `r classdate(w1c1,10)`: Can bias analysis be biased?
 
@@ -439,7 +443,7 @@ The video by Oliver discusses wild claims, the propensity of such claims to be b
 
 #### What:
 
--   Mathur MB, Fox MP. Toward open and reproducible epidemiology. *Am J Epidemiol* 2023;192(4):658–664 [\[link\]](https://osf.io/bpkf7/) \[5823 words\]
+- @mathur2023
 
 #### Why:
 
@@ -485,7 +489,7 @@ This week we will be reading more about the (possible) tension between our dutie
 
 #### Why:
 
-Thissession's readings are focused more on how to grapple with and communicate uncertainty in epidemiologic findings, both to other scientists (e.g., in peer-reviewed papers) and to the public or to other stakeholders. The chapter by Savitz and Wellenius provides some high-level guidance and advice to epidemiologists about their duties to describe evidence in a dispassionate way, but also to make good faith efforts to distill findings in ways suitably tailored for different audiences. Some additional discussion of how to consider biases across different studies when synthesizing evidence is also included. The piece by Blastland et al. is more direct in providing advice to scientists on how to communicate about evidence, largely arguing that our duties are to be transparent in reporting, especially about uncertainty, rather than attempting to persuade or change opinions.
+This session's readings are focused more on how to grapple with and communicate uncertainty in epidemiologic findings, both to other scientists (e.g., in peer-reviewed papers) and to the public or to other stakeholders. The chapter by Savitz and Wellenius provides some high-level guidance and advice to epidemiologists about their duties to describe evidence in a dispassionate way, but also to make good faith efforts to distill findings in ways suitably tailored for different audiences. Some additional discussion of how to consider biases across different studies when synthesizing evidence is also included. The piece by Blastland et al. is more direct in providing advice to scientists on how to communicate about evidence, largely arguing that our duties are to be transparent in reporting, especially about uncertainty, rather than attempting to persuade or change opinions.
 
 ### `r classdate(w1c1,14)`: How much does "evidence" even matter?
 
