@@ -279,12 +279,6 @@
   stroke: none
 )
 
-#set page(
-  paper: "us-letter",
-  margin: (x: 1.25in, y: 1.25in),
-  numbering: "1",
-)
-
 #show: doc => article(
   title: [EPIB 706: Doctoral Seminar],
   subtitle: [Winter 2026],
@@ -340,7 +334,7 @@ A couple of features of Persuall that you may want to use:
 
 == Writing
 <writing>
-The discussions in the course are meant to activate your critical thinking skills, and to encourage you to synthesize your own thoughts on the material, particularly as it may relate to your area of research interest. Toward that end, over the course of the semester you will be asked to submit #strong[one] original, critical essay that explores a topic of relevance to epidemiologic science. It may be a direct response to material that we read or discuss in class, or it may be an essay exploring other topics relevant to your work that demonstrate a good-faith effort to engage with the class material. These should take the form of a commentary similar (in spirit) to those we have read during the semester, and should be no longer than 2500 words. An outline of the essay, including the basic arguments you want to make, is due on #text(fill: red)[#strong[March 15, 2024];] and the final essay is due on #text(fill: red)[#strong[April 19, 2024];]. I will provide examples of what I think are good pieces of writing to aspire to.
+The discussions in the course are meant to activate your critical thinking skills, and to encourage you to synthesize your own thoughts on the material, particularly as it may relate to your area of research interest. Toward that end, over the course of the semester you will be asked to submit #strong[one] original, critical essay that explores a topic of relevance to epidemiologic science. It may be a direct response to material that we read or discuss in class, or it may be an essay exploring other topics relevant to your work that demonstrate a good-faith effort to engage with the class material. These should take the form of a commentary similar (in spirit) to those we have read during the semester, and should be no longer than 2500 words. An outline of the essay, including the basic arguments you want to make, is due on #text(fill: red)[#strong[March 17, 2026];] and the final essay is due on #text(fill: red)[#strong[April 16, 2024];]. I will provide examples of what I think are good pieces of writing to aspire to.
 
 == Engagement
 <engagement>
@@ -390,14 +384,14 @@ The course is pass-fail.
 
 = Course Outline (A "baker's dozen" of questions to consider)
 <course-outline-a-bakers-dozen-of-questions-to-consider>
-A note about the outline. In an effort to make this course as dynamic and helpful to students as possible, the list of topics and readings below is subject to change. Enthusiasm (or lack thereof) for certain topics may lead us to revise, drop, add, or replace some readings or entire topics as we go. I promise to entertain any suggestions for changes, but I may also disagree if I feel certain topics or readings are too important to replace.
+Why are we doing this?
+
+Because this is not a didactic course that is focused on learning methods or technical skills, I owe it to you to provide some justification for the topics and readings I've chosen, as well as for why I think this material would be useful for your doctoral training. For each set of assigned material (the 'What'), I've included a brief rationale (the 'Why'). I hope you find it helpful.
+
+A final note about the outline. In an effort to make this course as dynamic and helpful to students as possible, the list of topics and readings below is subject to change. Enthusiasm (or lack thereof) for certain topics may lead us to revise, drop, add, or replace some readings or entire topics as we go. I promise to entertain any suggestions for changes, but I may also disagree if I feel certain topics or readings are too important to replace.
 
 == Unit 1: What is the present and future of epidemiology as a discipline?
 <unit-1-what-is-the-present-and-future-of-epidemiology-as-a-discipline>
-Why are we doing this?
-
-Because this is not a didactic course that is focused on learning methods or technical skills, and because in the past this course has often been critiqued for not providing a solid rationale for why it even exists, I owe it to you to provide some justification for the topics and readings I've chosen, as well as for why I think this material would be useful for your doctoral training. For each set of assigned material (the 'What'), I've included a brief rationale (the 'Why'). I hope you find it helpful.
-
 #block[
 #heading(
 level: 
@@ -408,6 +402,19 @@ none
 , 
 [
 Tuesday 2026-01-06: Course introduction
+]
+)
+]
+#block[
+#heading(
+level: 
+4
+, 
+numbering: 
+none
+, 
+[
+What:
 ]
 )
 ]

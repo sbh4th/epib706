@@ -24,7 +24,7 @@ format:
     section-numbering: "1."
     number-depth: 2
     color-links: true
-    template: template.typ
+    # template: template.typ
     template-partials: 
       - typst-template.typ
       - typst-show.typ
@@ -101,7 +101,7 @@ A couple of features of Persuall that you may want to use:
 
 ## Writing
 
-The discussions in the course are meant to activate your critical thinking skills, and to encourage you to synthesize your own thoughts on the material, particularly as it may relate to your area of research interest. Toward that end, over the course of the semester you will be asked to submit **one** original, critical essay that explores a topic of relevance to epidemiologic science. It may be a direct response to material that we read or discuss in class, or it may be an essay exploring other topics relevant to your work that demonstrate a good-faith effort to engage with the class material. These should take the form of a commentary similar (in spirit) to those we have read during the semester, and should be no longer than 2500 words. An outline of the essay, including the basic arguments you want to make, is due on [**March 15, 2024**]{style="color: red"} and the final essay is due on [**April 19, 2024**]{style="color: red"}. I will provide examples of what I think are good pieces of writing to aspire to.
+The discussions in the course are meant to activate your critical thinking skills, and to encourage you to synthesize your own thoughts on the material, particularly as it may relate to your area of research interest. Toward that end, over the course of the semester you will be asked to submit **one** original, critical essay that explores a topic of relevance to epidemiologic science. It may be a direct response to material that we read or discuss in class, or it may be an essay exploring other topics relevant to your work that demonstrate a good-faith effort to engage with the class material. These should take the form of a commentary similar (in spirit) to those we have read during the semester, and should be no longer than 2500 words. An outline of the essay, including the basic arguments you want to make, is due on [**March 17, 2026**]{style="color: red"} and the final essay is due on [**April 16, 2024**]{style="color: red"}. I will provide examples of what I think are good pieces of writing to aspire to.
 
 ## Engagement
 
@@ -129,15 +129,17 @@ The course is pass-fail.
 
 # Course Outline (A "baker's dozen" of questions to consider)
 
-A note about the outline. In an effort to make this course as dynamic and helpful to students as possible, the list of topics and readings below is subject to change. Enthusiasm (or lack thereof) for certain topics may lead us to revise, drop, add, or replace some readings or entire topics as we go. I promise to entertain any suggestions for changes, but I may also disagree if I feel certain topics or readings are too important to replace.
+Why are we doing this?
+
+Because this is not a didactic course that is focused on learning methods or technical skills, I owe it to you to provide some justification for the topics and readings I've chosen, as well as for why I think this material would be useful for your doctoral training. For each set of assigned material (the 'What'), I've included a brief rationale (the 'Why'). I hope you find it helpful.
+
+A final note about the outline. In an effort to make this course as dynamic and helpful to students as possible, the list of topics and readings below is subject to change. Enthusiasm (or lack thereof) for certain topics may lead us to revise, drop, add, or replace some readings or entire topics as we go. I promise to entertain any suggestions for changes, but I may also disagree if I feel certain topics or readings are too important to replace.
 
 ## Unit 1: What is the present and future of epidemiology as a discipline?
 
-Why are we doing this?
-
-Because this is not a didactic course that is focused on learning methods or technical skills, and because in the past this course has often been critiqued for not providing a solid rationale for why it even exists, I owe it to you to provide some justification for the topics and readings I've chosen, as well as for why I think this material would be useful for your doctoral training. For each set of assigned material (the 'What'), I've included a brief rationale (the 'Why'). I hope you find it helpful.
-
 ### `r classdate(w1c1,1)`: Course introduction
+
+#### What:
 
 -   Administrative aspects of the course.
 -   Round table -- introductions.
@@ -229,11 +231,9 @@ Longstanding debates about whether exposures that are not directly (or perhaps e
 
 #### What:
 
--   VanderWeele TJ, Robinson WR. On the causal interpretation of race in regressions adjusting for confounding and mediating variables. *Epidemiology* 2014 Jul;25(4):473--84. [\[link\]](https://doi.org/10.1097/EDE.0000000000000105) \[11470 words\]
+- @vanderweele2014
 
--   Glymour MM, Spiegelman D. Evaluating Public Health Interventions: 5. Causal Inference in Public Health Research-Do Sex, Race, and Biological Factors Cause Health Outcomes? *Am J Public Health* 2017 Jan;107(1):81--85. [\[link\]](https://doi.org/10.2105/AJPH.2016.303539) \[3446 words\]
-
--   Boyd RW et al. On Racism: A New Standard For Publishing On Racial Health Inequities. *Health Affairs Blog*, July 2, 2020. [\[link\]](https://doi.org/10.1377/hblog20200630.939347) \[2378 words\]
+- @glymour2017
 
 #### Why:
 
@@ -243,7 +243,7 @@ The paper by Vanderweele and Robinson tries to address the issue of non-manipula
 
 #### What:
 
--   Vyas DA, Eisenstein LG, Jones DS. Hidden in Plain Sight --- Reconsidering the Use of Race Correction in Clinical Algorithms. *New Engl J Med* 2020;383(9):874--82. [\[link\]](https://doi.org/10.1056/NEJMms2004740) \[6251 words\]
+- @vyas2020
 
 -   Manski CF. Patient-centered appraisal of race-free clinical risk assessment. *Health Econ* 2022;31(10):2109--14. [\[link\]](https://onlinelibrary.wiley.com/doi/abs/10.1002/hec.4569) \[4133 words\]
 
