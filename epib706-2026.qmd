@@ -62,7 +62,7 @@ classdate <- function(obj, adv) {
 ```
 
 ::: {.content-visible when-format="html"}
-[PDF version](/cv/index.pdf)
+[PDF version](/epib706-2026.pdf)
 :::
 
 ::: {.content-visible when-format="typst"}
