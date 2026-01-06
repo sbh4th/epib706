@@ -695,11 +695,9 @@ What:
 ]
 )
 ]
-- VanderWeele TJ, Robinson WR. On the causal interpretation of race in regressions adjusting for confounding and mediating variables. #emph[Epidemiology] 2014 Jul;25(4):473--84. #link("https://doi.org/10.1097/EDE.0000000000000105")[\[link\]] \[11470 words\]
+- #cite(<vanderweele2014>, form: "prose")
 
-- Glymour MM, Spiegelman D. Evaluating Public Health Interventions: 5. Causal Inference in Public Health Research-Do Sex, Race, and Biological Factors Cause Health Outcomes? #emph[Am J Public Health] 2017 Jan;107(1):81--85. #link("https://doi.org/10.2105/AJPH.2016.303539")[\[link\]] \[3446 words\]
-
-- Boyd RW et al.~On Racism: A New Standard For Publishing On Racial Health Inequities. #emph[Health Affairs Blog];, July 2, 2020. #link("https://doi.org/10.1377/hblog20200630.939347")[\[link\]] \[2378 words\]
+- #cite(<glymour2017>, form: "prose")
 
 #block[
 #heading(
@@ -742,7 +740,7 @@ What:
 ]
 )
 ]
-- Vyas DA, Eisenstein LG, Jones DS. Hidden in Plain Sight --- Reconsidering the Use of Race Correction in Clinical Algorithms. #emph[New Engl J Med] 2020;383(9):874--82. #link("https://doi.org/10.1056/NEJMms2004740")[\[link\]] \[6251 words\]
+- #cite(<vyas2020>, form: "prose")
 
 - Manski CF. Patient-centered appraisal of race-free clinical risk assessment. #emph[Health Econ] 2022;31(10):2109--14. #link("https://onlinelibrary.wiley.com/doi/abs/10.1002/hec.4569")[\[link\]] \[4133 words\]
 
