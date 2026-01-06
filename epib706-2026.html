@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.26">
+<meta name="generator" content="quarto-1.7.30">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -27,15 +27,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="epib706-2026_files/libs/clipboard/clipboard.min.js"></script>
 <script src="epib706-2026_files/libs/quarto-html/quarto.js" type="module"></script>
 <script src="epib706-2026_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="epib706-2026_files/libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="epib706-2026_files/libs/quarto-html/popper.min.js"></script>
 <script src="epib706-2026_files/libs/quarto-html/tippy.umd.min.js"></script>
 <script src="epib706-2026_files/libs/quarto-html/anchor.min.js"></script>
 <link href="epib706-2026_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="epib706-2026_files/libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="epib706-2026_files/libs/quarto-html/quarto-syntax-highlighting-de070a7b0ab54f8780927367ac907214.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="epib706-2026_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="epib706-2026_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="epib706-2026_files/libs/bootstrap/bootstrap-66db0097476468aff533d1f23d934a35.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="epib706-2026_files/libs/bootstrap/bootstrap-bb4ae3cbdb7666cafb6ef5e9f69aabfc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -51,7 +50,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+      if (mathElements[i].tagName == "SPAN") {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -101,11 +100,11 @@ window.Quarto = {
   <li><a href="#unit-2-what-is-your-research-question" id="toc-unit-2-what-is-your-research-question" class="nav-link" data-scroll-target="#unit-2-what-is-your-research-question"><span class="header-section-number">6.2</span> Unit 2: What is your research question?</a>
   <ul class="collapse">
   <li><a href="#tuesday-2026-01-13-does-it-matter-whether-questions-and-methods-align" id="toc-tuesday-2026-01-13-does-it-matter-whether-questions-and-methods-align" class="nav-link" data-scroll-target="#tuesday-2026-01-13-does-it-matter-whether-questions-and-methods-align">Tuesday 2026-01-13: Does it matter whether questions and methods align?</a></li>
-  <li><a href="#thursday-2026-01-15-case-study-in-adjustment-newsom-vs.-desantis" id="toc-thursday-2026-01-15-case-study-in-adjustment-newsom-vs.-desantis" class="nav-link" data-scroll-target="#thursday-2026-01-15-case-study-in-adjustment-newsom-vs.-desantis">Thursday 2026-01-15: Case study in adjustment: Newsom vs.&nbsp;DeSantis</a></li>
+  <li><a href="#thursday-2026-01-15-estimands-and-practical-questions" id="toc-thursday-2026-01-15-estimands-and-practical-questions" class="nav-link" data-scroll-target="#thursday-2026-01-15-estimands-and-practical-questions">Thursday 2026-01-15: Estimands and practical questions</a></li>
   </ul></li>
   <li><a href="#unit-3-how-important-is-formal-causal-inference" id="toc-unit-3-how-important-is-formal-causal-inference" class="nav-link" data-scroll-target="#unit-3-how-important-is-formal-causal-inference"><span class="header-section-number">6.3</span> Unit 3: How important is formal causal inference?</a>
   <ul class="collapse">
-  <li><a href="#tuesday-2026-01-20-are-potential-outcomes-and-dags-necessary" id="toc-tuesday-2026-01-20-are-potential-outcomes-and-dags-necessary" class="nav-link" data-scroll-target="#tuesday-2026-01-20-are-potential-outcomes-and-dags-necessary">Tuesday 2026-01-20: Are potential outcomes and DAGs necessary?</a></li>
+  <li><a href="#tuesday-2026-01-20-are-modern-methods-worth-it" id="toc-tuesday-2026-01-20-are-modern-methods-worth-it" class="nav-link" data-scroll-target="#tuesday-2026-01-20-are-modern-methods-worth-it">Tuesday 2026-01-20: Are ‘modern’ methods worth it?</a></li>
   <li><a href="#thursday-2026-01-22-are-well-defined-interventions-needed-for-causal-questions" id="toc-thursday-2026-01-22-are-well-defined-interventions-needed-for-causal-questions" class="nav-link" data-scroll-target="#thursday-2026-01-22-are-well-defined-interventions-needed-for-causal-questions">Thursday 2026-01-22: Are well-defined interventions needed for causal questions?</a></li>
   </ul></li>
   <li><a href="#unit-4-how-should-we-study-non-manipulable-exposures" id="toc-unit-4-how-should-we-study-non-manipulable-exposures" class="nav-link" data-scroll-target="#unit-4-how-should-we-study-non-manipulable-exposures"><span class="header-section-number">6.4</span> Unit 4: How should we study non-manipulable exposures?</a>
@@ -113,7 +112,7 @@ window.Quarto = {
   <li><a href="#tuesday-2026-01-27-are-non-manipulable-exposures-causes" id="toc-tuesday-2026-01-27-are-non-manipulable-exposures-causes" class="nav-link" data-scroll-target="#tuesday-2026-01-27-are-non-manipulable-exposures-causes">Tuesday 2026-01-27: Are non-manipulable exposures causes?</a></li>
   <li><a href="#thursday-2026-01-29-case-study-race-in-clinical-treatment." id="toc-thursday-2026-01-29-case-study-race-in-clinical-treatment." class="nav-link" data-scroll-target="#thursday-2026-01-29-case-study-race-in-clinical-treatment.">Thursday 2026-01-29: Case study: race in clinical treatment.</a></li>
   </ul></li>
-  <li><a href="#unit-5-should-we-try-to-randomize-interventions" id="toc-unit-5-should-we-try-to-randomize-interventions" class="nav-link" data-scroll-target="#unit-5-should-we-try-to-randomize-interventions"><span class="header-section-number">6.5</span> Unit 5: Should we try to randomize interventions?</a>
+  <li><a href="#unit-5-should-we-try-to-randomize" id="toc-unit-5-should-we-try-to-randomize" class="nav-link" data-scroll-target="#unit-5-should-we-try-to-randomize"><span class="header-section-number">6.5</span> Unit 5: Should we try to randomize?</a>
   <ul class="collapse">
   <li><a href="#tuesday-2026-02-03-are-rcts-special" id="toc-tuesday-2026-02-03-are-rcts-special" class="nav-link" data-scroll-target="#tuesday-2026-02-03-are-rcts-special">Tuesday 2026-02-03: Are RCT’s special?</a></li>
   <li><a href="#thursday-2026-02-05-what-if-we-cant-randomize" id="toc-thursday-2026-02-05-what-if-we-cant-randomize" class="nav-link" data-scroll-target="#thursday-2026-02-05-what-if-we-cant-randomize">Thursday 2026-02-05: What if we can’t randomize?</a></li>
@@ -133,32 +132,35 @@ window.Quarto = {
   <li><a href="#tuesday-2026-02-24-good-and-bad-critiques" id="toc-tuesday-2026-02-24-good-and-bad-critiques" class="nav-link" data-scroll-target="#tuesday-2026-02-24-good-and-bad-critiques">Tuesday 2026-02-24: Good and bad critiques</a></li>
   <li><a href="#thursday-2026-02-26-how-can-we-quantify-our-assumptions" id="toc-thursday-2026-02-26-how-can-we-quantify-our-assumptions" class="nav-link" data-scroll-target="#thursday-2026-02-26-how-can-we-quantify-our-assumptions">Thursday 2026-02-26: How can we quantify our assumptions?</a></li>
   </ul></li>
-  <li><a href="#winter-break" id="toc-winter-break" class="nav-link" data-scroll-target="#winter-break"><span class="header-section-number">6.9</span> Winter Break</a>
+  <li><a href="#winter-break" id="toc-winter-break" class="nav-link" data-scroll-target="#winter-break">Winter Break</a>
   <ul class="collapse">
   <li><a href="#tuesday-2026-03-03-no-class" id="toc-tuesday-2026-03-03-no-class" class="nav-link" data-scroll-target="#tuesday-2026-03-03-no-class">Tuesday 2026-03-03: No class</a></li>
   <li><a href="#thursday-2026-03-05-no-class" id="toc-thursday-2026-03-05-no-class" class="nav-link" data-scroll-target="#thursday-2026-03-05-no-class">Thursday 2026-03-05: No class</a></li>
-  <li><a href="#tuesday-2026-03-10-can-bias-analysis-be-biased" id="toc-tuesday-2026-03-10-can-bias-analysis-be-biased" class="nav-link" data-scroll-target="#tuesday-2026-03-10-can-bias-analysis-be-biased">Tuesday 2026-03-10: Can bias analysis be biased?</a></li>
   </ul></li>
-  <li><a href="#unit-10-to-whom-do-epidemiologic-results-apply" id="toc-unit-10-to-whom-do-epidemiologic-results-apply" class="nav-link" data-scroll-target="#unit-10-to-whom-do-epidemiologic-results-apply"><span class="header-section-number">6.10</span> Unit 10: To whom do epidemiologic results apply?</a>
+  <li><a href="#unit-9-to-whom-do-epidemiologic-results-apply" id="toc-unit-9-to-whom-do-epidemiologic-results-apply" class="nav-link" data-scroll-target="#unit-9-to-whom-do-epidemiologic-results-apply"><span class="header-section-number">6.9</span> Unit 9: To whom do epidemiologic results apply?</a>
   <ul class="collapse">
-  <li><a href="#thursday-2026-03-12-how-should-we-think-about-generalizing-to-other-populations" id="toc-thursday-2026-03-12-how-should-we-think-about-generalizing-to-other-populations" class="nav-link" data-scroll-target="#thursday-2026-03-12-how-should-we-think-about-generalizing-to-other-populations">Thursday 2026-03-12: How should we think about generalizing to other populations?</a></li>
-  <li><a href="#tuesday-2026-03-17-should-we-generalize-to-specific-individuals" id="toc-tuesday-2026-03-17-should-we-generalize-to-specific-individuals" class="nav-link" data-scroll-target="#tuesday-2026-03-17-should-we-generalize-to-specific-individuals">Tuesday 2026-03-17: Should we generalize to specific individuals?</a></li>
+  <li><a href="#tuesday-2026-03-10-how-should-we-think-about-generalizing-to-other-populations" id="toc-tuesday-2026-03-10-how-should-we-think-about-generalizing-to-other-populations" class="nav-link" data-scroll-target="#tuesday-2026-03-10-how-should-we-think-about-generalizing-to-other-populations">Tuesday 2026-03-10: How should we think about generalizing to other populations?</a></li>
+  <li><a href="#thursday-2026-03-12-should-we-generalize-to-individuals" id="toc-thursday-2026-03-12-should-we-generalize-to-individuals" class="nav-link" data-scroll-target="#thursday-2026-03-12-should-we-generalize-to-individuals">Thursday 2026-03-12: Should we generalize to individuals?</a></li>
   </ul></li>
-  <li><a href="#unit-11-is-research-including-epidemiology-reliable" id="toc-unit-11-is-research-including-epidemiology-reliable" class="nav-link" data-scroll-target="#unit-11-is-research-including-epidemiology-reliable"><span class="header-section-number">6.11</span> Unit 11: Is research (including epidemiology) reliable?</a>
+  <li><a href="#unit-10-how-should-we-communicate-epidemiologic-evidence" id="toc-unit-10-how-should-we-communicate-epidemiologic-evidence" class="nav-link" data-scroll-target="#unit-10-how-should-we-communicate-epidemiologic-evidence"><span class="header-section-number">6.10</span> Unit 10: How should we communicate epidemiologic evidence?</a>
   <ul class="collapse">
-  <li><a href="#thursday-2026-03-19-is-science-broken" id="toc-thursday-2026-03-19-is-science-broken" class="nav-link" data-scroll-target="#thursday-2026-03-19-is-science-broken">Thursday 2026-03-19: Is science broken?</a></li>
-  <li><a href="#tuesday-2026-03-24-what-are-some-potential-solutions" id="toc-tuesday-2026-03-24-what-are-some-potential-solutions" class="nav-link" data-scroll-target="#tuesday-2026-03-24-what-are-some-potential-solutions">Tuesday 2026-03-24: What are some potential solutions?</a></li>
+  <li><a href="#tuesday-2026-03-17-how-should-we-discuss-epidemiologic-results" id="toc-tuesday-2026-03-17-how-should-we-discuss-epidemiologic-results" class="nav-link" data-scroll-target="#tuesday-2026-03-17-how-should-we-discuss-epidemiologic-results">Tuesday 2026-03-17: How should we discuss epidemiologic results?</a></li>
+  <li><a href="#thursday-2026-03-19-how-should-we-think-about-research-impact" id="toc-thursday-2026-03-19-how-should-we-think-about-research-impact" class="nav-link" data-scroll-target="#thursday-2026-03-19-how-should-we-think-about-research-impact">Thursday 2026-03-19: How should we think about research ‘impact’?</a></li>
   </ul></li>
-  <li><a href="#unit-12-how-should-we-put-together-all-of-the-evidence" id="toc-unit-12-how-should-we-put-together-all-of-the-evidence" class="nav-link" data-scroll-target="#unit-12-how-should-we-put-together-all-of-the-evidence"><span class="header-section-number">6.12</span> Unit 12: How should we put together all of the evidence?</a>
+  <li><a href="#unit-11-how-should-we-put-together-all-of-the-evidence" id="toc-unit-11-how-should-we-put-together-all-of-the-evidence" class="nav-link" data-scroll-target="#unit-11-how-should-we-put-together-all-of-the-evidence"><span class="header-section-number">6.11</span> Unit 11: How should we put together all of the evidence?</a>
   <ul class="collapse">
-  <li><a href="#thursday-2026-03-26-can-triangulation-help" id="toc-thursday-2026-03-26-can-triangulation-help" class="nav-link" data-scroll-target="#thursday-2026-03-26-can-triangulation-help">Thursday 2026-03-26: Can “triangulation” help?</a></li>
-  <li><a href="#tuesday-2026-03-31-does-meta-analysis-help-or-hurt" id="toc-tuesday-2026-03-31-does-meta-analysis-help-or-hurt" class="nav-link" data-scroll-target="#tuesday-2026-03-31-does-meta-analysis-help-or-hurt">Tuesday 2026-03-31: Does meta-analysis help or hurt?</a></li>
+  <li><a href="#tuesday-2026-03-24-can-triangulation-help" id="toc-tuesday-2026-03-24-can-triangulation-help" class="nav-link" data-scroll-target="#tuesday-2026-03-24-can-triangulation-help">Tuesday 2026-03-24: Can “triangulation” help?</a></li>
+  <li><a href="#thursday-2026-03-26-does-meta-analysis-help-or-hurt" id="toc-thursday-2026-03-26-does-meta-analysis-help-or-hurt" class="nav-link" data-scroll-target="#thursday-2026-03-26-does-meta-analysis-help-or-hurt">Thursday 2026-03-26: Does meta-analysis help or hurt?</a></li>
   </ul></li>
-  <li><a href="#unit-13-how-should-we-communicate-epidemiologic-evidence" id="toc-unit-13-how-should-we-communicate-epidemiologic-evidence" class="nav-link" data-scroll-target="#unit-13-how-should-we-communicate-epidemiologic-evidence"><span class="header-section-number">6.13</span> Unit 13: How should we communicate epidemiologic evidence?</a>
+  <li><a href="#unit-12-is-research-including-epidemiology-reliable" id="toc-unit-12-is-research-including-epidemiology-reliable" class="nav-link" data-scroll-target="#unit-12-is-research-including-epidemiology-reliable"><span class="header-section-number">6.12</span> Unit 12: Is research (including epidemiology) reliable?</a>
   <ul class="collapse">
-  <li><a href="#thursday-2026-04-02-how-should-we-discuss-epidemiologic-results" id="toc-thursday-2026-04-02-how-should-we-discuss-epidemiologic-results" class="nav-link" data-scroll-target="#thursday-2026-04-02-how-should-we-discuss-epidemiologic-results">Thursday 2026-04-02: How should we discuss epidemiologic results?</a></li>
-  <li><a href="#tuesday-2026-04-07-how-much-does-evidence-even-matter" id="toc-tuesday-2026-04-07-how-much-does-evidence-even-matter" class="nav-link" data-scroll-target="#tuesday-2026-04-07-how-much-does-evidence-even-matter">Tuesday 2026-04-07: How much does “evidence” even matter?</a></li>
-  <li><a href="#thursday-2026-04-09-wrap-up-can-we-change-scientific-culture" id="toc-thursday-2026-04-09-wrap-up-can-we-change-scientific-culture" class="nav-link" data-scroll-target="#thursday-2026-04-09-wrap-up-can-we-change-scientific-culture">Thursday 2026-04-09: Wrap up / Can we change scientific culture?</a></li>
+  <li><a href="#tuesday-2026-03-31-is-science-broken" id="toc-tuesday-2026-03-31-is-science-broken" class="nav-link" data-scroll-target="#tuesday-2026-03-31-is-science-broken">Tuesday 2026-03-31: Is science broken?</a></li>
+  <li><a href="#thursday-2026-04-02-what-are-some-potential-solutions" id="toc-thursday-2026-04-02-what-are-some-potential-solutions" class="nav-link" data-scroll-target="#thursday-2026-04-02-what-are-some-potential-solutions">Thursday 2026-04-02: What are some potential solutions?</a></li>
+  </ul></li>
+  <li><a href="#unit-13-will-ai-hurt-or-help" id="toc-unit-13-will-ai-hurt-or-help" class="nav-link" data-scroll-target="#unit-13-will-ai-hurt-or-help"><span class="header-section-number">6.13</span> Unit 13: Will AI hurt or help?</a>
+  <ul class="collapse">
+  <li><a href="#tuesday-2026-04-07-can-we-work-with-ai-in-our-analyses" id="toc-tuesday-2026-04-07-can-we-work-with-ai-in-our-analyses" class="nav-link" data-scroll-target="#tuesday-2026-04-07-can-we-work-with-ai-in-our-analyses">Tuesday 2026-04-07: Can we work with AI in our analyses?</a></li>
+  <li><a href="#thursday-2026-04-09-is-ai-too-much-of-a-good-thing" id="toc-thursday-2026-04-09-is-ai-too-much-of-a-good-thing" class="nav-link" data-scroll-target="#thursday-2026-04-09-is-ai-too-much-of-a-good-thing">Thursday 2026-04-09: Is AI too much of a good thing?</a></li>
   </ul></li>
   </ul></li>
   <li><a href="#academic-integrity" id="toc-academic-integrity" class="nav-link" data-scroll-target="#academic-integrity"><span class="header-section-number">7</span> Academic Integrity</a>
@@ -288,7 +290,7 @@ window.Quarto = {
 <h1 data-number="6"><span class="header-section-number">6</span> Course Outline (A “baker’s dozen” of questions)</h1>
 <p>Why are we doing this?</p>
 <p>Because this is not a didactic course that is focused on learning methods or technical skills, I owe it to you to provide some justification for the topics and readings I’ve chosen, as well as for why I think this material would be useful for your doctoral training. For each set of assigned material (the ‘What’), I’ve included a brief rationale (the ‘Why’). I hope you find it helpful.</p>
-<p>A final note about the outline. In an effort to make this course as dynamic and helpful to students as possible, the list of topics and readings below is subject to change. Enthusiasm (or lack thereof) for certain topics may lead us to revise, drop, add, or replace some readings or entire topics as we go. I promise to entertain any suggestions for changes, but I may also disagree if I feel certain topics or readings are too important to replace.</p>
+<p>A final note about the outline. In an effort to make this course as dynamic and helpful to students as possible, the list of topics and readings below is subject to change. Enthusiasm (or lack thereof) for certain topics may lead us to revise, drop, add, or replace some readings or entire topics as we go. I promise to entertain any suggestions from you for changes, but I may also disagree if I feel certain topics or readings are too important to replace.</p>
 <section id="unit-1-what-is-the-present-and-future-of-epidemiology-as-a-discipline" class="level2" data-number="6.1">
 <h2 data-number="6.1" class="anchored" data-anchor-id="unit-1-what-is-the-present-and-future-of-epidemiology-as-a-discipline"><span class="header-section-number">6.1</span> Unit 1: What is the present and future of epidemiology as a discipline?</h2>
 <section id="tuesday-2026-01-06-course-introduction" class="level3">
@@ -298,7 +300,7 @@ window.Quarto = {
 <li>Round table – introductions.</li>
 <li>Discussion of objectives and competencies.</li>
 </ul>
-<p>In the first substantive session we will talk generally about high-level questions regarding the discipline of epidemiology as a whole. Although you are early on in your training, I think it is valuable for you to be aware of these broader discussions about where the field stands in relation to its past, and what the appropriate balance should be between descriptive, causal, or implementation questions. Having some knowledge about the intellectual history of different concepts (“risk factor epidemiology”, “consequential epidemiology”) will help you to figure out where your own work stands in relation to the discipline as a whole.</p>
+<p>In the first substantive session we will talk generally about high-level questions regarding the discipline of epidemiology as a whole. Although it is early on in your training, I think it is valuable for you to be aware of these broader discussions about where the field stands in relation to its past, and what the appropriate balance should be between descriptive, causal, or implementation questions. Having some knowledge about the intellectual history of different concepts (“risk factor epidemiology”, “consequential epidemiology”) will help you to figure out where your own work stands in relation to the discipline as a whole.</p>
 </section>
 <section id="thursday-2026-01-08-reflections-on-epidemiologys-past-and-present" class="level3">
 <h3 class="anchored" data-anchor-id="thursday-2026-01-08-reflections-on-epidemiologys-past-and-present">Thursday 2026-01-08: Reflections on epidemiology’s past and present</h3>
@@ -307,8 +309,6 @@ window.Quarto = {
 <ul>
 <li><p><span class="citation" data-cites="daveysmith2019">George Davey Smith <span>“Post–<span>Modern Epidemiology</span>: <span>When Methods Meet Matter</span>,”</span> <em>American Journal of Epidemiology</em> 188, no. 8 (August 1, 2019): 1410–19, <a href="https://doi.org/10.1093/aje/kwz064">https://doi.org/10.1093/aje/kwz064</a>.</span></p></li>
 <li><p><span class="citation" data-cites="lesko2020">Catherine R Lesko, Alexander P Keil, and Jessie K Edwards <span>“The <span>Epidemiologic Toolbox</span>: <span>Identifying</span>, <span>Honing</span>, and <span>Using</span> the <span>Right Tools</span> for the <span>Job</span>,”</span> <em>American Journal of Epidemiology</em> 189, no. 6 (June 1, 2020): 511–17, <a href="https://doi.org/10.1093/aje/kwaa030">https://doi.org/10.1093/aje/kwaa030</a>.</span></p></li>
-<li><p><span class="citation" data-cites="goulden2025">Robert Goulden <span>“Time for Evidence-Based Methodology in Epidemiology,”</span> <em>International Journal of Epidemiology</em> 54, no. 3 (April 12, 2025): dyaf052, <a href="https://doi.org/10.1093/ije/dyaf052">https://doi.org/10.1093/ije/dyaf052</a>.</span></p></li>
-<li><p><span class="citation" data-cites="labrecque2025">Jeremy A Labrecque <span>“What Would We Learn from Empirical Evaluations of Epidemiologic Methods?”</span> <em>International Journal of Epidemiology</em> 54, no. 5 (August 18, 2025), <a href="https://doi.org/10.1093/ije/dyaf155">https://doi.org/10.1093/ije/dyaf155</a>.</span></p></li>
 </ul>
 </section>
 <section id="why" class="level4">
@@ -325,45 +325,45 @@ window.Quarto = {
 <section id="what-1" class="level4">
 <h4 class="anchored" data-anchor-id="what-1">What:</h4>
 <ul>
-<li><p>Fox MP, Murray EJ, Lesko CR, Sealy-Jefferson S. On the Need to Revitalize Descriptive Epidemiology. <em>Am J of Epidemiol</em> 2022;191(7):1174–9. <a href="https://doi.org/10.1093/aje/kwac056">[link]</a> [4263 words]</p></li>
 <li><p><span class="citation" data-cites="hernan2019">Miguel A. Hernán, John Hsu, and Brian Healy <span>“A <span>Second Chance</span> to <span>Get Causal Inference Right</span>: <span>A Classification</span> of <span>Data Science Tasks</span>,”</span> <em>CHANCE</em> 32, no. 1 (January 2, 2019): 42–49, <a href="https://doi.org/10.1080/09332480.2019.1579578">https://doi.org/10.1080/09332480.2019.1579578</a>.</span></p></li>
+<li><p><span class="citation" data-cites="kaufman2017">Jay S. Kaufman <span>“Statistics, <span>Adjusted Statistics</span>, and <span>Maladjusted Statistics</span>,”</span> <em>American Journal of Law &amp; Medicine</em> 43, no. 2–3 (May 2017): 193–208, <a href="https://doi.org/10.1177/0098858817723659">https://doi.org/10.1177/0098858817723659</a>.</span></p></li>
 </ul>
 </section>
 <section id="why-1" class="level4">
 <h4 class="anchored" data-anchor-id="why-1">Why:</h4>
-<p>What is the relationship between research questions and methods? Should we just use multivariable regression for everything? Does it actually matter? Fox et al.&nbsp;argue for the importance and need to reinvigorate descriptive epidemiology, and make a case that this has particular consequences for both theory and methods. The paper by Hernan and colleagues tries to lay out how questions and methods should be aligned in empirical data science research. This paper was written when enthusiasm for machine learning and other empirical data science algorithms began achieving a high degree of influence, and their paper aims to try and clarify the utility of being clear about the question being asked, the methods used to answer it, and the role of expert knowledge in generating the result.</p>
+<p>What is the relationship between research questions and methods? Should we just use multivariable regression for everything? Does it actually matter? The paper by Hernan and colleagues tries to lay out how questions and methods should be aligned in empirical data science research. This paper was written when enthusiasm for machine learning and other empirical data science algorithms began achieving a high degree of influence, and their paper aims to try and clarify the utility of being clear about the question being asked, the methods used to answer it, and the role of expert knowledge in generating the result. Kaufman’s paper is more focused on methods and questions for descriptive epidemiologic studies, and the thorny problems that come with decisions about when and what to adjust for in these studies.</p>
 </section>
 </section>
-<section id="thursday-2026-01-15-case-study-in-adjustment-newsom-vs.-desantis" class="level3">
-<h3 class="anchored" data-anchor-id="thursday-2026-01-15-case-study-in-adjustment-newsom-vs.-desantis">Thursday 2026-01-15: Case study in adjustment: Newsom vs.&nbsp;DeSantis</h3>
+<section id="thursday-2026-01-15-estimands-and-practical-questions" class="level3">
+<h3 class="anchored" data-anchor-id="thursday-2026-01-15-estimands-and-practical-questions">Thursday 2026-01-15: Estimands and practical questions</h3>
 <section id="what-2" class="level4">
 <h4 class="anchored" data-anchor-id="what-2">What:</h4>
 <ul>
-<li><p>Kaufman JS. Statistics, Adjusted Statistics, and Maladjusted Statistics. <em>Am J Law Med</em> 2017;43(2–3):193–208. <a href="https://doi.org/10.1177/0098858817723659">[link]</a> [8993 words]</p></li>
-<li><p>Shawn Hubler and Angelo Fichera. <em>NY Times</em>. DeSantis and Newsom Debate Fact-Check: A Spirited Discussion, Different Sets of Facts. Nov 30, 2023. <a href="https://www.nytimes.com/live/2023/11/30/us/desantis-newsom-debate-fact-check?unlocked_article_code=1.LE0.p8pj.2xkdrkNvD__A&amp;smid=url-share">[link]</a>. See the section on Gov.&nbsp;DeSantis of Florida’s claim that <em>“Florida had a lower standardized Covid death rate than California did. … California had higher excess mortality than Florida.”</em></p></li>
+<li><p><span class="citation" data-cites="kahan2023">Brennan C Kahan et al. <span>“Eliminating <span>Ambiguous Treatment Effects Using Estimands</span>,”</span> <em>American Journal of Epidemiology</em> 192, no. 6 (June 2, 2023): 987–94, <a href="https://doi.org/10.1093/aje/kwad036">https://doi.org/10.1093/aje/kwad036</a>.</span></p></li>
+<li><p><span class="citation" data-cites="albers2025">Frances E. M. Albers et al. <span>“Prediagnostic <span>Exposures</span> and <span>Cancer Survival</span>: <span>Can</span> a <span>Meaningful Causal Estimand Be Specified</span>?”</span> <em>Epidemiology</em> 36, no. 3 (May 2025): 408–12, <a href="https://doi.org/10.1097/EDE.0000000000001844">https://doi.org/10.1097/EDE.0000000000001844</a>.</span></p></li>
 </ul>
 </section>
 <section id="why-2" class="level4">
 <h4 class="anchored" data-anchor-id="why-2">Why:</h4>
-<p>Modern statistical software makes regression adjustment incredibly easy, but it cannot tell you whether, why, or what you should adjust for in your model (or whether to use a model at all). The paper by Kaufman tries to lay out the rationale for different kinds of statistical adjustment, depending on the specific epidemiologic question at hand. We will use this to inform a case study for this session, which is to answer the question of whether Gov.&nbsp;Ron DeSantis of Florida was right to use standardized death rates to compare Florida and California’s experience with COVID-19. Is this the right comparision? For which research question?</p>
+<p>What is the relationship between estimands (the quantities we seek to estimate) and research questions? We start with an overview from Kahan and colleagues on estimands and how to use them in answering research questions. The second paper by Albers et al.&nbsp;is focused on applying this kind of framework to a figure out how one might answer a question like whether physical activity may affect survival after a cancer diagnosis.</p>
 </section>
 </section>
 </section>
 <section id="unit-3-how-important-is-formal-causal-inference" class="level2" data-number="6.3">
 <h2 data-number="6.3" class="anchored" data-anchor-id="unit-3-how-important-is-formal-causal-inference"><span class="header-section-number">6.3</span> Unit 3: How important is formal causal inference?</h2>
 <p>Much of modern epidemiologic training now starts with the introduction of potential outcomes framework, as well as introducing DAGs as a way to draw and consider assumptions needed for doing causal inference. What are the implications of using these frameworks for the kinds of questions that can be asked and answered in epidemiology? Do we risk restricting ourselves to ‘formal’ methods when it comes to causal questions, or are other alternatives possible? These are fundamental questions about the nature of epidemiologic inquiry, and it is useful for you to consider the benefits and drawbacks that may come with adopting this epistemological stance. As you progress in your training, you’ll need to decide on how you will approach questions of causal inference both in your own work and in your evaluations of the wider epidemiologic literature.</p>
-<section id="tuesday-2026-01-20-are-potential-outcomes-and-dags-necessary" class="level3">
-<h3 class="anchored" data-anchor-id="tuesday-2026-01-20-are-potential-outcomes-and-dags-necessary">Tuesday 2026-01-20: Are potential outcomes and DAGs necessary?</h3>
+<section id="tuesday-2026-01-20-are-modern-methods-worth-it" class="level3">
+<h3 class="anchored" data-anchor-id="tuesday-2026-01-20-are-modern-methods-worth-it">Tuesday 2026-01-20: Are ‘modern’ methods worth it?</h3>
 <section id="what-3" class="level4">
 <h4 class="anchored" data-anchor-id="what-3">What:</h4>
 <ul>
-<li><p>Krieger N, Davey Smith G. The tale wagged by the DAG: broadening the scope of causal inference and explanation for epidemiology. Int J Epidemiol. 2016 12;45(6):1787–1808. <a href="https://doi.org/10.1093/ije/dyw114">[link]</a> [15714 words]</p></li>
-<li><p>Daniel RM, De Stavola BL, Vansteelandt S. Commentary: The formal approach to quantitative causal inference in epidemiology: misguided or misrepresented? Int J Epidemiol. 2016 12;45(6):1817–1829. <a href="https://doi.org/10.1093/ije/dyw227">[link]</a> [10561 words]</p></li>
+<li><p><span class="citation" data-cites="goulden2025">Robert Goulden <span>“Time for Evidence-Based Methodology in Epidemiology,”</span> <em>International Journal of Epidemiology</em> 54, no. 3 (April 12, 2025): dyaf052, <a href="https://doi.org/10.1093/ije/dyaf052">https://doi.org/10.1093/ije/dyaf052</a>.</span></p></li>
+<li><p><span class="citation" data-cites="labrecque2025">Jeremy A Labrecque <span>“What Would We Learn from Empirical Evaluations of Epidemiologic Methods?”</span> <em>International Journal of Epidemiology</em> 54, no. 5 (August 18, 2025), <a href="https://doi.org/10.1093/ije/dyaf155">https://doi.org/10.1093/ije/dyaf155</a>.</span></p></li>
 </ul>
 </section>
 <section id="why-3" class="level4">
 <h4 class="anchored" data-anchor-id="why-3">Why:</h4>
-<p>The first set of papers for this session come from an older, but still relevant “debate” about the utility and consequences of the “formal” approach to causal inference in epidemiology, which you likely now take for granted, since that is what most ‘modern’ epi programs teach (including ours). Krieger/Davey Smith are asking critical questions of potential outcomes and DAGs (the latter was also the editor at IJE at the time, hence the ‘relaxed’ approach to word limits), and Daniel et al.&nbsp;defending, more or less the modern approach. Look forward to hearing your thoughts.</p>
+<p>The first set of papers for this session (one of which was written for this class a few years ago) are focused on the benefits and potential drawbacks of the use of ‘modern’ causal inference methods in epidemiology.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>. Have these methods generated new and important epidemiologic discoveries that ‘old’ methods would have missed? Goulden is skeptical that new methods have demonstrated their worth, and also asks how we would know if they had? Labrecque responds by trying to place Goulden’s critique in the larger discussion of knowing when and where it may make the most sense to apply the ‘right’ methods for the question at hand.</p>
 </section>
 </section>
 <section id="thursday-2026-01-22-are-well-defined-interventions-needed-for-causal-questions" class="level3">
@@ -372,14 +372,14 @@ window.Quarto = {
 <h4 class="anchored" data-anchor-id="what-4">What:</h4>
 <ul>
 <li><p><span class="citation" data-cites="schwartz2016">Sharon Schwartz, Nicolle M. Gatto, and Ulka B. Campbell <span>“Causal Identification: A Charge of Epidemiology in Danger of Marginalization,”</span> <em>Annals of Epidemiology</em> 26, no. 10 (October 2016): 669–73, <a href="https://doi.org/10.1016/j.annepidem.2016.03.013">https://doi.org/10.1016/j.annepidem.2016.03.013</a>.</span></p></li>
-<li><p><span class="citation" data-cites="hernan2016c">Miguel A. Hernán <span>“Does Water Kill? <span>A</span> Call for Less Casual Causal Inferences,”</span> <em>Annals of Epidemiology</em> 26, no. 10 (October 2016): 674–80, <a href="https://doi.org/10.1016/j.annepidem.2016.08.016">https://doi.org/10.1016/j.annepidem.2016.08.016</a>.</span></p></li>
+<li><p><span class="citation" data-cites="hernan2016b">Miguel A. Hernán <span>“Does Water Kill? <span>A</span> Call for Less Casual Causal Inferences,”</span> <em>Annals of Epidemiology</em> 26, no. 10 (October 2016): 674–80, <a href="https://doi.org/10.1016/j.annepidem.2016.08.016">https://doi.org/10.1016/j.annepidem.2016.08.016</a>.</span></p></li>
 <li><p><span class="citation" data-cites="schwartz2017">Sharon Schwartz, Nicolle M. Gatto, and Ulka B. Campbell <span>“Heeding the Call for Less Casual Causal Inferences: The Utility of Realized (Quantitative) Causal Effects,”</span> <em>Annals of Epidemiology</em> 27, no. 6 (June 2017): 402–5, <a href="https://doi.org/10.1016/j.annepidem.2017.05.012">https://doi.org/10.1016/j.annepidem.2017.05.012</a>.</span></p></li>
 </ul>
 </section>
 <section id="why-4" class="level4">
 <h4 class="anchored" data-anchor-id="why-4">Why:</h4>
-<p>The second set of readings for this week is meant to engage with a more specific critique of ‘modern’ causal inference methods, namely, the notion that ‘good’ causal questions are based on well-defined interventions. This is a more recent argument, largely associated with Miguel Hernan and linked to the idea of using ‘target trials’ to formulate questions for observational studies.</p>
-<p>As academics are wont to do, there has been some pushback against this idea, notably by Sharon Schwartz, another long-term and thoughtful critic of epidemiology (see her nice 1999 pre-causal-inference-revolution paper in Am J Public Health on the consequences of what she called, ‘Type III error’ which is about asking the wrong question). She and other critics are pushing back against this idea and trying to understand it’s implications (again) for the kinds of <em>causal</em> questions we can answer (and note that I think this is a different sort of critique than was being made by Krieger/Davey Smith).</p>
+<p>The second set of readings for this week engages with a more specific critique of ‘modern’ causal inference methods, namely, the notion that ‘good’ causal questions are based on well-defined interventions. This is a more recent argument, largely associated with Miguel Hernan and linked to the idea of using ‘target trials’ to formulate questions for observational studies.</p>
+<p>As academics are wont to do, there has been some pushback against this idea, notably by Sharon Schwartz, another long-term and thoughtful critic of epidemiology (see her nice 1999 pre-causal-inference-revolution paper<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> in Am J Public Health on the consequences of what she called, ‘Type III error’ which is about asking the wrong question). She and other critics are pushing back against this idea and trying to understand it’s implications (again) for the kinds of <em>causal</em> questions we can answer.</p>
 </section>
 </section>
 </section>
@@ -397,7 +397,7 @@ window.Quarto = {
 </section>
 <section id="why-5" class="level4">
 <h4 class="anchored" data-anchor-id="why-5">Why:</h4>
-<p>The paper by Vanderweele and Robinson tries to address the issue of non-manipulable exposures (specifically race) in a way that respects the complexity of this kind of exposure, but attempts to move forward to see whether it is helpful to reframe the question to how interventions on factors plausibly affected by race may affect racial differences in health. Meanwhile, Glymour and Spiegelman offer more of a defense of the idea that non-manipulable factors are causes and deserve the same kind of consideration and treatment as other exposures we study routinely in epidemiology. What do you think? How can we balance methodological rigor and concerns for inequality?</p>
+<p>The paper by Vanderweele and Robinson tries to address the issue of non-manipulable exposures (specifically race) in a way that respects the complexity of this kind of exposure, but attempts to move forward to see whether it is helpful to reframe the question to how interventions on factors plausibly affected by race may affect racial differences in health. Meanwhile, Glymour and Spiegelman offer more of a defense of the idea that non-manipulable factors are causes and deserve the same kind of consideration and treatment as other exposures we study routinely in epidemiology. What do you think? How can we balance methodological rigor and concerns for equity?</p>
 </section>
 </section>
 <section id="thursday-2026-01-29-case-study-race-in-clinical-treatment." class="level3">
@@ -405,25 +405,25 @@ window.Quarto = {
 <section id="what-6" class="level4">
 <h4 class="anchored" data-anchor-id="what-6">What:</h4>
 <ul>
-<li><p>Vyas DA, Eisenstein LG, Jones DS. Hidden in Plain Sight — Reconsidering the Use of Race Correction in Clinical Algorithms. <em>New Engl J Med</em> 2020;383(9):874–82. <a href="https://doi.org/10.1056/NEJMms2004740">[link]</a> [6251 words]</p></li>
-<li><p>Manski CF. Patient-centered appraisal of race-free clinical risk assessment. <em>Health Econ</em> 2022;31(10):2109–14. <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/hec.4569">[link]</a> [4133 words]</p></li>
+<li><p><span class="citation" data-cites="vyas2020">Darshali A. Vyas, Leo G. Eisenstein, and David S. Jones <span>“Hidden in <span>Plain Sight</span> — <span>Reconsidering</span> the <span>Use</span> of <span>Race Correction</span> in <span>Clinical Algorithms</span>,”</span> <em>New England Journal of Medicine</em> 383, no. 9 (August 27, 2020): 874–82, <a href="https://doi.org/10.1056/NEJMms2004740">https://doi.org/10.1056/NEJMms2004740</a>.</span></p></li>
+<li><p><span class="citation" data-cites="coots2025">Madison Coots et al. <span>“A <span>Framework</span> for <span>Considering</span> the <span>Value</span> of <span>Race</span> and <span>Ethnicity</span> in <span>Estimating Disease Risk</span>,”</span> <em>Annals of Internal Medicine</em> 178, no. 1 (January 2025): 98–107, <a href="https://doi.org/10.7326/M23-3166">https://doi.org/10.7326/M23-3166</a>.</span></p></li>
 </ul>
 </section>
 <section id="why-6" class="level4">
 <h4 class="anchored" data-anchor-id="why-6">Why:</h4>
-<p>Taking a bit of a break from conceptual readings on questions and causal inference, in the second session we delve into a case study of the challenges in the use of race in clinical medicine. Should we use race as a factor in recommending treatments to patients? Does it matter whether or not race is a cause of the outcome, or whether including race might affect inequalities? The two papers from Vyas et al.&nbsp;and Manski arrive at different arguments regarding whether or not race should be included, and I think they provide a rich set of issues to discuss that complement the arguments about how we should study non-manipulable exposures in epidemiology.</p>
+<p>How should we think about a factor like race when considering disease risk? Taking a bit of a break from conceptual readings on questions and causal inference, in the second session we delve into a case study of the challenges in the use of race in clinical medicine. Should we use race as a factor in recommending treatments to patients? Does it matter whether or not race is a cause of the outcome, or whether including race might affect inequalities? The two papers from Vyas et al.&nbsp;and Coots et al.&nbsp;arrive at somewhate different arguments regarding whether or not race should be included, and I think they provide a rich set of issues to discuss that complement the arguments about how we should study non-manipulable exposures in epidemiology.</p>
 </section>
 </section>
 </section>
-<section id="unit-5-should-we-try-to-randomize-interventions" class="level2" data-number="6.5">
-<h2 data-number="6.5" class="anchored" data-anchor-id="unit-5-should-we-try-to-randomize-interventions"><span class="header-section-number">6.5</span> Unit 5: Should we try to randomize interventions?</h2>
-<p>Okay, we’ve talked about the role of asking good questions, whether non-manipulable factors are causes and ways to investigate them, and whether we need well-specified interventions for causal questions, but let’s now turn toward more practical concerns (ha). You want to study intervention <span class="math inline">\(X\)</span>, which is not known to be either harmful or beneficial, <em>can</em> be ethically and feasibly delivered, and has plausible reasons why it should affect <span class="math inline">\(Y\)</span>. What kind of design should you use? Should you try and design a randomized evaluation? What would be the benefits? What drawbacks? What implications for external generalizability or understanding the mechanisms through which it may affect <span class="math inline">\(Y\)</span>?</p>
+<section id="unit-5-should-we-try-to-randomize" class="level2" data-number="6.5">
+<h2 data-number="6.5" class="anchored" data-anchor-id="unit-5-should-we-try-to-randomize"><span class="header-section-number">6.5</span> Unit 5: Should we try to randomize?</h2>
+<p>Okay, we’ve talked about the role of asking good questions, whether non-manipulable factors are causes and ways to investigate them, and whether we need well-specified interventions for causal questions, but let’s now turn toward more practical concerns (ha). You want to study exposure <span class="math inline">\(X\)</span>, which is not known to be either harmful or beneficial, <em>can</em> be ethically and feasibly manipulated, and has plausible reasons for why it should affect <span class="math inline">\(Y\)</span>. What kind of design should you use? Should you try and design a randomized evaluation? What would be the benefits? What drawbacks? What are the implications for external generalizability or understanding the mechanisms through which it may affect <span class="math inline">\(Y\)</span>?</p>
 <section id="tuesday-2026-02-03-are-rcts-special" class="level3">
 <h3 class="anchored" data-anchor-id="tuesday-2026-02-03-are-rcts-special">Tuesday 2026-02-03: Are RCT’s special?</h3>
 <section id="what-7" class="level4">
 <h4 class="anchored" data-anchor-id="what-7">What:</h4>
 <ul>
-<li>Deaton A, Cartwright N. Understanding and misunderstanding randomized controlled trials. <em>Soc Sci Med</em> 2018;210:2–21. <a href="https://doi.org/10.1016/j.socscimed.2017.12.005">[link]</a> [22882 words]</li>
+<li><span class="citation" data-cites="deaton2018">Angus Deaton and Nancy Cartwright <span>“Understanding and Misunderstanding Randomized Controlled Trials,”</span> <em>Social Science &amp; Medicine</em> 210 (August 2018): 2–21, <a href="https://doi.org/10.1016/j.socscimed.2017.12.005">https://doi.org/10.1016/j.socscimed.2017.12.005</a>.</span></li>
 </ul>
 </section>
 <section id="why-7" class="level4">
@@ -436,15 +436,13 @@ window.Quarto = {
 <section id="what-8" class="level4">
 <h4 class="anchored" data-anchor-id="what-8">What:</h4>
 <ul>
-<li><p>Lodi S, Phillips A, Lundgren J, Logan R, Sharma S, Cole SR, et al.&nbsp;Effect Estimates in Randomized Trials and Observational Studies: Comparing Apples With Apples. <em>Am J Epidemiol</em> 2019 08;188(8):1569–1577. <a href="https://doi.org/10.1093/aje/kwz100">[link]</a> [3044 words]</p></li>
-<li><p>Bärnighausen T, Tugwell P, Røttingen JA, Shemilt I, Rockers P, Geldsetzer P, et al.&nbsp;Quasi-experimental study designs series—paper 4: uses and value. Journal of Clinical Epidemiology 2017;89:21–9. <a href="http://dx.doi.org/10.1016/j.jclinepi.2017.03.012">[link]</a> [6932 words]</p></li>
+<li><p><span class="citation" data-cites="pearce2023">Neil Pearce and Jan P. Vandenbroucke <span>“Are <span>Target Trial Emulations</span> the <span>Gold Standard</span> for <span>Observational Studies</span>?”</span> <em>Epidemiology</em> 34, no. 5 (September 2023): 614–18, <a href="https://doi.org/10.1097/EDE.0000000000001636">https://doi.org/10.1097/EDE.0000000000001636</a>.</span></p></li>
+<li><p><span class="citation" data-cites="dang2023">Lauren E. Dang and Laura B. Balzer <span>“Start with the <span>Target Trial Protocol</span>, <span>Then Follow</span> the <span>Roadmap</span> for <span>Causal Inference</span>,”</span> <em>Epidemiology</em> 34, no. 5 (September 2023): 619–23, <a href="https://doi.org/10.1097/EDE.0000000000001637">https://doi.org/10.1097/EDE.0000000000001637</a>.</span></p></li>
 </ul>
 </section>
 <section id="why-8" class="level4">
 <h4 class="anchored" data-anchor-id="why-8">Why:</h4>
-<p>Despite some important strengths of randomized designs, especially for exchangeability, in some cases it just won’t be feasible or ethical to pursue a randomized design. What then? Anything goes? Just plug all the confounders into your regression and hope for the best? There are still good reasons to consider thinking conceptually about the trial you would design if feasibility and ethical issues were irrelevant, and then attempting to pursue an observational design that corresponds as closely as possible to your hypothetical “target trial”.</p>
-<p>Lodi et al.&nbsp;are really focused on comparing results from an observational study to a trial that both investigate the same question, and their paper shows a practical example of how you might think about approaching this question (I would say even if you don’t have trial data). Nevertheless, this design still focuses almost entirely on regression adjustment as a way of achieving exchangeability–a rather strong assumption, and one that may be difficult to sell to critics.</p>
-<p>Finally, Barninghausen et al.&nbsp;provide an overview of benefits and drawbacks of quasi-experimental strategies that, by design, control for at least some sources of unmeasured confounding. These designs are becoming more common in epidemiology and are worth considering when deciding on how you might approach a causal question when randomization is not feasible.</p>
+<p>Despite some important strengths of randomized designs, especially for exchangeability, in some cases it just won’t be feasible or ethical to pursue a randomized design. What then? Anything goes? Just plug all the confounders into your regression and hope for the best? There are still good reasons to consider thinking conceptually about the trial you would design if feasibility and ethical issues were irrelevant, and then attempting to pursue an observational design that corresponds as closely as possible to your hypothetical “target trial”. The target trial framework has become much more common in recent years, but it is still worth considering its strengths and limitations. Pearce and Vandenbroucke argue that target trials have important limitations and should not be the default approach when randomization is infeasible. Dang and Balzer disagree and try to show how a more expanded view of the target trial approach can enhance causal inference.</p>
 </section>
 </section>
 </section>
@@ -456,13 +454,13 @@ window.Quarto = {
 <section id="what-9" class="level4">
 <h4 class="anchored" data-anchor-id="what-9">What:</h4>
 <ul>
-<li><p>Rothman KJ, Gallacher JEJ, Hatch EE. Why representativeness should be avoided. <em>Int J Epidemiol</em> 2013;42(4):1012-4. <a href="https://doi.org/10.1093/ije/dys223">[link]</a>. [2338 words]</p></li>
-<li><p>Ebrahim S, Davey Smith G. Should we always deliberately be non-representative? <em>Int J Epidemiol</em> 2013;42:1022–26. <a href="https://doi.org/10.1093/ije/dyt105">[link]</a> [3823 words]</p></li>
+<li><p><span class="citation" data-cites="rothman2013">K. J. Rothman, J. E. Gallacher, and E. E. Hatch <span>“Why Representativeness Should Be Avoided,”</span> <em>International Journal of Epidemiology</em> 42, no. 4 (August 1, 2013): 1012–14, <a href="https://doi.org/10.1093/ije/dys223">https://doi.org/10.1093/ije/dys223</a>.</span></p></li>
+<li><p><span class="citation" data-cites="rudolph2023">Jacqueline E Rudolph et al. <span>“Defining Representativeness of Study Samples in Medical and Population Health Research,”</span> <em>BMJ Medicine</em> 2, no. 1 (May 2023): e000399, <a href="https://doi.org/10.1136/bmjmed-2022-000399">https://doi.org/10.1136/bmjmed-2022-000399</a>.</span></p></li>
 </ul>
 </section>
 <section id="why-9" class="level4">
 <h4 class="anchored" data-anchor-id="why-9">Why:</h4>
-<p>Debates about whether studies designed to estimate causal effects need to be representative, or alternatively should purposefully be designed not to be representative, have been persistent in epidemiology, but have also become more pressing given increasing concerns for generalizability. This paper by Rothman arguing that causal studies should avoid representative samples created a bit of a stir a few years ago, and has produced some additional empirical work on how much this matters. These issues are important for when you are both producing and consuming research, and it will be worthwhile to struggle a bit with them.</p>
+<p>Debates about whether studies designed to estimate causal effects need to be representative, or alternatively should purposefully be designed not to be representative, have been persistent in epidemiology, but have also become more pressing given increasing concerns for generalizability. This paper by Rothman arguing that causal studies should avoid representative samples created a stir some years ago, and has produced some additional empirical work on how much this matters. This is complemented by a recent paper from Rudolph et al.&nbsp;putting this into a more modern context and discussing the importance of clearly defining the target population. These issues are important for when you are both producing and consuming research, and it will be worthwhile to struggle a bit with them.</p>
 </section>
 </section>
 <section id="thursday-2026-02-12-case-studies-in-moving-beyond-the-sample." class="level3">
@@ -470,13 +468,13 @@ window.Quarto = {
 <section id="what-10" class="level4">
 <h4 class="anchored" data-anchor-id="what-10">What:</h4>
 <ul>
-<li><p>Stamatakis E, et al.&nbsp;Is Cohort Representativeness Passé? Poststratified Associations of Lifestyle Risk Factors with Mortality in the UK Biobank. <em>Epidemiology</em> 2021;32:179–188. <a href="https://doi.org/10.1097/EDE.0000000000001316">[link]</a> [6921 words]</p></li>
-<li><p>Downes M, Carlin JB. Multilevel Regression and Poststratification Versus Survey Sample Weighting for Estimating Population Quantities in Large Population Health Studies. <em>Am J Epidemiol</em> 2020 Jul 1;189(7):717–25. <a href="https://doi.org/10.1093/aje/kwaa053">[link]</a> [5952 words]</p></li>
+<li><p><span class="citation" data-cites="stamatakis2021">Emmanuel Stamatakis et al. <span>“Is <span>Cohort Representativeness Passé</span>? <span>Poststratified Associations</span> of <span>Lifestyle Risk Factors</span> with <span>Mortality</span> in the <span>UK Biobank</span>,”</span> <em>Epidemiology</em> 32, no. 2 (March 2021): 179–88, <a href="https://doi.org/10.1097/EDE.0000000000001316">https://doi.org/10.1097/EDE.0000000000001316</a>.</span></p></li>
+<li><p><span class="citation" data-cites="downes2020">Marnie Downes and John B. Carlin <span>“Multilevel <span>Regression</span> and <span>Poststratification Versus Survey Sample Weighting</span> for <span>Estimating Population Quantities</span> in <span>Large Population Health Studies</span>,”</span> <em>American Journal of Epidemiology</em> 189, no. 7 (July 1, 2020): 717–25, <a href="https://doi.org/10.1093/aje/kwaa053">https://doi.org/10.1093/aje/kwaa053</a>.</span></p></li>
 </ul>
 </section>
 <section id="why-10" class="level4">
 <h4 class="anchored" data-anchor-id="why-10">Why:</h4>
-<p>Once again, let’s take a break and look at a couple of case studies regarding the importance (or non-importance) of representative samples. Do the consequences actually matter? Here we have two papers aimed at making inferences with non-representative samples. Stamatakis et al.&nbsp;are focused on estimating associations between measures of lifestyle and mortality, whereas Downes and Carlin have more descriptive aims and utilize different methods.</p>
+<p>Once again, let’s take a break and look at a couple of case studies regarding the importance (or non-importance) of representative samples. Do the consequences actually matter? Here we have two papers aimed at making inferences with non-representative samples. Stamatakis et al.&nbsp;are focused on estimating associations between measures of lifestyle and mortality from a volunteer biobank, whereas Downes and Carlin have more descriptive aims and utilize different methods.</p>
 </section>
 </section>
 </section>
@@ -507,7 +505,7 @@ window.Quarto = {
 </section>
 <section id="why-12" class="level4">
 <h4 class="anchored" data-anchor-id="why-12">Why:</h4>
-<p>Given the Wasserstein paper’s suggestion to abandon statistical significance, questions naturally arise about how we should do inference instead of using p-values. Most epidemiologists are trained to use confidence intervals rather than p-values, but it does not appear to have changed the basic problem of scientists dichotomizing evidence using arbitrary statistical rules. These papers attempt to provide some alternative avenues to explore. Greenland et al.&nbsp;continue their quest to promote notions of ‘compatibility’ rather than significance. I included the Harhay et al.&nbsp;paper because it shows how to provide a more nuanced interpretation of a ‘non-significant’ RCT using straightforward Bayesian inference. This should get you thinking about how you will manage your inferences in your own research</p>
+<p>Given the Wasserstein paper’s suggestion to abandon statistical significance, questions naturally arise about how we should do inference instead of using p-values. Most epidemiologists are trained to use confidence intervals rather than p-values, but it does not appear to have changed the basic problem of scientists dichotomizing evidence using arbitrary statistical thresholds. These papers attempt to provide some alternative avenues to explore. Greenland et al.&nbsp;continue their quest to promote notions of ‘compatibility’ rather than significance. I included the Harhay et al.&nbsp;paper because it shows how to provide a more nuanced interpretation of a ‘non-significant’ RCT using straightforward Bayesian inference. This should get you thinking about how you will manage your inferences in your own research</p>
 </section>
 </section>
 </section>
@@ -519,12 +517,12 @@ window.Quarto = {
 <section id="what-13" class="level4">
 <h4 class="anchored" data-anchor-id="what-13">What:</h4>
 <ul>
-<li>Small DS. How to Be a Good Critic of an Observational Study. In: Zubizarreta JR, Stuart EA, Small DS, Rosenbaum PR (eds.) <em>Handbook of Matching and Weighting Adjustments for Causal Inference</em>. 1st ed.&nbsp;Boca Raton: Chapman and Hall/CRC; 2023. p.&nbsp;531–52. <a href="https://doi.org/10.1201/9781003102670-24">[link]</a> [13158 words]</li>
+<li><span class="citation" data-cites="small2023">Dylan S. Small <span>“How to <span>Be</span> a <span>Good Critic</span> of an <span>Observational Study</span>,”</span> in <em>Handbook of <span>Matching</span> and <span>Weighting Adjustments</span> for <span>Causal Inference</span></em>, by José R. Zubizarreta et al., 1st ed. (Boca Raton: <span>Chapman and Hall/CRC</span>, 2023), 531–52, <a href="https://doi.org/10.1201/9781003102670-24">https://doi.org/10.1201/9781003102670-24</a>.</span></li>
 </ul>
 </section>
 <section id="why-13" class="level4">
 <h4 class="anchored" data-anchor-id="why-13">Why:</h4>
-<p>Small uses the famous example of smoking and lung cancer (among others) to discuss different ways of approaching an observational study with a critical eye. Taking historical cues from early proponents of sensitivity analysis (Bross, Cornfield), he makes a case for positive ways to critique observational studies, as well as keeping hypothetical critics in mind when designing your won studies. Nothing to formal or methodological here, just a focus on developing sound, credible arguments to critique a study.</p>
+<p>Small uses the famous example of smoking and lung cancer (among others) to discuss different ways of approaching an observational study with a critical eye. Taking historical cues from early proponents of sensitivity analysis (Bross, Cornfield), he makes a case for positive ways to critique observational studies, as well as keeping hypothetical critics in mind when designing your won studies. Nothing too formal or methodological here, just a focus on developing sound, credible arguments to critique a study.</p>
 </section>
 </section>
 <section id="thursday-2026-02-26-how-can-we-quantify-our-assumptions" class="level3">
@@ -532,7 +530,7 @@ window.Quarto = {
 <section id="what-14" class="level4">
 <h4 class="anchored" data-anchor-id="what-14">What:</h4>
 <ul>
-<li>Lash TL, Fox MP, MacLehose RF, Maldonado G, McCandless LC, Greenland S. Good practices for quantitative bias analysis. <em>Int J Epidemiol</em> 2014;43(6):1969–85. <a href="https://doi.org/10.1093/ije/dyu149">[link]</a> [12518 words]</li>
+<li><span class="citation" data-cites="lash2014">T. L. Lash et al. <span>“Good Practices for Quantitative Bias Analysis,”</span> <em>International Journal of Epidemiology</em> 43, no. 6 (December 1, 2014): 1969–85, <a href="https://doi.org/10.1093/ije/dyu149">https://doi.org/10.1093/ije/dyu149</a>.</span></li>
 </ul>
 </section>
 <section id="why-14" class="level4">
@@ -541,170 +539,170 @@ window.Quarto = {
 </section>
 </section>
 </section>
-<section id="winter-break" class="level2" data-number="6.9">
-<h2 data-number="6.9" class="anchored" data-anchor-id="winter-break"><span class="header-section-number">6.9</span> Winter Break</h2>
+<section id="winter-break" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="winter-break">Winter Break</h2>
 <section id="tuesday-2026-03-03-no-class" class="level3">
 <h3 class="anchored" data-anchor-id="tuesday-2026-03-03-no-class">Tuesday 2026-03-03: No class</h3>
 </section>
 <section id="thursday-2026-03-05-no-class" class="level3">
 <h3 class="anchored" data-anchor-id="thursday-2026-03-05-no-class">Thursday 2026-03-05: No class</h3>
 </section>
-<section id="tuesday-2026-03-10-can-bias-analysis-be-biased" class="level3">
-<h3 class="anchored" data-anchor-id="tuesday-2026-03-10-can-bias-analysis-be-biased">Tuesday 2026-03-10: Can bias analysis be biased?</h3>
+</section>
+<section id="unit-9-to-whom-do-epidemiologic-results-apply" class="level2" data-number="6.9">
+<h2 data-number="6.9" class="anchored" data-anchor-id="unit-9-to-whom-do-epidemiologic-results-apply"><span class="header-section-number">6.9</span> Unit 9: To whom do epidemiologic results apply?</h2>
+<p>We have spent time now thinking about developing questions, considering whether to randomize treatments, how to sample and make statistical inferences about population or causal parameters, and thinking about how to address biases. This week, we are moving on to thinking about the question of to whom our study results should apply. These are core questions that come up in the context of evaluating strengths and weaknesses of studies in peer review (or perhaps grant review), and whether the results of studies may provide actionable evidence.</p>
+<section id="tuesday-2026-03-10-how-should-we-think-about-generalizing-to-other-populations" class="level3">
+<h3 class="anchored" data-anchor-id="tuesday-2026-03-10-how-should-we-think-about-generalizing-to-other-populations">Tuesday 2026-03-10: How should we think about generalizing to other populations?</h3>
 <section id="what-15" class="level4">
 <h4 class="anchored" data-anchor-id="what-15">What:</h4>
 <ul>
-<li><p>Lash TL, Ahern TP, Collin LJ, Fox MP, MacLehose RF. Bias Analysis Gone Bad. <em>Am J Epidemiol</em> 2021;190(8):1604–12. <a href="https://doi.org/10.1093/aje/kwab072">[link]</a> [6451 words]</p></li>
-<li><p>Gustafson P. Invited Commentary: Toward Better Bias Analysis. <em>Am J Epidemiol</em> 2021;190(8):1613–6. <a href="https://doi.org/10.1093/aje/kwab068">[link]</a> [2037 words]</p></li>
+<li><p><span class="citation" data-cites="lesko2017">Catherine R. Lesko et al. <span>“Generalizing <span>Study Results</span>: <span>A Potential Outcomes Perspective</span>,”</span> <em>Epidemiology</em> 28, no. 4 (July 2017): 553–61, <a href="https://doi.org/10.1097/EDE.0000000000000664">https://doi.org/10.1097/EDE.0000000000000664</a>.</span></p></li>
+<li><p><span class="citation" data-cites="lu2025">Haidong Lu et al. <span>“Revisiting Representativeness,”</span> <em>International Journal of Epidemiology</em> 54, no. 4 (June 11, 2025): dyaf109, <a href="https://doi.org/10.1093/ije/dyaf109">https://doi.org/10.1093/ije/dyaf109</a>.</span></p></li>
 </ul>
 </section>
 <section id="why-15" class="level4">
 <h4 class="anchored" data-anchor-id="why-15">Why:</h4>
-<p>Although sensitivity analysis has been around a long time, quantitative bias analysis continues to be rare, and perhaps one explanation is that it asks a lot from researchers. Other options may include using simple bounds to answer questions about how bad things would have to be to ‘nullify’ an effect, but replacing ignoring assumptions with absurd assumptions leaves much to be desired. Lash et al.&nbsp;demonstrate how to do bias analysis ‘better’ and what can go wrong when it is not done with care. Gustafson, in a comment, provides an interesting hypothetical set of scenarios for different ways of combining different study designs and strategies for accounting for bias. I hope you can come away with an appreciation and understanding of why such analyses are valuable.</p>
+<p>Despite the clear importance of considering to whom study results should apply, there has been little formal work on what assumptions are needed to derive quantitative estimates of effects in different external populations, whether those refer to the target population or a population that is external to the target. Lesko et al.&nbsp;provide a formal approach to these issues, using a potential outcomes perspective. The paper by Lu et al.&nbsp;revisiting the concept of representativeness in the context of different types of selection bias. These two papers argue that we should consider these formal approaches, and provide some guidance as to what assumptions (and potentially data) would be needed to do so.</p>
 </section>
 </section>
-</section>
-<section id="unit-10-to-whom-do-epidemiologic-results-apply" class="level2" data-number="6.10">
-<h2 data-number="6.10" class="anchored" data-anchor-id="unit-10-to-whom-do-epidemiologic-results-apply"><span class="header-section-number">6.10</span> Unit 10: To whom do epidemiologic results apply?</h2>
-<p>We have spent time now thinking about developing questions, considering whether to randomize treatments, making statistical inferences about population or causal parameters, and thinking about how to address biases. This week, we are moving on to thinking about the question of to whom our study results should apply. These are core questions that come up in the context of evaluating strengths and weaknesses of studies in peer review (or perhaps grant review), and whether the results of studies may provide actionable evidence.</p>
-<section id="thursday-2026-03-12-how-should-we-think-about-generalizing-to-other-populations" class="level3">
-<h3 class="anchored" data-anchor-id="thursday-2026-03-12-how-should-we-think-about-generalizing-to-other-populations">Thursday 2026-03-12: How should we think about generalizing to other populations?</h3>
+<section id="thursday-2026-03-12-should-we-generalize-to-individuals" class="level3">
+<h3 class="anchored" data-anchor-id="thursday-2026-03-12-should-we-generalize-to-individuals">Thursday 2026-03-12: Should we generalize to individuals?</h3>
 <section id="what-16" class="level4">
 <h4 class="anchored" data-anchor-id="what-16">What:</h4>
 <ul>
-<li><p>Lesko CR, Buchanan AL, Westreich D, Edwards JK, Hudgens MG, Cole SR. Generalizing Study Results: A Potential Outcomes Perspective. <em>Epidemiology</em> 2017;28:553–561. <a href="https://doi.org/10.1097/EDE.0000000000000664">[link]</a> [6631 words]</p></li>
-<li><p>Westreich D, Edwards JK, Lesko CR, Cole SR, Stuart EA. Target Validity and the Hierarchy of Study Designs. <em>Am J Epidemiol</em> 2019;188:438–443. <a href="https://doi.org/10.1093/aje/kwy228">[link]</a> [5308 words]</p></li>
+<li><p><span class="citation" data-cites="roberts2024">Megan C. Roberts et al. <span>“Precision Public Health in the Era of Genomics and Big Data,”</span> <em>Nature Medicine</em> 30, no. 7 (July 2024): 1865–73, <a href="https://doi.org/10.1038/s41591-024-03098-0">https://doi.org/10.1038/s41591-024-03098-0</a>.</span></p></li>
+<li><p><span class="citation" data-cites="paneth2020">Nigel Paneth and Richard Cooper <span>“Will <span>Precision Medicine Lead</span> to a <span>Healthier Population</span>?”</span> <em>Issues in Science and Technology</em> XXXVI, no. 2 (February 10, 2020): 64–71, <a href="https://issues.org/precision-medicine/">https://issues.org/precision-medicine/</a>.</span></p></li>
 </ul>
 </section>
 <section id="why-16" class="level4">
 <h4 class="anchored" data-anchor-id="why-16">Why:</h4>
-<p>Despite the clear importance of considering to whom study results should apply, there has been little formal work on what assumptions are needed to derive quantitative estimates of effects in different external populations, whether those refer to the target population or a population that is external to the target. These two papers argue that we should consider these formal approaches, and provide some guidance as to what assumptions (and potentially data) would be needed to do so.</p>
-</section>
-</section>
-<section id="tuesday-2026-03-17-should-we-generalize-to-specific-individuals" class="level3">
-<h3 class="anchored" data-anchor-id="tuesday-2026-03-17-should-we-generalize-to-specific-individuals">Tuesday 2026-03-17: Should we generalize to specific individuals?</h3>
-<section id="what-17" class="level4">
-<h4 class="anchored" data-anchor-id="what-17">What:</h4>
-<ul>
-<li><p>Khoury, MJ et al.&nbsp;The Intersection of Genomics and Big Data with Public Health: Opportunities for Precision Public Health. <em>PLoS Medicine</em> 2020;17: e1003373. <a href="https://doi.org/10.1371/journal.pmed.1003373">[link]</a> [7677 words]</p></li>
-<li><p>Cooper R, Paneth N. Will precision medicine lead to a healthier population? <em>Issues in Science and Technology</em> 2020;36(2):64-71. <a href="https://www.jstor.org/stable/26949110">[link]</a> [6793 words]</p></li>
-</ul>
-</section>
-<section id="why-17" class="level4">
-<h4 class="anchored" data-anchor-id="why-17">Why:</h4>
 <p>The second part of our readings on extending results to other populations reframes the question not about transporting results to a different sample, but about how to (and whether we can) derive reliable predictions about treatment effects at the individual level. This is related to ongoing discussions about the concepts of “precision” epidemiology or precision public health, and whether these ideas are really novel or just ways of re-branding what we have always considered in public health, which is targeting when it comes to interventions. There have emerged different ‘camps’ of those more and less enthusiastic about this idea, and these two papers are meant to provide an overview of some of these issues.</p>
 </section>
 </section>
 </section>
-<section id="unit-11-is-research-including-epidemiology-reliable" class="level2" data-number="6.11">
-<h2 data-number="6.11" class="anchored" data-anchor-id="unit-11-is-research-including-epidemiology-reliable"><span class="header-section-number">6.11</span> Unit 11: Is research (including epidemiology) reliable?</h2>
-<p>This week we are stepping away a bit from epidemiology only, and focusing on larger questions related potential problems that may be widespread across scientific research (obviously, including epidemiology). Can or should we trust most published research? Is it reliable? Is it replicable and, if not, is that really a problem? Many of these issues have come up in the context of something that has been called the “replication crisis” in science, much of which started when some high-profile lab and social science projects were found not to replicate using similar designs and methods.</p>
-<section id="thursday-2026-03-19-is-science-broken" class="level3">
-<h3 class="anchored" data-anchor-id="thursday-2026-03-19-is-science-broken">Thursday 2026-03-19: Is science broken?</h3>
+<section id="unit-10-how-should-we-communicate-epidemiologic-evidence" class="level2" data-number="6.10">
+<h2 data-number="6.10" class="anchored" data-anchor-id="unit-10-how-should-we-communicate-epidemiologic-evidence"><span class="header-section-number">6.10</span> Unit 10: How should we communicate epidemiologic evidence?</h2>
+<p>This week we will be reading more about the (possible) tension between our duties as epidemiologic scientists to try and report evidence in a dispassionate way, and the sometimes pressing need for action to tackle pressing health problems when evidence is uncertain, or in contrast to our expectations.</p>
+<section id="tuesday-2026-03-17-how-should-we-discuss-epidemiologic-results" class="level3">
+<h3 class="anchored" data-anchor-id="tuesday-2026-03-17-how-should-we-discuss-epidemiologic-results">Tuesday 2026-03-17: How should we discuss epidemiologic results?</h3>
+<section id="what-17" class="level4">
+<h4 class="anchored" data-anchor-id="what-17">What:</h4>
+<ul>
+<li><p><span class="citation" data-cites="savitz2016">David A. Savitz and Gregory A. Wellenius <span>“Characterization and <span>Communication</span> of <span>Conclusions</span>,”</span> in <em>Interpreting <span>Epidemiologic Evidence</span>: <span>Connecting Research</span> to <span>Applications</span></em> (Oxford University Press, 2016), 200–210, <a href="https://doi.org/10.1093/acprof:oso/9780190243777.001.0001">https://doi.org/10.1093/acprof:oso/9780190243777.001.0001</a>.</span></p></li>
+<li><p><span class="citation" data-cites="blastland2020">Michael Blastland et al. <span>“Five Rules for Evidence Communication,”</span> <em>Nature</em> 587, no. 7834 (November 19, 2020): 362–64, <a href="https://doi.org/10.1038/d41586-020-03189-1">https://doi.org/10.1038/d41586-020-03189-1</a>.</span></p></li>
+</ul>
+</section>
+<section id="why-17" class="level4">
+<h4 class="anchored" data-anchor-id="why-17">Why:</h4>
+<p>This session’s readings are focused more on how to grapple with and communicate uncertainty in epidemiologic findings, both to other scientists (e.g., in peer-reviewed papers) and to the public or to other stakeholders. The chapter by Savitz and Wellenius provides some high-level guidance and advice to epidemiologists about their duties to describe evidence in a dispassionate way, but also to make good faith efforts to distill findings in ways suitably tailored for different audiences. Some additional discussion of how to consider biases across different studies when synthesizing evidence is also included. The piece by Blastland et al.&nbsp;is more direct in providing advice to scientists on how to communicate about evidence, largely arguing that our duties are to be transparent in reporting, especially about uncertainty, rather than attempting to persuade or change opinions.</p>
+</section>
+</section>
+<section id="thursday-2026-03-19-how-should-we-think-about-research-impact" class="level3">
+<h3 class="anchored" data-anchor-id="thursday-2026-03-19-how-should-we-think-about-research-impact">Thursday 2026-03-19: How should we think about research ‘impact’?</h3>
 <section id="what-18" class="level4">
 <h4 class="anchored" data-anchor-id="what-18">What:</h4>
 <ul>
-<li><p>Oliver, J. Scientific studies. <em>Last Week Tonight with John Oliver</em>, Season 3, Episode 11, May 5, 2016 <a href="https://www.youtube.com/watch?v=0Rnq1NpHdmw">[link]</a> [20 mins] <strong>Note: contains explicit and crude language</strong></p></li>
-<li><p>Lewis-Kraus G. They Studied Dishonesty. Was Their Work a Lie? <em>The New Yorker</em> September 30, 2023. <a href="https://www.newyorker.com/magazine/2023/10/09/they-studied-dishonesty-was-their-work-a-lie">[link]</a> [12128 words]</p></li>
+<li><p><span class="citation" data-cites="bann2024">David Bann et al. <span>“Dialling Back <span>‘Impact’</span> Claims: Researchers Should Not Be Compelled to Make Policy Claims Based on Single Studies,”</span> <em>International Journal of Epidemiology</em> 53, no. 1 (February 1, 2024): dyad181, <a href="https://doi.org/10.1093/ije/dyad181">https://doi.org/10.1093/ije/dyad181</a>.</span></p></li>
+<li><p><span class="citation" data-cites="lesko2025">Catherine R. Lesko et al. <span>“A Framework for Thinking about the Potential Public Health Impact of Epidemiologic Research,”</span> <em>Epidemiology</em>, December 5, 2025, <a href="https://doi.org/10.1097/EDE.0000000000001939">https://doi.org/10.1097/EDE.0000000000001939</a>.</span></p></li>
 </ul>
 </section>
 <section id="why-18" class="level4">
 <h4 class="anchored" data-anchor-id="why-18">Why:</h4>
-<p>The video by Oliver discusses wild claims, the propensity of such claims to be blown up by the media, as well as problems with incentives. It’s old, but do you think we have made progress since Oliver’s piece aired? The second reading is a long essay describing the story about two prominent researchers in psychology and business that have come under substantial scrutiny after some of their work was found to be consistent with fraud. We think of fraud as being rare, but to what extent can (or should) we make independent verification of results normative in epidemiology?</p>
+<p>When your study is finished, how should the results be communicated? Should you consider policy implications? Create a press release? How can we decide whether the research we do has ‘impact’? These two papers provide some different perspectives on these questions. Bann et al.&nbsp;make the case that single studies should (in most cases) refrain from making claims about policy. In a very recent paper Lesko et al.&nbsp;try and provide a more systematic framework for thinking about potential impact, considering disease burden, potential interventions, and the strength of evidence.</p>
 </section>
 </section>
-<section id="tuesday-2026-03-24-what-are-some-potential-solutions" class="level3">
-<h3 class="anchored" data-anchor-id="tuesday-2026-03-24-what-are-some-potential-solutions">Tuesday 2026-03-24: What are some potential solutions?</h3>
+</section>
+<section id="unit-11-how-should-we-put-together-all-of-the-evidence" class="level2" data-number="6.11">
+<h2 data-number="6.11" class="anchored" data-anchor-id="unit-11-how-should-we-put-together-all-of-the-evidence"><span class="header-section-number">6.11</span> Unit 11: How should we put together all of the evidence?</h2>
+<p>This week we are going to talk more about how to put together and think about diverse lines of evidence to come to some sort of judgement about causal effects. Most of you will have heard (and I agree) that a single study is unlikely to be sufficient to generate certainty about a given exposure-outcome effect. There may be special circumstances (e.g, vaccine trials for COVID-19), but generally we are starting from a place where we have to consider various lines of argument and evidence to inform our thinking. How should we put all of this evidence together?</p>
+<section id="tuesday-2026-03-24-can-triangulation-help" class="level3">
+<h3 class="anchored" data-anchor-id="tuesday-2026-03-24-can-triangulation-help">Tuesday 2026-03-24: Can “triangulation” help?</h3>
 <section id="what-19" class="level4">
 <h4 class="anchored" data-anchor-id="what-19">What:</h4>
 <ul>
-<li><span class="citation" data-cites="mathur2023">Maya B Mathur and Matthew P Fox <span>“Toward <span>Open</span> and <span>Reproducible Epidemiology</span>,”</span> <em>American Journal of Epidemiology</em> 192, no. 4 (April 6, 2023): 658–64, <a href="https://doi.org/10.1093/aje/kwad007">https://doi.org/10.1093/aje/kwad007</a>.</span></li>
+<li><p><span class="citation" data-cites="labrecque2024">Jeremy A. Labrecque and Sonja A. Swanson <span>“Using <span>Counterfactual Worlds</span> to <span>Triangulate Evidence</span> in the <span>Real World</span>,”</span> <em>Current Epidemiology Reports</em> 11, no. 1 (March 1, 2024): 44–53, <a href="https://doi.org/10.1007/s40471-023-00340-0">https://doi.org/10.1007/s40471-023-00340-0</a>.</span></p></li>
+<li><p><span class="citation" data-cites="gutierrez2025">Sirena Gutierrez, M. Maria Glymour, and George Davey Smith <span>“Evidence Triangulation in Health Research,”</span> <em>European Journal of Epidemiology</em> 40, no. 7 (July 2025): 743–57, <a href="https://doi.org/10.1007/s10654-024-01194-6">https://doi.org/10.1007/s10654-024-01194-6</a>.</span></p></li>
 </ul>
 </section>
 <section id="why-19" class="level4">
 <h4 class="anchored" data-anchor-id="why-19">Why:</h4>
-<p>The second session features a paper by Mathur and Fox that is more focused on outlining and describing some potential solutions, including study pre-registration and pre-analysis plans, registered reports or ‘results-blind’ peer review, sharing of research materials, including data and code, and changing incentives around publication and grants - all core processes for modern working scientists.</p>
+<p>You may have seen various papers talk about the concept of ‘triangulation’ in thinking about evidence. Here we have two papers that pursue somewhat different approaches to the idea. Labrecque and Swanson focus on a more formal approach anchored in causal inference. Gutierrez et al.&nbsp;take a somewhat more expansive view, but the basic idea here is to pull together (sometimes by design) data sources that may trade off different kinds of biases in order to see whether results are consistent across various settings. I encourage you to consider whether you think it is a useful approach.</p>
 </section>
 </section>
-</section>
-<section id="unit-12-how-should-we-put-together-all-of-the-evidence" class="level2" data-number="6.12">
-<h2 data-number="6.12" class="anchored" data-anchor-id="unit-12-how-should-we-put-together-all-of-the-evidence"><span class="header-section-number">6.12</span> Unit 12: How should we put together all of the evidence?</h2>
-<p>This week we are going to talk more about how to put together and think about diverse lines of evidence to come to some sort of judgement about causal effects. Most of you will have heard (and I agree) that it a single study is unlikely to be sufficient to generate certainty about a given exposure-outcome effect. There may be special circumstances (e.g, vaccine trials for COVID-19), but generally we are starting from a place where we have to consider various lines of argument and evidence to inform our thinking.</p>
-<section id="thursday-2026-03-26-can-triangulation-help" class="level3">
-<h3 class="anchored" data-anchor-id="thursday-2026-03-26-can-triangulation-help">Thursday 2026-03-26: Can “triangulation” help?</h3>
+<section id="thursday-2026-03-26-does-meta-analysis-help-or-hurt" class="level3">
+<h3 class="anchored" data-anchor-id="thursday-2026-03-26-does-meta-analysis-help-or-hurt">Thursday 2026-03-26: Does meta-analysis help or hurt?</h3>
 <section id="what-20" class="level4">
 <h4 class="anchored" data-anchor-id="what-20">What:</h4>
 <ul>
-<li>Lawlor DA, Tilling K, Davey Smith G. Triangulation in aetiological epidemiology. <em>Int J Epidemiol</em> 2016;45(6):1866–86. <a href="https://academic.oup.com/ije/article/45/6/1866/2930550">[link]</a> [14610 words]</li>
+<li><p><span class="citation" data-cites="hiltonboon2022">Michele Hilton Boon et al. <span>“Value and <span>Challenges</span> of <span>Using Observational Studies</span> in <span>Systematic Reviews</span> of <span>Public Health Interventions</span>,”</span> <em>American Journal of Public Health</em> 112, no. 4 (April 2022): 548–52, <a href="https://doi.org/10.2105/AJPH.2021.306658">https://doi.org/10.2105/AJPH.2021.306658</a>.</span></p></li>
+<li><p><span class="citation" data-cites="savitz2021a">David A. Savitz and Francesco Forastiere <span>“Do Pooled Estimates from Meta-Analyses of Observational Epidemiology Studies Contribute to Causal Inference?”</span> <em>Occupational and Environmental Medicine</em> 78, no. 9 (September 1, 2021): 621–22, <a href="https://doi.org/10.1136/oemed-2021-107702">https://doi.org/10.1136/oemed-2021-107702</a>.</span></p></li>
 </ul>
 </section>
 <section id="why-20" class="level4">
 <h4 class="anchored" data-anchor-id="why-20">Why:</h4>
-<p>You may have seen various papers talk about the concept of ‘triangulation’ in thinking about evidence. The Lawlor et al.&nbsp;paper focuses on trying to pull together (sometimes by design) data sources that may trade off different kinds of biases in order to see whether results are consistent across various settings, but in a formal and methodological way. I encourage you to consider whether you think it is a useful approach.</p>
-</section>
-</section>
-<section id="tuesday-2026-03-31-does-meta-analysis-help-or-hurt" class="level3">
-<h3 class="anchored" data-anchor-id="tuesday-2026-03-31-does-meta-analysis-help-or-hurt">Tuesday 2026-03-31: Does meta-analysis help or hurt?</h3>
-<section id="what-21" class="level4">
-<h4 class="anchored" data-anchor-id="what-21">What:</h4>
-<ul>
-<li><p>Hilton Boon M, Burns J, Craig P, Griebler U, Heise TL, Vittal Katikireddi S, et al.&nbsp;Value and Challenges of Using Observational Studies in Systematic Reviews of Public Health Interventions. <em>Am J Public Health</em> 2022;112(4):548–52. <a href="https://doi.org/10.2105/AJPH.2021.306658">[link]</a> [3899 words]</p></li>
-<li><p>Savitz DA, Forastiere F. Do pooled estimates from meta-analyses of observational epidemiology studies contribute to causal inference? <em>Occup Environ Med</em> 2021;78(9):621–2. <a href="https://doi.org/10.1136/oemed-2021-107702">[link]</a> [2029 words]</p></li>
-</ul>
-</section>
-<section id="why-21" class="level4">
-<h4 class="anchored" data-anchor-id="why-21">Why:</h4>
 <p>Meta-analysis of a systematic review has become the dominant method for summarizing epidemiologic evidence, but comes with a large set of challenges, particularly for observational studies. These two papers provide an overview of some of the challenges of how these contribute to evidence, and whether they are ultimately useful for informing causal inference about the effects of exposures.</p>
 </section>
 </section>
 </section>
-<section id="unit-13-how-should-we-communicate-epidemiologic-evidence" class="level2" data-number="6.13">
-<h2 data-number="6.13" class="anchored" data-anchor-id="unit-13-how-should-we-communicate-epidemiologic-evidence"><span class="header-section-number">6.13</span> Unit 13: How should we communicate epidemiologic evidence?</h2>
-<p>This week we will be reading more about the (possible) tension between our duties as epidemiologic scientists to try and report evidence in a dispassionate way, and the sometimes pressing need for action to tackle pressing health problems when evidence is uncertain, or in contrast to our expectations.</p>
-<section id="thursday-2026-04-02-how-should-we-discuss-epidemiologic-results" class="level3">
-<h3 class="anchored" data-anchor-id="thursday-2026-04-02-how-should-we-discuss-epidemiologic-results">Thursday 2026-04-02: How should we discuss epidemiologic results?</h3>
+<section id="unit-12-is-research-including-epidemiology-reliable" class="level2" data-number="6.12">
+<h2 data-number="6.12" class="anchored" data-anchor-id="unit-12-is-research-including-epidemiology-reliable"><span class="header-section-number">6.12</span> Unit 12: Is research (including epidemiology) reliable?</h2>
+<p>This week we are stepping away a bit from epidemiology only, and focusing on larger questions related to potential problems that may be widespread across scientific research (obviously, including epidemiology). Can or should we trust most published research? Is it reliable? Is it replicable and, if not, is that really a problem? Many of these issues have come up in the context of something that has been called the “replication crisis” in science, much of which started when some high-profile lab and social science projects were found not to replicate using similar designs and methods.</p>
+<section id="tuesday-2026-03-31-is-science-broken" class="level3">
+<h3 class="anchored" data-anchor-id="tuesday-2026-03-31-is-science-broken">Tuesday 2026-03-31: Is science broken?</h3>
+<section id="what-21" class="level4">
+<h4 class="anchored" data-anchor-id="what-21">What:</h4>
+<ul>
+<li><p><span class="citation" data-cites="baker2016">Monya Baker <span>“1,500 Scientists Lift the Lid on Reproducibility,”</span> <em>Nature</em> 533, no. 7604 (May 26, 2016): 452–54, <a href="https://doi.org/10.1038/533452a">https://doi.org/10.1038/533452a</a>.</span></p></li>
+<li><p><span class="citation" data-cites="szabo2025">Csaba Szabo <span>“A <span>Broken Scientific Publishing System</span>,”</span> in <em>Unreliable</em> (Columbia University Press, 2025), 148–92, <a href="https://doi.org/10.7312/szab21623-006">https://doi.org/10.7312/szab21623-006</a>.</span></p></li>
+</ul>
+</section>
+<section id="why-21" class="level4">
+<h4 class="anchored" data-anchor-id="why-21">Why:</h4>
+<p>The short paper by Baker is old but documents a widespread agreement (across disciplines) that there are problems with the reliability of science. The chapter by Szabo from his recently published book <em>Unreliable</em> about problems in biomedical science focuses largely on problems in the pipeline for publishing scientific research. You may be familiar with some of these issues (e.g., so-called ‘predatory’ journals), but the scale of these challenges has increased as more research output is generated, as well as being exacerbated by generative AI. These are challenging issues and may pose serious dilemmas for early career researchers facing ever greater pressure to publish more and more.</p>
+</section>
+</section>
+<section id="thursday-2026-04-02-what-are-some-potential-solutions" class="level3">
+<h3 class="anchored" data-anchor-id="thursday-2026-04-02-what-are-some-potential-solutions">Thursday 2026-04-02: What are some potential solutions?</h3>
 <section id="what-22" class="level4">
 <h4 class="anchored" data-anchor-id="what-22">What:</h4>
 <ul>
-<li><p>Savitz DA, Wellenius GA. Characterization and Communication of Conclusions. In: <em>Interpreting epidemiologic evidence: connecting research to applications</em>. Oxford University Press; 2016. p.&nbsp;200–10. <a href="https://academic.oup.com/book/8266/chapter/153869539">[link]</a> [5958 words]</p></li>
-<li><p>Blastland M et al.&nbsp;Five rules for evidence communication. <em>Nature</em> 2020;587:362–364 <a href="https://doi.org/10.1038/d41586-020-03189-1">[link]</a> [2664 words]</p></li>
+<li><p><span class="citation" data-cites="mathur2023">Maya B Mathur and Matthew P Fox <span>“Toward <span>Open</span> and <span>Reproducible Epidemiology</span>,”</span> <em>American Journal of Epidemiology</em> 192, no. 4 (April 6, 2023): 658–64, <a href="https://doi.org/10.1093/aje/kwad007">https://doi.org/10.1093/aje/kwad007</a>.</span></p></li>
+<li><p><span class="citation" data-cites="mcelreath2025">Richard McElreath <span>“Which <span>Kind</span> of <span>Science Reform</span>”</span> (Elements of Evolutionary Anthropology, July 9, 2025), <a href="https://elevanth.org/blog/2025/07/09/which-kind-of-science-reform/">https://elevanth.org/blog/2025/07/09/which-kind-of-science-reform/</a>.</span></p></li>
 </ul>
 </section>
 <section id="why-22" class="level4">
 <h4 class="anchored" data-anchor-id="why-22">Why:</h4>
-<p>This session’s readings are focused more on how to grapple with and communicate uncertainty in epidemiologic findings, both to other scientists (e.g., in peer-reviewed papers) and to the public or to other stakeholders. The chapter by Savitz and Wellenius provides some high-level guidance and advice to epidemiologists about their duties to describe evidence in a dispassionate way, but also to make good faith efforts to distill findings in ways suitably tailored for different audiences. Some additional discussion of how to consider biases across different studies when synthesizing evidence is also included. The piece by Blastland et al.&nbsp;is more direct in providing advice to scientists on how to communicate about evidence, largely arguing that our duties are to be transparent in reporting, especially about uncertainty, rather than attempting to persuade or change opinions.</p>
+<p>The second session features a paper by Mathur and Fox that is more focused on outlining and describing some potential solutions to problems with unreliable research, including study pre-registration and pre-analysis plans, registered reports or ‘results-blind’ peer review, sharing of research materials, including data and code, and changing incentives around publication and grants - all core processes for modern working scientists. A recent blog post by Richard McElreath is a bit more skeptical about potential science reforms.</p>
 </section>
 </section>
-<section id="tuesday-2026-04-07-how-much-does-evidence-even-matter" class="level3">
-<h3 class="anchored" data-anchor-id="tuesday-2026-04-07-how-much-does-evidence-even-matter">Tuesday 2026-04-07: How much does “evidence” even matter?</h3>
+</section>
+<section id="unit-13-will-ai-hurt-or-help" class="level2" data-number="6.13">
+<h2 data-number="6.13" class="anchored" data-anchor-id="unit-13-will-ai-hurt-or-help"><span class="header-section-number">6.13</span> Unit 13: Will AI hurt or help?</h2>
+<section id="tuesday-2026-04-07-can-we-work-with-ai-in-our-analyses" class="level3">
+<h3 class="anchored" data-anchor-id="tuesday-2026-04-07-can-we-work-with-ai-in-our-analyses">Tuesday 2026-04-07: Can we work with AI in our analyses?</h3>
 <section id="what-23" class="level4">
 <h4 class="anchored" data-anchor-id="what-23">What:</h4>
 <ul>
-<li>Johns DM. The Ice-Cream Conspiracy. <em>Atlantic Monthly</em> 2023;331(4):16-22. <a href="https://search-ebscohost-com.proxy3.library.mcgill.ca/login.aspx?direct=true&amp;db=rch&amp;AN=163061193&amp;scope=site">[link]</a> [3687 words]</li>
+<li><span class="citation" data-cites="dobler2025">Dennis Dobler et al. <span>“<span>ChatGPT</span> as a <span>Tool</span> for <span>Biostatisticians</span>: <span>A Tutorial</span> on <span>Applications</span>, <span>Opportunities</span>, and <span>Limitations</span>,”</span> <em>Statistics in Medicine</em> 44, no. 23–24 (October 2025): e70263, <a href="https://doi.org/10.1002/sim.70263">https://doi.org/10.1002/sim.70263</a>.</span></li>
 </ul>
 </section>
 <section id="why-23" class="level4">
 <h4 class="anchored" data-anchor-id="why-23">Why:</h4>
-<p>David Merritt Johns uses the recent example of a ‘novel’ finding in nutritional epidemiology as a basis for an essay about the role that extra-scientific judgements play in how we as scientists (and humans) interpret findings that may contrast with our expectations. How will you react if your study produces findings in opposition to what you may have hypothesized?</p>
+<p>AI and chatbots are now ubiquitous, and that extends to science in general and epidemiology in particular. Should we use them? If so, how, and for what purposes? Dobler and colleagues provide an overview from the lens of biostatistics about how AI may be useful in epidemiologic research, as well as some of the pitfalls to avoid.</p>
 </section>
 </section>
-<section id="thursday-2026-04-09-wrap-up-can-we-change-scientific-culture" class="level3">
-<h3 class="anchored" data-anchor-id="thursday-2026-04-09-wrap-up-can-we-change-scientific-culture">Thursday 2026-04-09: Wrap up / Can we change scientific culture?</h3>
-<p>We’ve discussed multiple theoretical and methodological issues thus far, many of which stem from, and cannot be separated from, the fact that science is conducted by humans. This creates a kind of cultural inertia in science that has produced important advances, but also creates problems. Can we change the culture to improve the way epidemiology is working today? This last session asks you to consider this question.</p>
+<section id="thursday-2026-04-09-is-ai-too-much-of-a-good-thing" class="level3">
+<h3 class="anchored" data-anchor-id="thursday-2026-04-09-is-ai-too-much-of-a-good-thing">Thursday 2026-04-09: Is AI too much of a good thing?</h3>
 <section id="what-24" class="level4">
 <h4 class="anchored" data-anchor-id="what-24">What:</h4>
 <ul>
-<li><p>Lakens D. Is my study useless? Why researchers need methodological review boards. <em>Nature</em> 2023;613(7942):9–9. <a href="https://www.nature.com/articles/d41586-022-04504-8">[link]</a> [977 words]</p></li>
-<li><p>Wrap up</p>
-<ul>
-<li>Final discussion.</li>
-<li>Course review and feedback.</li>
-</ul></li>
+<li><p><span class="citation" data-cites="sengupta2025">Alex Sen Gupta <span>“<span>PhD</span> Training Needs a Reboot in an <span>AI</span> World,”</span> <em>Nature</em> 647, no. 8088 (November 6, 2025): 27–28, <a href="https://doi.org/10.1038/d41586-025-03572-w">https://doi.org/10.1038/d41586-025-03572-w</a>.</span></p></li>
+<li><p><span class="citation" data-cites="messeri2024">Lisa Messeri and M. J. Crockett <span>“Artificial Intelligence and Illusions of Understanding in Scientific Research,”</span> <em>Nature</em> 627, no. 8002 (March 7, 2024): 49–58, <a href="https://doi.org/10.1038/s41586-024-07146-0">https://doi.org/10.1038/s41586-024-07146-0</a>.</span></p></li>
 </ul>
 </section>
 <section id="why-24" class="level4">
 <h4 class="anchored" data-anchor-id="why-24">Why:</h4>
-<p>Lakens (a psychologist) makes a case that ethical review boards have an obligation to consider whether proposed research is capable of producing reliable evidence, and suggests they should have the power to intervene to stop work that has a low probability of providing reliable evidence.</p>
+<p>How might the use of AI change science more generally, and what are the consequences for training programs? Sen Gupta argues that recent improvements in AI are so powerful that they may now fundamentally threaten the traditional model of scientific training, and we need to change the way we are training PhD students. On the other hand, Messeri and Crockett are more skeptical of whether AI can and will lead to better understanding or improved discoveries in science. These are fundamental questions that the new generation of epidemiologists are going to have to grapple with, and it is worth your time to start thinking critically about how and why you will use AI in your own work.</p>
 </section>
 </section>
 </section>
@@ -720,39 +718,20 @@ window.Quarto = {
 <section id="plagarism" class="level2" data-number="7.2">
 <h2 data-number="7.2" class="anchored" data-anchor-id="plagarism"><span class="header-section-number">7.2</span> Plagarism</h2>
 <ul>
-<li><ol type="a">
-<li>No student shall, with intent to deceive, represent the work of another person as his or her own in any academic writing, essay, thesis, research report, project or assignment submitted in a course or program of study or represent as his or her own an entire essay or work of another, whether the material so represented constitutes a part or the entirety of the work submitted.<br>
-</li>
-</ol></li>
-<li><ol start="2" type="a">
-<li>Upon demonstration that the student has represented and submitted another person’s work as his or her own, it shall be presumed that the student intended to deceive; the student shall bear the burden of rebutting this presumption by evidence satisfying the person or body hearing the case that no such intent existed, notwithstanding Article 22 of the Charter of Student Rights.<br>
-</li>
-</ol></li>
-<li><ol start="3" type="a">
-<li>No student shall contribute any work to another student with the knowledge that the latter may submit the work in part or whole as his or her own. Receipt of payment for work contributed shall be cause for presumption that the student had such knowledge; the student shall bear the burden of rebutting this presumption by evidence satisfying the person or body hearing the case that no such intent existed (notwithstanding Article 22 of the Charter of Students’ Rights).</li>
-</ol></li>
+<li><p>No student shall, with intent to deceive, represent the work of another person as his or her own in any academic writing, essay, thesis, research report, project or assignment submitted in a course or program of study or represent as his or her own an entire essay or work of another, whether the material so represented constitutes a part or the entirety of the work submitted.</p></li>
+<li><p>Upon demonstration that the student has represented and submitted another person’s work as his or her own, it shall be presumed that the student intended to deceive; the student shall bear the burden of rebutting this presumption by evidence satisfying the person or body hearing the case that no such intent existed, notwithstanding Article 22 of the Charter of Student Rights.</p></li>
+<li><p>No student shall contribute any work to another student with the knowledge that the latter may submit the work in part or whole as his or her own. Receipt of payment for work contributed shall be cause for presumption that the student had such knowledge; the student shall bear the burden of rebutting this presumption by evidence satisfying the person or body hearing the case that no such intent existed (notwithstanding Article 22 of the Charter of Students’ Rights).</p></li>
 </ul>
 </section>
 <section id="cheating" class="level2" data-number="7.3">
 <h2 data-number="7.3" class="anchored" data-anchor-id="cheating"><span class="header-section-number">7.3</span> Cheating</h2>
-<p>No student shall:</p>
+<p>No student shall:<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a></p>
 <ul>
-<li><ol type="a">
-<li>In the course of an examination obtain or attempt to obtain information from another student or unauthorized source or give or attempt to give information to another student or possess, use or attempt to use any unauthorized material;</li>
-</ol></li>
-<li><ol start="2" type="a">
-<li>Represent or attempt to represent oneself as another or have or attempt to have oneself represented by another in the taking of an examination, preparation of a paper or other similar activity;<br>
-</li>
-</ol></li>
-<li><ol start="3" type="a">
-<li>Submit in any course or program of study, without both the knowledge and approval of the person to whom it is submitted, all or a substantial portion of any academic writing, essay, thesis, research report, project or assignment for which credit has previously been obtained or which has been or is being submitted in another course or program of study in the University or elsewhere;<br>
-</li>
-</ol></li>
-<li><ol start="4" type="a">
-<li>Submit in any course or program of study any academic writing, essay, thesis, research report, project or assignment containing a statement of fact known by the student to be false or a reference to a source which reference or source has been fabricated.</li>
-</ol></li>
+<li><p>In the course of an examination obtain or attempt to obtain information from another student or unauthorized source or give or attempt to give information to another student or possess, use or attempt to use any unauthorized material;</p></li>
+<li><p>Represent or attempt to represent oneself as another or have or attempt to have oneself represented by another in the taking of an examination, preparation of a paper or other similar activity;</p></li>
+<li><p>Submit in any course or program of study, without both the knowledge and approval of the person to whom it is submitted, all or a substantial portion of any academic writing, essay, thesis, research report, project or assignment for which credit has previously been obtained or which has been or is being submitted in another course or program of study in the University or elsewhere;</p></li>
+<li><p>Submit in any course or program of study any academic writing, essay, thesis, research report, project or assignment containing a statement of fact known by the student to be false or a reference to a source which reference or source has been fabricated.</p></li>
 </ul>
-<p>Downloaded and excerpted from A Handbook on Student Rights and Responsibilities, 2010. Available on-line at http://www.mcgill.ca/students/srr/academicrights/integrity/cheating</p>
 </section>
 </section>
 <section id="language-rights" class="level1" data-number="8">
@@ -766,6 +745,9 @@ window.Quarto = {
 
 <ol>
 <li id="fn1"><p>The published paper by Goulden assigned for Unit 3 was written for EPIB 706.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Both of these authors have PhDs from this department, so I realize this feels a little narrow in terms of voices<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p><span class="citation" data-cites="schwartz1999">S Schwartz and K M Carpenter <span>“The Right Answer for the Wrong Question: Consequences of Type <span>III</span> Error for Public Health Research.”</span> <em>American Journal of Public Health</em> 89, no. 8 (August 1999): 1175–80, <a href="https://doi.org/10.2105/AJPH.89.8.1175">https://doi.org/10.2105/AJPH.89.8.1175</a>.</span><a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>Downloaded and excerpted from A Handbook on Student Rights and Responsibilities, 2010. Available on-line at http://www.mcgill.ca/students/srr/academicrights/integrity/cheating<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section></div></main>
 <!-- /main column -->
@@ -820,14 +802,13 @@ window.Quarto = {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-      const outerScaffold = trigger.parentElement.cloneNode(true);
-      const codeEl = outerScaffold.querySelector('code');
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
         }
-      }
-      return codeEl.innerText;
+        return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
