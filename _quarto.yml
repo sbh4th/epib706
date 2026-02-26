@@ -2,4 +2,4 @@ project:
   type: website
   output-dir: docs
   render:
-    - epib706-2026.qmd
+    - epib706.qmd
