@@ -315,7 +315,7 @@ Debates about whether studies designed to estimate causal effects need to be rep
 
 - @stamatakis2021
 
-- @downes2020
+- @downes2020a
 
 #### Why:
 
@@ -387,11 +387,11 @@ We have spent time now thinking about developing questions, considering whether 
 
 - @lesko2017
 
-- @lu2025
+- @lesko2020a
 
 #### Why:
 
-Despite the clear importance of considering to whom study results should apply, there has been little formal work on what assumptions are needed to derive quantitative estimates of effects in different external populations, whether those refer to the target population or a population that is external to the target. Lesko et al. provide a formal approach to these issues, using a potential outcomes perspective. The paper by Lu et al. revisiting the concept of representativeness in the context of different types of selection bias. These two papers argue that we should consider these formal approaches, and provide some guidance as to what assumptions (and potentially data) would be needed to do so.
+Despite the clear importance of considering to whom study results should apply, there has been little formal work on what assumptions are needed to derive quantitative estimates of effects in different external populations, whether those refer to the target population or a population that is external to the target. Lesko et al.'s 2017 paper provides a formal approach to these issues, using a potential outcomes perspective. The second paper by Lekso et al. is less formal and provides a bit more context for thinking about how to integrate both internal and external validity in the context of a single study. Together these two papers argue that we should consider formal approaches to generalizability, and provide some guidance as to what assumptions (and potentially data) would be needed to do so.
 
 ### `r classdate(w1c2,10)`: Should we generalize to individuals?
 
