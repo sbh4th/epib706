@@ -281,6 +281,12 @@
 /* Color links */
 #show link: set text(fill: rgb(0, 0, 255))
 
+#set page(
+  paper: "us-letter",
+  margin: (x: 1.25in, y: 1.25in),
+  numbering: "1",
+)
+
 #show: doc => article(
   title: [EPIB 706: Doctoral Seminar],
   subtitle: [Winter 2026],
@@ -919,7 +925,7 @@ What:
 ]
 - #cite(<stamatakis2021>, form: "prose")
 
-- #cite(<downes2020>, form: "prose")
+- #cite(<downes2020a>, form: "prose")
 
 #block[
 #heading(
@@ -1189,7 +1195,7 @@ What:
 ]
 - #cite(<lesko2017>, form: "prose")
 
-- #cite(<lu2025>, form: "prose")
+- #cite(<lesko2020a>, form: "prose")
 
 #block[
 #heading(
@@ -1204,7 +1210,7 @@ Why:
 ]
 )
 ]
-Despite the clear importance of considering to whom study results should apply, there has been little formal work on what assumptions are needed to derive quantitative estimates of effects in different external populations, whether those refer to the target population or a population that is external to the target. Lesko et al.~provide a formal approach to these issues, using a potential outcomes perspective. The paper by Lu et al.~revisiting the concept of representativeness in the context of different types of selection bias. These two papers argue that we should consider these formal approaches, and provide some guidance as to what assumptions (and potentially data) would be needed to do so.
+Despite the clear importance of considering to whom study results should apply, there has been little formal work on what assumptions are needed to derive quantitative estimates of effects in different external populations, whether those refer to the target population or a population that is external to the target. Lesko et al.'s 2017 paper provides a formal approach to these issues, using a potential outcomes perspective. The second paper by Lekso et al.~is less formal and provides a bit more context for thinking about how to integrate both internal and external validity in the context of a single study. Together these two papers argue that we should consider formal approaches to generalizability, and provide some guidance as to what assumptions (and potentially data) would be needed to do so.
 
 #block[
 #heading(
