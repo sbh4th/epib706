@@ -1,0 +1,174 @@
+---
+title: "Why a doctoral seminar?"
+subtitle: "EPIB 706 · Session 1 · Course introduction"
+author: "Sam Harper"
+date: 2027-01-05
+date-format: "dddd, MMMM D, YYYY"
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    width: 1600
+    height: 900
+    slide-number: true
+    auto-stretch: false
+    embed-resources: true
+title-slide-attributes:
+    data-background-image: "images/mcgill-epi-logo.png"
+    data-background-size: 30%
+    data-background-position: 50% 90%
+editor: source
+bibliography: ../EPIB706.bib
+csl: ../chicago-syllabus.csl
+---
+
+## Where this course sits in your training {.vcenter}
+
+::::::: roomy
+:::::: msg-list
+::: msg-item
+**EPIB 703 / 704: how to do it**\
+Study design, bias, confounding, estimation: the tools
+:::
+
+::: msg-item
+**EPIB 706: when, why, and whether**\
+Which tools fit which questions, and what the field argues about
+:::
+
+::: msg-item
+**Your thesis: doing it yourself**\
+You'll have to defend those choices to committees, reviewers, and readers
+:::
+::::::
+:::::::
+
+::: notes
+(~1:00) Most of you have just come through the methods sequence, which is (rightly) about learning to use the tools. This seminar is the other half: thinking about which tools fit which questions, and getting comfortable with the fact that thoughtful epidemiologists disagree about a lot. By the time you're writing a thesis proposal, nobody will tell you which estimand or design to use. You'll have to choose and defend it.
+:::
+
+## A "baker's dozen" of questions {.smaller}
+
+:::::: {.columns .valign-center}
+::: {.column width="50%"}
+:::::: msg-list
+::: msg-item
+**1.** What is the present and future of epidemiology?
+:::
+::: msg-item
+**2.** What is your research question?
+:::
+::: msg-item
+**3.** How important is formal causal inference?
+:::
+::: msg-item
+**4.** How should we study non-manipulable exposures?
+:::
+::: msg-item
+**5.** Should we try to randomize?
+:::
+::: msg-item
+**6.** Do we need representative samples?
+:::
+::: msg-item
+**7.** How should we make statistical inferences?
+:::
+::::::
+:::
+
+::: {.column width="50%"}
+:::::: msg-list
+::: msg-item
+**8.** How bad can it be?
+:::
+::: msg-item
+**9.** To whom do epidemiologic results apply?
+:::
+::: msg-item
+**10.** How should we communicate evidence?
+:::
+::: msg-item
+**11.** How should we put all the evidence together?
+:::
+::: msg-item
+**12.** Is research (including epidemiology) reliable?
+:::
+::: msg-item
+**13.** Will AI save us or kill us?
+:::
+::::::
+:::
+::::::
+
+::: notes
+(~1:00) Don't walk through all 13. The point is the arc: we start with the discipline and the question (Units 1-2), move through design and causal inference (3-6), then inference and bias (7-9), and end with how evidence gets communicated, combined, and trusted (10-13). Every unit is framed as a question because I don't think any of them has a settled answer.
+:::
+
+## How each session works {.vcenter}
+
+::::::: roomy
+:::::: msg-list
+::: msg-item
+**Before class: read and annotate**\
+Every reading is in Perusall; bring 2-3 points or questions
+:::
+
+::: msg-item
+**Start of class: ~5 minutes of context**\
+Where the topic fits in your training, and why I chose it
+:::
+
+::: msg-item
+**The rest: your discussion**\
+A student leads each session; I'm a participant, not a lecturer
+:::
+::::::
+:::::::
+
+::: notes
+(~1:00) This is new this year, so flag it as an experiment and ask them to tell me if it helps. The context slides are short and are not a summary of the readings. That's the discussion leader's job. They just answer "why are we reading this, and why now?"
+:::
+
+## What you'll do {.vcenter}
+
+::::::: roomy
+:::::: msg-list
+::: msg-item
+**Lead at least one discussion**\
+Sign up on the sheet (link on MyCourses)
+:::
+
+::: msg-item
+**Write one critical essay** (≤ 2500 words)\
+Outline due [March 16]{.red}; final essay due [April 15]{.red}
+:::
+
+::: msg-item
+**Show up, read, engage**\
+The course is pass/fail and only works if we all participate
+:::
+::::::
+:::::::
+
+::: notes
+(~1:00) Keep the admin brisk; it's all in the syllabus. Mention that the essay is a commentary in the spirit of what we read, and that at least one past essay (Goulden, Unit 3) was published. Note the AI policy briefly: I'd rather read your own thinking, and if you use these tools, say where and how.
+:::
+
+## For today {.vcenter}
+
+::::::: roomy
+:::::: msg-list
+::: msg-item
+**Round table**\
+Who are you, what are you working on, and what question keeps you up at night?
+:::
+
+::: msg-item
+**For Thursday**\
+Davey Smith (2019) and Lesko et al. (2020) on where the discipline stands
+:::
+::::::
+:::::::
+
+::: notes
+(~0:30) Hand off to introductions. The "question that keeps you up" is a deliberate bridge to Unit 2.
+:::

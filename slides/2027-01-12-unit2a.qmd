@@ -1,0 +1,121 @@
+---
+title: "Do questions and methods need to align?"
+subtitle: "EPIB 706 · Unit 2 · What is your research question?"
+author: "Sam Harper"
+date: 2027-01-12
+date-format: "dddd, MMMM D, YYYY"
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    width: 1600
+    height: 900
+    slide-number: true
+    auto-stretch: false
+    embed-resources: true
+title-slide-attributes:
+    data-background-image: "images/mcgill-epi-logo.png"
+    data-background-size: 30%
+    data-background-position: 50% 90%
+editor: source
+bibliography: ../EPIB706.bib
+csl: ../chicago-syllabus.csl
+nocite: |
+  @hernan2019, @kaufman2017
+---
+
+## Where this fits in your training {.vcenter}
+
+::::::: roomy
+:::::: msg-list
+::: msg-item
+**Last week: what is the discipline for?**\
+Different kinds of questions need different tools
+:::
+
+::: msg-item
+**This unit: start with *your* question**\
+Before choosing a design, model, or adjustment set
+:::
+
+::: msg-item
+**Next unit: how formal should causal inference be?**\
+Once the question is clear, how much machinery do we need?
+:::
+::::::
+:::::::
+
+::: notes
+(~1:00) Connect to Thursday: Lesko et al. gave us a taxonomy of questions. This week we push on the practical consequences of being vague about which kind of question you're asking.
+:::
+
+## Why I think this matters for you {.vcenter}
+
+::::::: roomy
+:::::: msg-list
+::: msg-item
+**"Just run a regression" is a habit, not a strategy**\
+The same model can answer very different questions, or none
+:::
+
+::: msg-item
+**Adjustment is a choice that changes the question**\
+Especially in descriptive work, where "controlling for" can hide what you want to see
+:::
+
+::: msg-item
+**Reviewers increasingly ask: what is your estimand?**\
+You should be able to answer that in one sentence
+:::
+::::::
+:::::::
+
+::: notes
+(~1:00) A lot of published epidemiology can't say clearly whether it's describing, predicting, or estimating a causal effect. That matters for interpretation, and it matters for you because it's one of the most common critiques you'll get on a proposal or manuscript.
+:::
+
+## The two readings {.vcenter}
+
+::::::: roomy
+:::::: msg-list
+::: msg-item
+**Hernán, Hsu & Healy (2019): "A second chance to get causal inference right"**\
+Description, prediction, and counterfactual prediction as distinct tasks, and the role of expert knowledge
+:::
+
+::: msg-item
+**Kaufman (2017): "Statistics, adjusted statistics, and maladjusted statistics"**\
+When adjustment helps or hurts in *descriptive* comparisons
+:::
+::::::
+:::::::
+
+::: notes
+(~1:15) Hernán and colleagues were writing as machine learning and "data science" were taking off, and they argue that being explicit about the task is what keeps causal questions from being treated as prediction problems. Kaufman takes the same logic to descriptive epidemiology, and it's a reminder that "adjusted" doesn't automatically mean "better". Leave the details to the discussion leader.
+:::
+
+## Questions to carry into discussion {.vcenter}
+
+::::::: roomy
+:::::: msg-list
+::: msg-item
+**Can you state your own research question as one of these tasks?**
+:::
+
+::: msg-item
+**When is an "unadjusted" estimate the right answer?**
+:::
+
+::: msg-item
+**Is a misaligned question and method wasteful, or even unethical?**
+:::
+::::::
+:::::::
+
+::: notes
+(~1:00) The first question is worth a quick go-around if time allows. The third connects back to the Unit 2 framing in the syllabus and sets up Thursday's session on estimands (Kahan et al.; Albers et al.).
+:::
+
+## References
+
+::: {#refs}
+:::

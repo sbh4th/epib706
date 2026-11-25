@@ -1,0 +1,122 @@
+---
+title: "Where does epidemiology stand?"
+subtitle: "EPIB 706 · Unit 1 · Reflections on epidemiology's past and present"
+author: "Sam Harper"
+date: 2027-01-07
+date-format: "dddd, MMMM D, YYYY"
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    width: 1600
+    height: 900
+    slide-number: true
+    auto-stretch: false
+    embed-resources: true
+title-slide-attributes:
+    data-background-image: "images/mcgill-epi-logo.png"
+    data-background-size: 30%
+    data-background-position: 50% 90%
+editor: source
+bibliography: ../EPIB706.bib
+csl: ../chicago-syllabus.csl
+nocite: |
+  @daveysmith2019, @lesko2020
+---
+
+## Where this fits in your training {.vcenter}
+
+::::::: roomy
+:::::: msg-list
+::: msg-item
+**You've just learned "modern" epidemiology**\
+Potential outcomes, DAGs, estimands, bias analysis
+:::
+
+::: msg-item
+**That toolkit is fairly recent**\
+Much of it took shape over the last 30-40 years
+:::
+
+::: msg-item
+**This week: step back from the tools**\
+What is the discipline *for*, and how did we get here?
+:::
+::::::
+:::::::
+
+::: notes
+(~1:00) The methods sequence gives you a particular, fairly recent version of epidemiology. That's not a criticism. It's a very powerful toolkit. But it helps to know that it's one version, that it has a history, and that some senior people in the field think it has costs as well as benefits.
+:::
+
+## Why I think this matters for you {.vcenter}
+
+::::::: roomy
+:::::: msg-list
+::: msg-item
+**You'll be asked where your work fits**\
+"Risk factor", "consequential", "causal", "descriptive": these labels carry baggage
+:::
+
+::: msg-item
+**Debates about the field shape what gets funded and published**\
+And what your committee and reviewers expect from you
+:::
+
+::: msg-item
+**Early is the right time**\
+Easier to choose a direction before you're deep into a thesis
+:::
+::::::
+:::::::
+
+::: notes
+(~1:00) I'm asking you to think about this at the very beginning of your doctoral training. It may feel abstract, but it's much easier to place your own work intentionally now than to discover in year four that your thesis lives on one side of a debate you didn't know existed.
+:::
+
+## The two readings {.vcenter}
+
+::::::: roomy
+:::::: msg-list
+::: msg-item
+**Davey Smith (2019): "Post-modern epidemiology"**\
+A historical view, and a critique of methods-first training
+:::
+
+::: msg-item
+**Lesko, Keil & Edwards (2020): "The epidemiologic toolbox"**\
+Matching tools to kinds of questions: descriptive, synthesized causal evidence, and specific interventions
+:::
+::::::
+:::::::
+
+::: notes
+(~1:15) One reading looks back and one looks at your toolbox today. Davey Smith asks what we may have lost by putting methods first; the title plays on "Modern Epidemiology". Lesko and colleagues are early-career researchers trained much like you. They take the tools as given and ask which questions each tool can actually answer. Don't summarize further. That's the discussion leader's job.
+:::
+
+## Questions to carry into discussion {.vcenter}
+
+::::::: roomy
+:::::: msg-list
+::: msg-item
+**Is "methods meeting matter" a real tension, or a false choice?**
+:::
+
+::: msg-item
+**Which kind of question does *your* research ask?**\
+And are the tools you're learning the right ones for it?
+:::
+
+::: msg-item
+**What would each author think of the other's paper?**
+:::
+::::::
+:::::::
+
+::: notes
+(~1:00) Leave these up while handing off to the discussion leader. The third question is a good one to come back to if the discussion stalls.
+:::
+
+## References
+
+::: {#refs}
+:::

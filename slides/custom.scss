@@ -1,0 +1,546 @@
+/*-- scss:defaults --*/
+
+// -----------------------------------------------------------------------
+// Fonts
+// Alegreya (Google Font) — a stand-in for Minion Pro, after Richard
+// McElreath's Statistical Rethinking slides. Deliberately a *text* font,
+// not used for ggplot output: R renders figures as static images with
+// their own font handling, so axis text stays whatever your plotting
+// code already sets, regardless of this setting.
+//
+// Replaces the Source Sans Pro headers / Lucida Sans body split from
+// this repo's original custom.scss (kept as custom-original.scss).
+// -----------------------------------------------------------------------
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap');
+$font-family-sans-serif: "Alegreya", "Georgia", serif !default;
+$presentation-heading-font: $font-family-sans-serif !default;
+$font-family-monospace: "Menlo", "Consolas", monospace !default;
+
+// Quarto's revealjs theme defaults headings to weight 600 — on Alegreya
+// specifically that reads much heavier/blacker than it does on a
+// grotesque sans. Regular weight instead; color + size already carry
+// enough visual weight to read as a heading without also bolding.
+$presentation-heading-font-weight: 400 !default;
+
+// Tabular data (tinytable/gt/modelsummary output, real HTML <table>
+// elements) reads worse in a serif face than prose does — numerals lose
+// the clean vertical alignment a table needs, and 1/l/I, 0/O get harder
+// to tell apart. "Source Sans Pro" is already bundled by Quarto's own
+// revealjs theme (it's the format's default heading font), so this adds
+// no extra font load — just an explicit override back to it for tables.
+// Figures don't need this: knitr/ggplot chunks render to a static PNG
+// with R's own font handling, never the page's CSS font.
+$table-font-family: "Source Sans Pro", -apple-system, "Helvetica Neue", Arial, sans-serif !default;
+
+// -----------------------------------------------------------------------
+// Colors
+// theme-* are the palette used for inline emphasis spans (.blue, .red, ...)
+// and for slide-variant classes below. Keep this list short — a handful
+// of colors used consistently reads better than many colors used once.
+// -----------------------------------------------------------------------
+// Blue/green: Brewer/Set1-matched — chosen to match the palette already
+// used in ggplot figures elsewhere (theme_asm() etc.), so slide emphasis
+// and analysis figures read as one consistent system.
+// Red: McGill's own brand red (Pantone 185, #ED1B2F) rather than
+// Brewer's — McGill's visual identity guide leaves the rest of the
+// palette open as long as McGill Red appears alongside the logo.
+$theme-blue:   #377eb8 !default;
+$theme-red:    #ED1B2F !default;
+$theme-green:  #4daf4a !default;
+$theme-gray:   #cccccc !default;
+$theme-dark:   #1a1a2e !default;
+$theme-white:  #ffffff !default;
+
+$body-bg: $theme-white !default;
+$body-color: #222222 !default;
+// Blue serif titles, black serif body — after McElreath's Statistical
+// Rethinking slides: the heading carries color, body text doesn't need
+// to, since the title is already the one thing on the slide asking for
+// attention.
+$presentation-heading-color: $theme-blue !default;
+$link-color: $theme-blue !default;
+$code-color: $theme-blue !default;
+
+// -----------------------------------------------------------------------
+// Sizes
+// Doumont's advice: fewer, larger sizes read better from the back row
+// than many small ones. Prefer bumping presentation-font-size-root over
+// introducing new size variants.
+// -----------------------------------------------------------------------
+$presentation-font-size-root: 50px !default;
+$presentation-h1-font-size: 2em !default;
+$presentation-h2-font-size: 1.3em !default;
+$presentation-h3-font-size: 1.1em !default;
+$code-block-font-size: 0.65em !default;
+
+// Left-margin width for the .roomy body treatment below.
+$content-margin-left: 33% !default;
+
+/*-- scss:rules --*/
+
+// -----------------------------------------------------------------------
+// Content-slide titles and subheadings (h2, h3)
+// Bold by browser default, not by any rule here — at 1.3em/1.1em that
+// read too heavy against the McElreath-style serif. Same size, lighter
+// weight. Add [text]{.blue} or wrap in **...** on a case-by-case basis
+// where a heading needs to stand out (e.g. parallel item labels).
+// -----------------------------------------------------------------------
+.reveal h2, .reveal h3 { font-weight: 400; }
+
+// -----------------------------------------------------------------------
+// Images/figures at full slide width
+// Reveal.js's own base theme caps `.reveal img { max-width: 95%; max-
+// height: 95%; }` -- fine for small inline images, but it silently eats
+// 5% of the space on any figure meant to fill the slide (e.g. a wide
+// side-by-side patchwork figure with out.width="100%"), and interacts
+// badly with wrapped raw-HTML overlays (position:relative containers)
+// where the image needs to exactly match its wrapper's size. Overriding
+// here once rather than patching every image/wrapper individually.
+// -----------------------------------------------------------------------
+.reveal img { max-width: 100%; max-height: 100%; }
+
+// -----------------------------------------------------------------------
+// Inline emphasis spans
+// Use sparingly: color highlights one clause the audience should carry
+// away, not whole slides. Applied as [text]{.blue} etc.
+// .black added for this repo — several existing slides use [text]{.black}
+// paired with [text]{.gray} as a two-state "this one, not that one"
+// sequencing device (e.g. "Concentration Index Decomposition" vs.
+// "Kitagawa-Blinder-Oaxaca Decomposition") — the same idea as the
+// .msg-item/.dim roadmap pattern below, just applied ad hoc to headings.
+// -----------------------------------------------------------------------
+.blue   { color: $theme-blue; }
+.red    { color: $theme-red; }
+.green  { color: $theme-green; }
+.gray   { color: $theme-gray; }
+.white  { color: $theme-white; }
+.black  { color: $body-color; }
+
+// A lighter-weight alternative to r-fit-text for one big line — scales
+// with its container instead of filling the slide.
+.large  { font-size: 1.5em; }
+
+// -----------------------------------------------------------------------
+// Slide variants
+// Mark a slide as ## Title {.section} to switch its palette.
+// -----------------------------------------------------------------------
+// Reveal renders each slide's background as a separate .slide-background
+// div (it copies the slide's classes onto it), and revealjs's own base
+// CSS sets that div's background-color with higher specificity than a
+// bare .section rule — so the fill has to target it explicitly.
+.reveal .slide-background.section {
+  background-color: $theme-dark;
+}
+
+.section {
+  color: $theme-white;
+
+  h1, h2, h3 { color: $theme-white; }
+  a { color: $theme-green; }
+}
+
+// -----------------------------------------------------------------------
+// Quotes
+// Evidence slides lean on blockquotes — give them a consistent,
+// understated frame instead of the browser default.
+// -----------------------------------------------------------------------
+.reveal blockquote {
+  border-left: 4px solid $theme-blue;
+  padding-left: 0.6em;
+  margin-left: 0;
+  font-style: normal;
+  box-shadow: none;
+  background: none;
+  width: 100%;
+}
+
+// -----------------------------------------------------------------------
+// Console box
+// A dark navy block with white monospace text for R code/output — after
+// the console box in McElreath's slides. Applies to any ```{r}``` chunk
+// automatically; no special markup needed beyond echo=TRUE.
+// -----------------------------------------------------------------------
+.reveal pre {
+  display: inline-block;
+  width: auto;
+  max-width: 100%;
+  background-color: $theme-dark;
+  border-radius: 6px;
+  padding: 0.6em 0.9em;
+  margin: 0.3em 0;
+  box-shadow: none;
+}
+
+// Quarto's "copy code" button wraps the source block in its own light
+// scaffold div with a background and a 1px border — visible as a pale
+// outline around the (content-width) navy box unless removed.
+.code-copy-outer-scaffold,
+.reveal div.sourceCode {
+  background: none;
+  border: none;
+}
+
+// Pandoc's syntax highlighting colors are picked for a *light* code
+// block — several nearly disappear against $theme-dark. Turn syntax
+// coloring off inside the console box; every span inherits plain white.
+// Both declarations need !important: Quarto's own base CSS carries a
+// more specific `.reveal pre.sourceCode code { color: #222 }` that
+// otherwise beats this rule on specificity alone.
+.reveal pre code {
+  background: none;
+  color: $theme-white !important;
+  font-family: $font-family-monospace;
+
+  span {
+    color: inherit !important;
+  }
+}
+
+// Line-number gutter (numberSource) is styled by Pandoc for a light
+// background too — recolor it to a dim white.
+.reveal pre.numberSource code > span > a::before {
+  color: rgba($theme-white, 0.4) !important;
+}
+
+// -----------------------------------------------------------------------
+// Message pairs
+// A structure-slide pattern: each point is a short bold label — the
+// message — plus one plain supporting line, rather than a flat bullet
+// dot. One accent color across all items ("let one colour do the
+// work") — use .dim on a .msg-item to mute it to gray for a recurring
+// agenda slide that highlights which point is current. Markup:
+//   ::: {.msg-list}
+//   ::: {.msg-item}
+//   **Point label**\
+//   One supporting clause
+//   :::
+//   :::
+// -----------------------------------------------------------------------
+.msg-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7em;
+}
+
+.msg-item p {
+  margin: 0;
+}
+
+.msg-item strong {
+  color: $theme-blue;
+  font-size: 1.05em;
+}
+
+.msg-item.dim strong,
+.msg-item.dim {
+  color: $theme-gray;
+}
+
+// A .msg-item's label can be wrapped in a link (e.g. to jump to that
+// section's slide) without looking like one.
+.msg-item a {
+  text-decoration: none;
+}
+
+// -----------------------------------------------------------------------
+// Citations
+// ::: aside ::: is used for source citations, kept small and unobtrusive.
+// -----------------------------------------------------------------------
+.reveal .aside {
+  margin-bottom: 5em;
+  font-size: 0.4em;
+  color: $theme-gray;
+}
+
+.reveal .slide aside .aside-footnotes {
+  margin-bottom: 1em;
+  font-size: 0.3em;
+}
+
+// -----------------------------------------------------------------------
+// Text-overlay boxes for background-image slides.
+// -----------------------------------------------------------------------
+.textbox {
+  padding: 0.5em 0.8em;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 4px;
+}
+
+.textbox.dark {
+  background-color: rgba(26, 26, 46, 0.85);
+  color: $theme-white;
+}
+
+// -----------------------------------------------------------------------
+// Alignment helpers
+// -----------------------------------------------------------------------
+.h2center h2 { text-align: center; }
+
+// .vcenter does vertical centering in plain CSS flexbox (not Reveal's
+// built-in {.center}, which measures content height once in JS at
+// slide-activation time and can race an R-chunk figure's image load).
+// The title stays pinned at top; only a direct-child .columns/.roomy/
+// .flush grows to fill the leftover space and centers within that.
+// !important is required: Reveal shows/hides slides by toggling
+// `display` as an inline style, which otherwise always wins over a
+// stylesheet rule regardless of selector specificity.
+.reveal .slides section.vcenter {
+  display: flex !important;
+  flex-direction: column;
+}
+
+.reveal .slides section.vcenter > .columns {
+  flex: 1;
+}
+
+// Title pinned top-left, body indented into a wide right-hand column
+// and centered vertically in the space below the title. Wrap plain
+// body content (a bullet list, a single supporting line) in
+// ::: {.roomy} ::: on a slide already marked {.vcenter}.
+.reveal .slides section.vcenter > .roomy {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: $content-margin-left;
+}
+
+// Same vertical centering as .roomy, minus the wide left indent — for
+// content that should align under the title (a roadmap/TOC slide, say)
+// rather than sit off to the right of it.
+.reveal .slides section.vcenter > .flush {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+// For an unequal-width columns row, vertically aligns the shorter
+// column to the middle of the taller one instead of both hugging the
+// top. Opt-in — most .columns slides rely on top alignment. Apply as
+// ::::: {.columns .valign-center}
+.columns.valign-center {
+  display: flex;
+  align-items: center;
+}
+
+// =========================================================================
+// Repo-specific additions (des-decomp) — structural CSS the existing 52
+// slides actually depend on, carried over (and adapted to the palette
+// above) from this repo's original custom.scss so the content keeps
+// working, not just the new visual identity. See custom-original.scss
+// for the pre-template version these were pulled from.
+// =========================================================================
+
+// ── Native Quarto columns ────────────────────────────────────────────────
+// This repo's Quarto/embed-resources setup overrides reveal's flex
+// columns with display:initial/inline-block, which silently breaks
+// nested ::: columns ::: layouts (second column wraps below) — used
+// ~35 times in des-decomp.qmd. Restore flex behavior unconditionally
+// (the .valign-center rule above still layers on top of this fine).
+.reveal div.columns {
+  display: flex;
+  gap: min(4vw, 1.5em);
+}
+.reveal div.columns > div.column {
+  display: block;
+  vertical-align: initial;
+}
+
+// ── xaringan-style column helpers ────────────────────────────────────────
+// Used once in des-decomp.qmd (::: left-column ::: / ::: right-column :::,
+// a 25/75 split with an empty left column for indent).
+.reveal .left-column {
+  float: left;
+  width: 23%;
+}
+.reveal .right-column {
+  float: right;
+  width: 74%;
+}
+.reveal .left-column ~ *:not(.right-column) {
+  clear: both;
+}
+
+// ── Footnote (::: footnote :::, used ~12 times for citations) ───────────
+// bottom is a fixed px value, not em: at this theme's larger root font
+// size, "1em" here scaled up enough to push the footnote noticeably
+// higher than intended, into the same vertical space as tall column
+// content above it (e.g. the Kakwani citation slide). A fixed offset
+// keeps it pinned near the slide's actual bottom edge regardless of
+// font size.
+.reveal .footnote {
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+  font-size: 0.5em;
+  color: $theme-gray;
+}
+
+// ── Verbatim transcripts ──────────────────────────────────────────────
+// Built via an R chunk with results: asis (see e.g. the transcript-molloy
+// chunk), not written directly in markdown. Line-numbered like a
+// conversation-analysis source transcript. .sct highlights a "Score
+// Calibration Talk" episode (Pier et al. 2017's own term) -- underlined
+// in the source paper; highlighted here instead, more legible projected.
+.transcript {
+  font-family: $font-family-monospace;
+  font-size: 0.5em;
+  line-height: 1.5;
+  text-align: left;
+}
+.transcript-line {
+  display: flex;
+  gap: 0.6em;
+}
+.transcript-line .ln {
+  color: $theme-gray;
+  width: 1.6em;
+  flex: none;
+  text-align: right;
+}
+.transcript-line .spk {
+  color: $theme-blue;
+  font-weight: 700;
+  width: 2.2em;
+  flex: none;
+}
+.transcript-line .txt {
+  flex: 1;
+}
+.transcript .sct {
+  background-color: #fff3cd;
+  border-radius: 2px;
+  padding: 0 0.15em;
+}
+
+// ── Slide numbers ─────────────────────────────────────────────────────────
+.reveal .slide-number,
+.reveal .slide-number a {
+  color: $theme-gray;
+  background-color: transparent;
+  font-size: 0.75em;
+}
+
+// ── Pandoc/Quarto citation footnotes — hide ref numbers, keep content ────
+// Not currently triggered (no ^[...] footnotes in des-decomp.qmd as of
+// this template swap), kept in case that changes.
+.reveal a.footnote-ref,
+.reveal [role="doc-noteref"] {
+  display: none !important;
+}
+.reveal sup:has(a.footnote-ref),
+.reveal sup:has([role="doc-noteref"]) {
+  display: none !important;
+}
+.reveal .footnotes ol,
+.reveal aside.footnotes ol,
+.reveal section.footnotes ol {
+  list-style: none !important;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+.reveal .footnotes li::marker,
+.reveal aside.footnotes li::marker,
+.reveal section.footnotes li::marker {
+  content: "" !important;
+}
+.reveal a.footnote-back,
+.reveal [role="doc-backlink"] {
+  display: none !important;
+}
+.reveal .footnotes,
+.reveal aside.footnotes {
+  font-size: 0.5em;
+  color: $theme-gray;
+}
+
+// ── Tables ────────────────────────────────────────────────────────────────
+// Plain `table` tag, not `.table` — tinytable renders `class="tinytable"`,
+// not Bootstrap's `.table`, so the border rules below (inherited from the
+// original custom.scss) never actually matched tinytable output; this
+// font-family rule uses the tag selector instead so it does.
+.reveal table {
+  font-family: $table-font-family;
+}
+
+.reveal .table td, .reveal .table th {
+  border-color: black;
+}
+.reveal .table tbody td {
+  border-bottom: none;
+}
+.reveal .table tbody tr:last-child td {
+  border-bottom: 1px solid black;
+}
+.reveal .table thead tr:first-child th {
+  border-bottom: none;
+}
+.reveal .table thead tr:last-child th {
+  border-bottom: 1px solid black;
+}
+
+// ── Curtain: a background-colored cover over the right half of a block ───
+// Sits on top of whatever is inside .curtain-wrap and fades out on the
+// next click (.fragment.fade-out is visible until its step, then hides).
+// Markup:
+//   ::: {.curtain-wrap}
+//   ...table or figure...
+//   <div class="curtain fragment fade-out"></div>
+//   :::
+.reveal .curtain-wrap { position: relative; }
+
+// Extends a few px past the block's top/bottom edge and sits above it
+// (z-index): a table's collapsed border rules straddle its edge, and
+// would otherwise peek out across the covered half.
+.reveal .curtain {
+  position: absolute;
+  top: -4px;
+  bottom: -4px;
+  left: 50%;
+  right: 0;
+  z-index: 5;
+  background: $body-bg;
+}
+
+// ── Hand-drawn-style callout ──────────────────────────────────────────────
+// A pointer + label overlaid on top of existing slide content (e.g.
+// circling/arrowing at one item in a .msg-list to say "this one"),
+// after a hand-annotated screenshot. Just a color/type treatment --
+// positioning itself comes from Quarto's own `.absolute` div (which
+// sets inline position/top/left directly), combined with `.fragment`
+// so it stays hidden until advanced to. Both top/left and the SVG
+// path/polygon need hand-tuning per slide/target. Markup:
+//   ::: {.absolute top="55%" left="3%" .fragment .annotation}
+//   <div class="annotation-text">Our interest is here</div>
+//   <svg viewBox="0 0 200 220" width="140" height="150">
+//     <path d="M 100 10 C 60 60, 60 140, 130 190" fill="none"
+//       stroke="currentColor" stroke-width="4"/>
+//     <polygon points="130,190 116,168 105,184" fill="currentColor"/>
+//   (the arrowhead's 3 points: tip = the path's own end coordinate, then
+//   two back corners offset symmetrically around the curve's tangent
+//   direction at that point -- not just any nearby points, or the
+//   triangle comes out lopsided/backwards-looking)
+//   </svg>
+//   :::
+.reveal .annotation {
+  color: $theme-red;
+  text-align: center;
+}
+
+.reveal .annotation-text {
+  font-size: 0.55em;
+  font-style: italic;
+  margin-bottom: 0.2em;
+}
+
+// ── Inline code chip ──────────────────────────────────────────────────────
+// Same background/padding/radius treatment as the original custom.scss,
+// recolored to the new accent instead of orange.
+.reveal code:not(pre code) {
+  color: $theme-blue;
+  background-color: #f0f0f0;
+  padding: 0.05em 0.3em;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
